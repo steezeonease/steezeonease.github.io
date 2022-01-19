@@ -1,0 +1,11 @@
+.navigationContainer {
+  display: flex;
+  font-size: 24px;
+  justify-content: flex-end;
+
+  a {
+    text-decoration: none;
+    margin-left: 36px;
+    color: #000000;
+  }
+}

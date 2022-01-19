@@ -1,0 +1,27 @@
+.topSection {
+  display: flex;
+  justify-content: center;
+}
+
+.introContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.emojiPicContainer {
+  border: 1px solid black;
+  margin-right: 48px;
+}
+
+.blurbText {
+  display: flex;
+  flex-direction: column;
+  max-width: 610px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+}
