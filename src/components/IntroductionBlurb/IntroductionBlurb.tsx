@@ -1,17 +1,21 @@
 import styles from "./IntroductionBlurb.module.scss";
-import linkedin from "../../images/linkedin.svg";
-import medium from "../../images/medium.svg";
+import { Icon } from "@fluentui/react/lib/Icon";
 
 export const IntroductionBlurb: React.FC = () => {
   return (
     <div className={styles.introContainer}>
       <div className={styles.topSection}>
         <div className={styles.emojiPicContainer}>
-          <img src="https://via.placeholder.com/362x362" />
+          <img alt="placeholder" src="https://via.placeholder.com/374x362" />
         </div>
         <div className={styles.blurbText}>
           <h1>Hannah Yi</h1>
-          <h2>UX Designer | Seattle, WA</h2>
+          <h2>
+            UX Designer{" "}
+            <span className={styles.location}>
+              <Icon iconName="POISolid" /> Seattle, WA
+            </span>
+          </h2>
           <h3>
             I empathize, acknowledge, and validate human needs to create products that are simple,
             purposeful, and accessible.

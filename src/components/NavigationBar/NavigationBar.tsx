@@ -5,7 +5,6 @@ export const NavigationBar: React.FC = () => {
     <div className={styles.navigationContainer}>
       <a href="#">Work</a>
       <a href="#">About</a>
-      <a href="#">Contact</a>
       <a href="#">Resume</a>
     </div>
   );

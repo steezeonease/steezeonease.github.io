@@ -1,11 +1,22 @@
+@import "../../css/common";
+
 .navigationContainer {
   display: flex;
   font-size: 24px;
   justify-content: flex-end;
+  font-family: "Work Sans";
 
   a {
     text-decoration: none;
     margin-left: 36px;
-    color: #000000;
+    color: $ms-color-neutralSecondary;
+
+    &:hover {
+      color: $ms-color-neutralPrimary;
+    }
+
+    &:active {
+      color: $ms-color-neutralDark;
+    }
   }
 }

@@ -1,23 +1,47 @@
+.introContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 140px 0 356px;
+}
+
 .topSection {
   display: flex;
   justify-content: center;
 }
 
-.introContainer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .emojiPicContainer {
-  border: 1px solid black;
-  margin-right: 48px;
+  border: 1px solid #000000;
+  margin-right: 40px;
 }
 
 .blurbText {
   display: flex;
   flex-direction: column;
-  max-width: 610px;
+  max-width: 632px;
+
+  h1 {
+    font-family: "Crimson Text";
+    margin: 0;
+    font-size: 72px;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+  h2 {
+    margin: 0 0 54px;
+    font-weight: 500;
+
+    .location {
+      margin-left: 10px;
+    }
+  }
+
+  h3 {
+    font-family: "Work Sans";
+    font-weight: 300;
+    font-size: 24px;
+  }
 }
 
 .socials {
