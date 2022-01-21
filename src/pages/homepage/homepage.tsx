@@ -21,8 +21,8 @@ export const Homepage = () => {
               </span>
             </h2>
             <h3>
-              I empathize, acknowledge, and validate human needs to create products that are simple,
-              purposeful, and accessible.
+              I listen, acknowledge, and connect with individuals to create products that are
+              minimal, intentional, and accessible for communities, at large.
             </h3>
           </div>
         </div>
