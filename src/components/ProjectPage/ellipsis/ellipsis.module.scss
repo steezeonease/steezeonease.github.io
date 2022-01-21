@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  width: 108px;
+  justify-content: space-between;
+  margin: 86px auto;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000000;
+}

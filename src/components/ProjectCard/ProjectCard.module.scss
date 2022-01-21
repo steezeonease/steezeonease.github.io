@@ -1,6 +1,6 @@
 .cardContainer {
   width: 538px;
-  height: 538px;
+  height: 516px;
   border-radius: 5px;
   background-color: #849669;
   position: relative;
@@ -45,12 +45,17 @@
   transition: opacity 0.2s ease-in-out;
 }
 
+.textContainer {
+  padding: 0 40px;
+}
+
 .projectTitle {
   font-size: 48px;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
+  font-family: "Crimson Text";
 }
 
 .projectDescription {
-  width: 75%;
   font-size: 20px;
+  font-family: "Work Sans";
 }
