@@ -1,12 +1,9 @@
-import { ProjectPage } from "../../components/ProjectPage/ProjectPage";
-import { ProjectSection } from "../../components/ProjectPage/ProjectSection/ProjectSection";
-import { StickyNote } from "../../components/ProjectPage/StickyNote/StickyNote";
-import { Ellipsis } from "../../components/ProjectPage/ellipsis/ellipsis";
+import { ProjectPage } from "../../../components/ProjectPage/ProjectPage";
+import { ProjectSection } from "../../../components/ProjectPage/ProjectSection/ProjectSection";
+import { StickyNote } from "../../../components/ProjectPage/StickyNote/StickyNote";
+import { Ellipsis } from "../../../components/ProjectPage/ellipsis/ellipsis";
 
-import designProcess from "../../images/prepDoc/designProcess.png";
-import affinityMap from "../../images/prepDoc/affinityMap.png";
-
-export const Work = () => {
+export const PrepDoc = () => {
   return (
     <main>
       <ProjectPage
@@ -31,7 +28,7 @@ export const Work = () => {
           </ProjectSection>
           <ProjectSection header={"My Design Process"}>
             <>
-              <img width="100%" src={designProcess} />
+              <img width="100%" src={require("./images/designProcess.png")} />
             </>
           </ProjectSection>
           <Ellipsis />
@@ -94,7 +91,7 @@ export const Work = () => {
                 </li>
               </ul>
               <figure>
-                <img width="100%" src={affinityMap} alt="Affinity map" />
+                <img width="100%" src={require("./images/affinityMap.png")} alt="Affinity map" />
                 <figcaption>Image of my affinity map</figcaption>
               </figure>
             </>

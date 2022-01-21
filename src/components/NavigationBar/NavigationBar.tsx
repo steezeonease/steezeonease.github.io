@@ -5,7 +5,7 @@ export const NavigationBar: React.FC = () => {
   return (
     <div className={styles.navigationContainer}>
       <nav>
-        <Link to="/work">Work</Link>
+        <Link to="/">Work</Link>
         <Link to="/about">About</Link>
         <Link to="/resume">Resume</Link>
       </nav>
