@@ -5,7 +5,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
 
 // Pages
-import { Homepage } from "./pages/homepage/homepage";
+import { Homepage } from "./pages/homepage/Homepage";
 import { About } from "./pages/about/about";
 import { PrepDoc } from "./pages/work/prep-doc/prepDoc";
 
