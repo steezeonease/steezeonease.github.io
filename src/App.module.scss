@@ -1,15 +1,7 @@
 .app {
   display: flex;
   flex-direction: column;
-  max-width: 1600px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 40px 0 60px;
-}
-
-.cardsContainer {
-  display: grid;
-  grid-template-columns: min-content min-content;
-  column-gap: 100px;
-  row-gap: 100px;
-  margin: auto;
 }
