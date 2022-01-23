@@ -3,6 +3,8 @@ import { ProjectSection } from "../../../components/ProjectPage/ProjectSection/P
 import { StickyNote } from "../../../components/ProjectPage/StickyNote/StickyNote";
 import { Ellipsis } from "../../../components/ProjectPage/ellipsis/ellipsis";
 
+import styles from "./prepDoc.module.scss";
+
 export const PrepDoc = () => {
   return (
     <main>
@@ -43,7 +45,7 @@ export const PrepDoc = () => {
                 <li>6 females</li>
                 <li>All have visited a healthcare provider at least once in their life</li>
               </ul>
-              <div style={{ display: "flex", justifyContent: "space-between", margin: "100px 0" }}>
+              <div className={styles.stickyNotesContainer}>
                 <StickyNote
                   text="I feel frustrated when I have to prepare for an appointment because it makes me feel like I should have gone to medical school"
                   backgroundColor="#DCEBCA"
@@ -90,7 +92,7 @@ export const PrepDoc = () => {
                   there for a medical concern — usually something bad
                 </li>
               </ul>
-              <figure>
+              <figure className={styles.imageContainer}>
                 <img width="100%" src={require("./images/affinityMap.png")} alt="Affinity map" />
                 <figcaption>Image of my affinity map</figcaption>
               </figure>

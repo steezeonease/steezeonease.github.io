@@ -1,8 +1,14 @@
+@import "../../../css/common";
+
 .container {
   display: flex;
   width: 108px;
   justify-content: space-between;
   margin: 86px auto;
+
+  @include media-breakpoint-down(md) {
+    margin: 40px auto;
+  }
 }
 
 .dot {
