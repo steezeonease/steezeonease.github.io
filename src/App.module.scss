@@ -5,8 +5,7 @@
   flex-direction: column;
   max-width: 1260px;
   margin: 0 auto;
-  padding: 40px 0 60px;
-  min-width: 420px;
+  padding: 40px 20px 60px;
 
   @include media-breakpoint-down(lg) {
     padding: 30px 20px 20px;
