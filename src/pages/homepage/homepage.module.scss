@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 140px 0 180px;
+  margin: 85px 0 140px;
 
   @include media-breakpoint-down(lg) {
     margin: 0 0 100px;
@@ -47,10 +47,26 @@
   }
 }
 
+.socialContainer {
+  display: flex;
+  gap: 28px;
+  margin: 12px 0 24px;
+}
+
+.socialLink {
+  background-color: #7e5cff;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .topSection {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   margin: 0 30px;
 
   @include media-breakpoint-down(md) {
@@ -64,19 +80,18 @@
   }
 }
 
-.emojiPicContainer {
+.avatarContainer {
   margin-right: 2.5vw;
   border-radius: 50%;
   overflow: hidden;
   flex: 0 0 34%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
   @include media-breakpoint-down(md) {
     margin-bottom: 16px;
   }
 
   img {
-    position: relative;
-    top: 9px;
     height: 100%;
     width: 100%;
   }
@@ -84,12 +99,37 @@
 
 .navLink {
   color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.testimonial {
+  display: flex;
+  margin: 0 auto 132px;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Work Sans";
+}
+
+.testimonialText {
+  display: flex;
+  max-width: 824px;
+  flex-direction: column;
+  margin-left: 44px;
+}
+
+.testimonialAuthor {
+  margin-top: 20px;
+  font-weight: 700;
 }
 
 .blurbText {
   display: flex;
   flex-direction: column;
   max-width: 632px;
+  justify-content: space-between;
 
   .name {
     font-family: "Crimson Text";
@@ -131,7 +171,7 @@
   }
 
   .locationText {
-    margin: 0 0 54px;
+    margin: 0 0 24px;
     font-weight: 500;
 
     @include media-breakpoint-down(md) {
@@ -167,4 +207,13 @@
   @include media-breakpoint-down(md) {
     font-size: 12px;
   }
+}
+
+.footerSocialContainer {
+  width: 453px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 121px;
+  background: no-repeat url("../../images/squiggly.png") 0 0 transparent;
 }
