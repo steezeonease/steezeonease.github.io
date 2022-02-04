@@ -5,24 +5,26 @@
   font-size: 18px;
   justify-content: space-between;
   font-family: "Work Sans";
-  margin-right: 30px;
 
   @include media-breakpoint-down(md) {
     font-size: 16px;
     margin-bottom: 30px;
   }
 
-  a {
-    text-decoration: none;
-    margin-left: 36px;
-    color: $ms-color-neutralSecondary;
+  nav {
+    a {
+      text-decoration: none;
+      margin-left: 36px;
+      color: #000;
 
-    &:hover {
-      color: $ms-color-neutralPrimary;
-    }
+      &:hover {
+        color: #000;
+        font-weight: 700;
+      }
 
-    &:active {
-      color: $ms-color-neutralDark;
+      &:active {
+        color: #000;
+      }
     }
   }
 }

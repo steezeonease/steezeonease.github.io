@@ -6,7 +6,7 @@
   grid-column-gap: 80px;
   grid-row-gap: 80px;
   margin: auto;
-  padding: 0 40px;
+  padding: 0 20px;
   box-sizing: border-box;
   width: 100%;
 
@@ -66,8 +66,9 @@
 
 .topSection {
   display: flex;
-  justify-content: center;
-  margin: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 
   @include media-breakpoint-down(md) {
     margin-top: 0px;
@@ -81,11 +82,19 @@
 }
 
 .avatarContainer {
-  margin-right: 2.5vw;
+  margin-right: 82px;
   border-radius: 50%;
   overflow: hidden;
-  flex: 0 0 34%;
+  flex: 0 0 31%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  @include media-breakpoint-down(lg) {
+    margin-right: 50px;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-right: 40px;
+  }
 
   @include media-breakpoint-down(md) {
     margin-bottom: 16px;
@@ -107,10 +116,15 @@
 
 .testimonial {
   display: flex;
-  margin: 0 auto 132px;
+  margin: 0 30px 132px;
+  justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 18px;
   font-family: "Work Sans";
+
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
 }
 
 .testimonialText {
@@ -128,7 +142,6 @@
 .blurbText {
   display: flex;
   flex-direction: column;
-  max-width: 632px;
   justify-content: space-between;
 
   .name {
@@ -138,6 +151,7 @@
     line-height: 1;
     font-weight: 400;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 2px;
 
     @include media-breakpoint-down(xl) {
       font-size: 64px;
@@ -155,8 +169,6 @@
 
   .locationText,
   .blurb {
-    font-size: 24px;
-
     @include media-breakpoint-down(xl) {
       font-size: 20px;
     }
@@ -166,12 +178,13 @@
     }
 
     @include media-breakpoint-down(md) {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
   .locationText {
     margin: 0 0 24px;
+    font-size: 24px;
     font-weight: 500;
 
     @include media-breakpoint-down(md) {
@@ -181,27 +194,25 @@
     @include media-breakpoint-down(lg) {
       margin: 0 0 36px;
     }
-
-    .location {
-      margin-left: 10px;
-    }
   }
 
   .blurb {
     font-family: "Work Sans";
     font-weight: 300;
     margin: 0;
+    font-size: 20px;
   }
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  margin: 60px 30px 0;
+  margin: 60px 20px 0;
 
   a {
     color: $ms-color-neutralPrimary;
     text-decoration: none;
+    font-weight: 600;
   }
 
   @include media-breakpoint-down(md) {

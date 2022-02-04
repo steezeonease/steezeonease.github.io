@@ -14,7 +14,7 @@ export const ProjectCard: React.FC<IProjectCard> = (props: IProjectCard) => {
   return (
     <div className={styles.cardContainer + " cardContainer"}>
       <div className={styles.cardFront} style={imageContainerStyles}>
-        <img style={imageStyles} src={imageSrc} />
+        <img style={imageStyles} src={imageSrc} alt="Project card" />
       </div>
       <div className={styles.cardHover}>
         <div className={styles.textContainer}>

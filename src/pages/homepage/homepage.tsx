@@ -46,7 +46,7 @@ export const Homepage: React.FC = () => {
         <div className={styles.testimonialText}>
           <div>
             "This is to say that Hannah might be one of the most dedicated and passionate designers
-            I have ever met. She is a trusted team player and cares deeply about those around her.""
+            I have ever met. She is a trusted team player and cares deeply about those around her."
           </div>
           <div className={styles.testimonialAuthor}>Samantha Chiu - UX Designer</div>
         </div>
@@ -58,12 +58,12 @@ export const Homepage: React.FC = () => {
             caseStudyTitle={"Behind the scenes of my portfolio coming to life from scratch."}
             imageSrc={require("../../images/projectPreviews/portfolioPreview.png")}
             imageStyles={{
-              bottom: 0,
-              right: 0,
               width: "100%",
             }}
             imageContainerStyles={{
               backgroundColor: "#C4B0EC",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           />
         </NavLink>
@@ -94,10 +94,10 @@ export const Homepage: React.FC = () => {
           caseStudyTitle={
             "A mobile application that will help you feel more prepared for your next healthcare appointment."
           }
-          imageSrc={require("../../images/projectPreviews/prepDocPreview.png")}
+          imageSrc={require("../../images/projectPreviews/prepDocPreview2.png")}
           imageStyles={{
             bottom: 0,
-            right: -100,
+            right: -150,
             width: "100%",
           }}
           imageContainerStyles={{
