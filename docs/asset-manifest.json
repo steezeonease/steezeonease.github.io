@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.986f08d7.css",
-    "main.js": "/static/js/main.fe6e6091.js",
+    "main.css": "/static/css/main.969e7368.css",
+    "main.js": "/static/js/main.26dbb126.js",
     "static/js/787.e95b87d8.chunk.js": "/static/js/787.e95b87d8.chunk.js",
-    "static/media/careercafecropped.jpg": "/static/media/careercafecropped.4676f0046537b83e9905.jpg",
     "static/media/affinityMap.png": "/static/media/affinityMap.a7615f45431cfee6f57e.png",
     "static/media/designsteezecropped.jpg": "/static/media/designsteezecropped.5ee043fc320404f4939e.jpg",
     "static/media/candidlyconnecting.jpg": "/static/media/candidlyconnecting.3e40e80d28ebff649bc0.jpg",
     "static/media/designProcess.png": "/static/media/designProcess.fc3766f754a19698937e.png",
+    "static/media/careercafecropped.jpg": "/static/media/careercafecropped.414a22dd85731d426c10.jpg",
     "static/media/monstera.svg": "/static/media/monstera.c6c3c7ee24690b5f0da4ba8bf858d0f0.svg",
     "static/media/homepagebg.jpg": "/static/media/homepagebg.a1061ad76bb6a20c41c6.jpg",
     "static/media/prepdoc.jpg": "/static/media/prepdoc.28ddc4606fb94447140e.jpg",
@@ -16,12 +16,12 @@
     "index.html": "/index.html",
     "static/media/mail.svg": "/static/media/mail.0ee5d7b279b29a53d61574df47b20fe7.svg",
     "static/media/mailWhite.svg": "/static/media/mailWhite.0a89ace2b67d2a7da368034f05a9c5f7.svg",
-    "main.986f08d7.css.map": "/static/css/main.986f08d7.css.map",
-    "main.fe6e6091.js.map": "/static/js/main.fe6e6091.js.map",
+    "main.969e7368.css.map": "/static/css/main.969e7368.css.map",
+    "main.26dbb126.js.map": "/static/js/main.26dbb126.js.map",
     "787.e95b87d8.chunk.js.map": "/static/js/787.e95b87d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.986f08d7.css",
-    "static/js/main.fe6e6091.js"
+    "static/css/main.969e7368.css",
+    "static/js/main.26dbb126.js"
   ]
 }

@@ -7,10 +7,11 @@ interface IProjectCard {
   caseStudyTitle: string;
   imageSrc?: string;
   bgImageStyle?: { [key: string]: any };
+  backgroundOpacity?: number;
 }
 
 export const ProjectCard: React.FC<IProjectCard> = (props: IProjectCard) => {
-  const { title, caseStudyTitle, imageSrc, bgImageStyle } = props;
+  const { title, caseStudyTitle, imageSrc, bgImageStyle, backgroundOpacity } = props;
 
   const bgImageStyleNew = {
     ...bgImageStyle,
@@ -18,6 +19,12 @@ export const ProjectCard: React.FC<IProjectCard> = (props: IProjectCard) => {
 
   return (
     <Parallax bgImage={imageSrc} strength={-400} bgImageStyle={bgImageStyleNew}>
+      <div
+        className={styles.overlay}
+        style={{
+          opacity: backgroundOpacity,
+        }}
+      />
       <div className={styles.cardContainer}>
         <div className={styles.cardFront}>
           <div className={styles.textContainer + " sectionContainer"}>

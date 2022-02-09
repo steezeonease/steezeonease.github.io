@@ -11,7 +11,12 @@ import { Parallax } from "react-parallax";
 export const Homepage: React.FC = () => {
   return (
     <>
-      <Parallax bgImage={homepagebg} bgImageAlt="home page background" strength={300}>
+      <Parallax
+        bgImage={homepagebg}
+        bgImageAlt="home page background"
+        strength={300}
+        className={styles.homepageBg}
+      >
         <div className={styles.topSection + " containerSection"}>
           <h1 className={styles.name}>
             <img src={monstera} alt="Monstera" />
@@ -56,6 +61,7 @@ export const Homepage: React.FC = () => {
             backgroundPosition: "center center",
             top: "-12vw",
           }}
+          backgroundOpacity={0.4}
         />
         <ProjectCard
           title={"careercafé"}
@@ -66,8 +72,9 @@ export const Homepage: React.FC = () => {
           bgImageStyle={{
             backgroundSize: "cover",
             backgroundPosition: "center center",
-            top: "-25vw",
+            top: "-13vw",
           }}
+          backgroundOpacity={0.5}
         />
 
         <ProjectCard
@@ -81,6 +88,7 @@ export const Homepage: React.FC = () => {
             backgroundPosition: "center center",
             top: "-9vw",
           }}
+          backgroundOpacity={0.6}
         />
         <ProjectCard
           title={"Prep Doc"}
@@ -93,6 +101,7 @@ export const Homepage: React.FC = () => {
             backgroundPosition: "center center",
             top: "-20vw",
           }}
+          backgroundOpacity={0.0}
         />
       </div>
       <div className={styles.footer}>

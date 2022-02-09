@@ -14,6 +14,19 @@
   margin: 12px 0 24px;
 }
 
+.homepageBg {
+  position: relative;
+
+  :global(.react-parallax-content) {
+    &::before {
+      content: " ";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
 .socialLink {
   background-color: #df76d5;
   color: #23212b;
@@ -43,6 +56,7 @@
   height: 825px;
   padding-bottom: 86px;
   box-sizing: border-box;
+  position: relative;
 
   .name {
     position: relative;

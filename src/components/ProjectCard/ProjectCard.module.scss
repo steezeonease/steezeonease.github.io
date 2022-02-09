@@ -1,8 +1,15 @@
 @import "./../../css/common";
 
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+}
+
 .cardContainer {
   height: 500px;
   display: flex;
+  position: relative;
 }
 
 .cardFront {
