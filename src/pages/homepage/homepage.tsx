@@ -66,7 +66,7 @@ export const Homepage: React.FC = () => {
           bgImageStyle={{
             backgroundSize: "cover",
             backgroundPosition: "center center",
-            top: "-13vw",
+            top: "-25vw",
           }}
         />
 
@@ -79,7 +79,7 @@ export const Homepage: React.FC = () => {
           bgImageStyle={{
             backgroundSize: "cover",
             backgroundPosition: "center center",
-            top: "-20vw",
+            top: "-9vw",
           }}
         />
         <ProjectCard
