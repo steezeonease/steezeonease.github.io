@@ -1,92 +1,85 @@
-import { NavLink } from "react-router-dom";
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
 import linkedInLogo from "../../images/linkedin.svg";
+import linkedInWhite from "../../images/linkedinWhite.svg";
 import mail from "../../images/mail.svg";
+import mailWhite from "../../images/mailWhite.svg";
+import monstera from "../../images/monstera.svg";
 import styles from "./Homepage.module.scss";
+import homepagebg from "../../images/homepagebg.jpg";
+import { Parallax } from "react-parallax";
 
 export const Homepage: React.FC = () => {
   return (
     <>
-      <div className={styles.introContainer}>
-        <div className={styles.topSection}>
-          <div className={styles.avatarContainer}>
-            <img alt="Memoji Hi" src={require("../../images/selfie.png")} />
-          </div>
-          <div className={styles.blurbText}>
-            <h1 className={styles.name}>
-              Hello,
-              <br />
-              I'm Hannah!
-            </h1>
-            <div className={styles.socialContainer}>
-              <a
-                className={styles.socialLink}
-                href="https://www.linkedin.com/in/steeze/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={linkedInLogo} alt="LinkedIn icon" />
-              </a>
-              <a className={styles.socialLink} href="mailto: designbysteeze@gmail.com">
-                <img src={mail} alt="Mail icon" />
-              </a>
-            </div>
-            <h2 className={styles.locationText}>
-              UX Designer | <span className={styles.location}>Seattle, WA</span>
-            </h2>
-            <h3 className={styles.blurb}>
-              I listen, acknowledge, and connect with individuals to create products that are
-              minimal, intentional, and accessible for communities, at large.
-            </h3>
+      <Parallax bgImage={homepagebg} bgImageAlt="home page background" strength={300}>
+        <div className={styles.topSection + " containerSection"}>
+          <h1 className={styles.name}>
+            <img src={monstera} alt="Monstera" />
+            <span>H</span>annah Yi
+          </h1>
+          <h2 className={styles.locationText}>
+            UX Designer | <span className={styles.location}>Seattle, WA</span>
+          </h2>
+          <div className={styles.socialContainer}>
+            <a
+              className={styles.socialLink}
+              href="https://www.linkedin.com/in/steeze/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={linkedInLogo} alt="LinkedIn icon" />
+            </a>
+            <a className={styles.socialLink} href="mailto: designbysteeze@gmail.com">
+              <img src={mail} alt="Mail icon" />
+            </a>
           </div>
         </div>
-      </div>
-      <div className={styles.testimonial}>
-        <img src={require("../../images/sammi.png")} alt="Samantha" />
-        <div className={styles.testimonialText}>
-          <div>
-            "This is to say that Hannah might be one of the most dedicated and passionate designers
-            I have ever met. She is a trusted team player and cares deeply about those around her."
-          </div>
-          <div className={styles.testimonialAuthor}>Samantha Chiu - UX Designer</div>
-        </div>
+      </Parallax>
+      <div className={styles.aboutMe + " containerSection"}>
+        <p>I'm a UX Designer based in Seattle, the city of rain.</p>
+        <p>
+          My joys in life is to leave a positive imprint by adding a touch of humananity to others'
+          daily life experiences.
+        </p>
+        <p>
+          I put my curiosity to work by listening, engaging, and connecting with individuals to
+          design better products for communities at large.
+        </p>
       </div>
       <div className={styles.cardsContainer}>
-        <NavLink to="/work/prep-doc" className={styles.navLink}>
-          <ProjectCard
-            title={"designbysteeze"}
-            caseStudyTitle={"Behind the scenes of my portfolio coming to life from scratch."}
-            imageSrc={require("../../images/projectPreviews/portfolioPreview.png")}
-            imageStyles={{
-              width: "100%",
-            }}
-            imageContainerStyles={{
-              backgroundColor: "#C4B0EC",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          />
-        </NavLink>
+        <ProjectCard
+          title={"designbysteeze"}
+          caseStudyTitle={"Behind the scenes of my portfolio coming to life from scratch."}
+          imageSrc={require("../../images/projectPreviews/designsteezecropped.jpg")}
+          bgImageStyle={{
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            top: "-12vw",
+          }}
+        />
         <ProjectCard
           title={"careercafé"}
           caseStudyTitle={
             "A web based application to help you find your next career and connect you with knowledgeable mentors in your particular field of interest. "
           }
-          imageSrc={require("../../images/projectPreviews/careerCafePreview.png")}
-          imageStyles={{
-            width: "100%",
-            height: "100%",
+          imageSrc={require("../../images/projectPreviews/careercafecropped.jpg")}
+          bgImageStyle={{
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            top: "-13vw",
           }}
         />
+
         <ProjectCard
           title={"Candidly Connecting"}
           caseStudyTitle={
             "A business that provides tools and resources for adults to help facilitate discussions to children about diversity and inclusion."
           }
-          imageSrc={require("../../images/projectPreviews/candidlyConnectingPreview.png")}
-          imageStyles={{
-            width: "100%",
-            height: "100%",
+          imageSrc={require("../../images/projectPreviews/candidlyconnecting.jpg")}
+          bgImageStyle={{
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            top: "-20vw",
           }}
         />
         <ProjectCard
@@ -94,24 +87,26 @@ export const Homepage: React.FC = () => {
           caseStudyTitle={
             "A mobile application that will help you feel more prepared for your next healthcare appointment."
           }
-          imageSrc={require("../../images/projectPreviews/prepDocPreview2.png")}
-          imageStyles={{
-            bottom: 0,
-            right: -150,
-            width: "100%",
-          }}
-          imageContainerStyles={{
-            backgroundColor: "#C4B0EC",
+          imageSrc={require("../../images/projectPreviews/prepdoc.jpg")}
+          bgImageStyle={{
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            top: "-20vw",
           }}
         />
       </div>
       <div className={styles.footer}>
-        <div className={styles.footerSocialContainer}>
-          <a href="mailto: designbysteeze@gmail.com">designbysteeze@gmail.com</a>
-        </div>
-        <div className={styles.footerSocialContainer}>
-          <a href="https://www.linkedin.com/in/steeze/">linkedin.com/in/steeze</a>
-        </div>
+        <a
+          className={styles.socialLink}
+          href="https://www.linkedin.com/in/steeze/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={linkedInWhite} alt="LinkedIn icon" />
+        </a>
+        <a className={styles.socialLink} href="mailto: designbysteeze@gmail.com">
+          <img src={mailWhite} alt="Mail icon" />
+        </a>
       </div>
     </>
   );

@@ -1,60 +1,22 @@
 @import "./../../css/common";
 
 .cardsContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 80px;
-  grid-row-gap: 80px;
+  display: flex;
+  flex-direction: column;
   margin: auto;
-  padding: 0 20px;
   box-sizing: border-box;
   width: 100%;
-
-  @include media-breakpoint-down(md) {
-    padding: 0 30px;
-  }
-
-  @include media-breakpoint-down(sm) {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: none;
-    grid-row-gap: 30px;
-  }
-
-  :global(.cardContainer) {
-    &:before {
-      content: "";
-      display: block;
-      height: 0;
-      width: 0;
-      padding-bottom: 100%;
-    }
-  }
-}
-
-.introContainer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 85px 0 140px;
-
-  @include media-breakpoint-down(lg) {
-    margin: 0 0 100px;
-  }
-
-  @include media-breakpoint-down(md) {
-    margin: 0 0 60px;
-  }
 }
 
 .socialContainer {
   display: flex;
-  gap: 28px;
+  gap: 14px;
   margin: 12px 0 24px;
 }
 
 .socialLink {
-  background-color: #7e5cff;
+  background-color: #df76d5;
+  color: #23212b;
   height: 48px;
   width: 48px;
   border-radius: 50%;
@@ -64,94 +26,43 @@
   justify-content: center;
 }
 
-.topSection {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-
-  @include media-breakpoint-down(md) {
-    margin-top: 0px;
-  }
-}
-
 @include media-breakpoint-down(sm) {
   .topSection {
     flex-direction: column;
   }
 }
 
-.avatarContainer {
-  margin-right: 82px;
-  border-radius: 50%;
-  overflow: hidden;
-  flex: 0 0 31%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-  @include media-breakpoint-down(lg) {
-    margin-right: 50px;
-  }
-
-  @include media-breakpoint-down(md) {
-    margin-right: 40px;
-  }
-
-  @include media-breakpoint-down(md) {
-    margin-bottom: 16px;
-  }
-
-  img {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-.navLink {
-  color: inherit;
-
-  &:hover {
-    color: inherit;
-  }
-}
-
-.testimonial {
+.topSection {
   display: flex;
-  margin: 0 30px 132px;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  font-family: "Work Sans";
-
-  @include media-breakpoint-down(md) {
-    font-size: 14px;
-  }
-}
-
-.testimonialText {
-  display: flex;
-  max-width: 824px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0 20px 0 94px;
+  color: white;
   flex-direction: column;
-  margin-left: 44px;
-}
-
-.testimonialAuthor {
-  margin-top: 20px;
-  font-weight: 700;
-}
-
-.blurbText {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-size: cover;
+  height: 825px;
+  padding-bottom: 86px;
+  box-sizing: border-box;
 
   .name {
-    font-family: "Crimson Text";
+    position: relative;
+    font-family: "Crimson Pro";
     margin: 0;
     font-size: 72px;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 300;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    letter-spacing: 2px;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translateY(-89px);
+    }
+
+    span {
+      font-weight: 600;
+    }
 
     @include media-breakpoint-down(xl) {
       font-size: 64px;
@@ -167,64 +78,43 @@
     }
   }
 
-  .locationText,
-  .blurb {
-    @include media-breakpoint-down(xl) {
-      font-size: 20px;
-    }
-
-    @include media-breakpoint-down(lg) {
-      font-size: 18px;
-    }
-
-    @include media-breakpoint-down(md) {
-      font-size: 16px;
-    }
-  }
-
   .locationText {
     margin: 0 0 24px;
     font-size: 24px;
+    line-height: 32px;
     font-weight: 500;
+    font-family: "Crimson Text";
 
     @include media-breakpoint-down(md) {
       margin: 0 0 30px;
+      font-size: 16px;
     }
 
     @include media-breakpoint-down(lg) {
       margin: 0 0 36px;
+      font-size: 18px;
     }
   }
 
   .blurb {
-    font-family: "Work Sans";
     font-weight: 300;
     margin: 0;
     font-size: 20px;
   }
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 60px 20px 0;
-
-  a {
-    color: $ms-color-neutralPrimary;
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  @include media-breakpoint-down(md) {
-    font-size: 12px;
-  }
+.aboutMe {
+  background-color: #fff;
+  color: black;
+  padding: 88px 94px;
+  font-family: "Crimson Text";
+  font-size: 24px;
+  line-height: 40px;
 }
 
-.footerSocialContainer {
-  width: 453px;
+.footer {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 121px;
-  background: no-repeat url("../../images/squiggly.png") 0 0 transparent;
+  gap: 14px;
+  margin: 60px 20px 60px;
 }
