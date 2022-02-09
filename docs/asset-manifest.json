@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.3dbc3449.css",
-    "main.js": "/static/js/main.23ca5cb7.js",
+    "main.css": "/static/css/main.5d819326.css",
+    "main.js": "/static/js/main.0b739703.js",
     "static/js/787.e95b87d8.chunk.js": "/static/js/787.e95b87d8.chunk.js",
+    "static/media/careercafecropped.jpg": "/static/media/careercafecropped.4676f0046537b83e9905.jpg",
     "static/media/affinityMap.png": "/static/media/affinityMap.a7615f45431cfee6f57e.png",
-    "static/media/prepDocPreview2.png": "/static/media/prepDocPreview2.44a5e3216a7ced3e324a.png",
-    "static/media/candidlyConnectingPreview.png": "/static/media/candidlyConnectingPreview.f3cb600c91510c57c111.png",
+    "static/media/designsteezecropped.jpg": "/static/media/designsteezecropped.5ee043fc320404f4939e.jpg",
+    "static/media/candidlyconnecting.jpg": "/static/media/candidlyconnecting.3e40e80d28ebff649bc0.jpg",
     "static/media/designProcess.png": "/static/media/designProcess.fc3766f754a19698937e.png",
-    "static/media/logo.svg": "/static/media/logo.d0487a71c1198879081b0d18cf77057d.svg",
-    "static/media/careerCafePreview.png": "/static/media/careerCafePreview.97ae9b94b239ab67950e.png",
-    "static/media/portfolioPreview.png": "/static/media/portfolioPreview.f1111863cc970fa3c767.png",
-    "static/media/selfie.png": "/static/media/selfie.c23ccfa80f2c10215b8f.png",
-    "static/media/squiggly.png": "/static/media/squiggly.5d11f980cad6f9876271.png",
-    "static/media/sammi.png": "/static/media/sammi.e298078d39cfed7aeff9.png",
-    "static/media/linkedin.svg": "/static/media/linkedin.27d2ca8858de8f1c618c92b80e58de3e.svg",
+    "static/media/monstera.svg": "/static/media/monstera.c6c3c7ee24690b5f0da4ba8bf858d0f0.svg",
+    "static/media/homepagebg.jpg": "/static/media/homepagebg.a1061ad76bb6a20c41c6.jpg",
+    "static/media/prepdoc.jpg": "/static/media/prepdoc.28ddc4606fb94447140e.jpg",
+    "static/media/linkedin.svg": "/static/media/linkedin.6a3162d26c4d19ee57cf8a89baf1d92e.svg",
+    "static/media/linkedinWhite.svg": "/static/media/linkedinWhite.4bd114b7821beb46bb74311ca212392e.svg",
     "index.html": "/index.html",
-    "static/media/mail.svg": "/static/media/mail.10d8cabe6c6a95aa7e6048fd9e8e9458.svg",
-    "main.3dbc3449.css.map": "/static/css/main.3dbc3449.css.map",
-    "main.23ca5cb7.js.map": "/static/js/main.23ca5cb7.js.map",
+    "static/media/mail.svg": "/static/media/mail.0ee5d7b279b29a53d61574df47b20fe7.svg",
+    "static/media/mailWhite.svg": "/static/media/mailWhite.0a89ace2b67d2a7da368034f05a9c5f7.svg",
+    "main.5d819326.css.map": "/static/css/main.5d819326.css.map",
+    "main.0b739703.js.map": "/static/js/main.0b739703.js.map",
     "787.e95b87d8.chunk.js.map": "/static/js/787.e95b87d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dbc3449.css",
-    "static/js/main.23ca5cb7.js"
+    "static/css/main.5d819326.css",
+    "static/js/main.0b739703.js"
   ]
 }
