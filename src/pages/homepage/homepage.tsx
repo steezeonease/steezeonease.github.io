@@ -43,7 +43,7 @@ export const Homepage: React.FC = () => {
       <div className={styles.aboutMe + " containerSection"}>
         <p>I'm a UX Designer based in Seattle, the city of rain.</p>
         <p>
-          My joys in life is to leave a positive imprint by adding a touch of humananity to others'
+          My joys in life is to leave a positive imprint by adding a touch of humanity to others'
           daily life experiences.
         </p>
         <p>
