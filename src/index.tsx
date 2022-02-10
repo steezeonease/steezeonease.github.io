@@ -6,7 +6,7 @@ import App from "./App";
 
 // Pages
 import { Homepage } from "./pages/homepage/Homepage";
-import { About } from "./pages/about/about";
+import { About } from "./pages/about/About";
 import { PrepDoc } from "./pages/work/prep-doc/prepDoc";
 
 import reportWebVitals from "./reportWebVitals";
