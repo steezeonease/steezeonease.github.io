@@ -9,19 +9,21 @@ export const About: React.FC = () => {
   return (
     <>
       <ParallaxBanner layers={[{ image: `${aboutbg}`, speed: -20 }]}>
-        <div className={styles.topSection + " containerSection"}>
-          <h1 className={styles.name}>
-            <img src={monstera} alt="Monstera" />
-            <span>H</span>
-          </h1>
-          <div className={styles.aboutBlurb}>
-            <div className={styles.header}>I am human.</div>
-            <div className={styles.bodyText}>
-              "This is to say that Hannah might be one of the most dedicated and passionate
-              designers I have ever met. She is a trusted team player and cares deeply about those
-              around her."
+        <div className="containerSection">
+          <div className={styles.topSection}>
+            <h1 className={styles.name}>
+              <img src={monstera} alt="Monstera" />
+              <span>H</span>
+            </h1>
+            <div className={styles.aboutBlurb}>
+              <div className={styles.header}>I am human.</div>
+              <div className={styles.bodyText}>
+                "This is to say that Hannah might be one of the most dedicated and passionate
+                designers I have ever met. She is a trusted team player and cares deeply about those
+                around her."
+              </div>
+              <div className={styles.author}>Samantha Chiu | UX Designer</div>
             </div>
-            <div className={styles.author}>Samantha Chiu | UX Designer</div>
           </div>
         </div>
       </ParallaxBanner>

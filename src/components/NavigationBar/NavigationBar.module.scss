@@ -3,7 +3,7 @@
 .navigationContainer {
   display: flex;
   position: absolute;
-  font-size: 18px;
+  font-size: 24px;
   justify-content: flex-end;
   left: 0;
   right: 0;
@@ -11,12 +11,25 @@
   z-index: 1;
   font-family: "Crimson Pro";
   gap: 66px;
-  margin-right: $lgSidePadding;
+  padding-right: $lgSidePadding;
 
-  @include ms-screen-md-down {
-    font-size: 16px;
-    margin-bottom: 30px;
-    margin-right: $smSidePadding;
+  .iconButton {
+    color: #fff;
+    position: relative;
+    top: -4px;
+    left: -4px;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    :global(.ms-Icon) {
+      font-size: 24px;
+    }
+  }
+
+  .menuButton {
+    display: none;
   }
 
   nav {
@@ -33,6 +46,30 @@
       &:active {
         color: #fff;
       }
+    }
+  }
+
+  @include ms-screen-md-down {
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    padding-right: $smSidePadding;
+    flex-direction: column;
+    padding-left: $smSidePadding;
+    gap: 40px;
+
+    &.isOpen {
+      nav {
+        display: contents;
+      }
+    }
+
+    nav {
+      display: none;
+    }
+
+    .menuButton {
+      display: block;
     }
   }
 }
