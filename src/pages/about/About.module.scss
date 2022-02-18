@@ -40,19 +40,7 @@
   }
 }
 
-.socialLink {
-  background-color: #df76d5;
-  color: #23212b;
-  height: 48px;
-  width: 48px;
-  border-radius: 50%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@include media-breakpoint-down(sm) {
+@include ms-screen-sm-down {
   .topSection {
     flex-direction: column;
   }
@@ -63,7 +51,7 @@
   font-family: "Crimson Pro";
   margin: 0;
   top: 67px;
-  left: 94px;
+  left: $lgSidePadding;
   font-size: 72px;
   line-height: 1;
   font-weight: 300;
@@ -77,8 +65,9 @@
     top: 0;
   }
 
-  @include media-breakpoint-down(md) {
+  @include ms-screen-md-down {
     margin-bottom: 8px;
+    left: $smSidePadding;
   }
 }
 
@@ -100,12 +89,12 @@
     font-weight: 500;
     font-family: "Crimson Text";
 
-    @include media-breakpoint-down(md) {
+    @include ms-screen-md-down {
       margin: 0 0 30px;
       font-size: 16px;
     }
 
-    @include media-breakpoint-down(lg) {
+    @include ms-screen-lg-down {
       margin: 0 0 36px;
       font-size: 18px;
     }
@@ -121,13 +110,13 @@
 .aboutMe {
   background-color: #fff;
   color: black;
-  padding: 88px 94px;
+  padding: 88px $lgSidePadding;
   font-family: "Crimson Text";
   font-size: 24px;
   line-height: 40px;
 
-  @include media-breakpoint-down(md) {
-    padding: 60px 40px;
+  @include ms-screen-md-down {
+    padding: 60px $smSidePadding;
   }
 }
 

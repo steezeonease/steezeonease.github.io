@@ -1,4 +1,4 @@
-@import "../../css/common";
+@import "../../css/_common";
 
 .navigationContainer {
   display: flex;
@@ -11,11 +11,12 @@
   z-index: 1;
   font-family: "Crimson Pro";
   gap: 66px;
-  margin-right: 94px;
+  margin-right: $lgSidePadding;
 
-  @include media-breakpoint-down(md) {
+  @include ms-screen-md-down {
     font-size: 16px;
     margin-bottom: 30px;
+    margin-right: $smSidePadding;
   }
 
   nav {

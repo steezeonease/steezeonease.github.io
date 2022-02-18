@@ -1,7 +1,7 @@
 @import "./css/common";
 
 :global(.containerSection) {
-  max-width: 1440px;
+  max-width: $maxWidth;
   margin-left: auto;
   margin-right: auto;
   width: 100%;

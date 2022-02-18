@@ -3,18 +3,12 @@ import mailWhite from "../../images/mailWhite.svg";
 import monstera from "../../images/monstera.svg";
 import styles from "./About.module.scss";
 import aboutbg from "../../images/aboutbg.jpg";
-import { Parallax } from "react-parallax";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 export const About: React.FC = () => {
   return (
     <>
-      <Parallax
-        bgImage={aboutbg}
-        bgImageAlt="home page background"
-        strength={300}
-        className={styles.aboutBg}
-        bgImageStyle={{ bottom: "-17vw" }}
-      >
+      <ParallaxBanner layers={[{ image: `${aboutbg}`, speed: -20 }]}>
         <div className={styles.topSection + " containerSection"}>
           <h1 className={styles.name}>
             <img src={monstera} alt="Monstera" />
@@ -30,7 +24,7 @@ export const About: React.FC = () => {
             <div className={styles.author}>Samantha Chiu | UX Designer</div>
           </div>
         </div>
-      </Parallax>
+      </ParallaxBanner>
       <div className={styles.aboutMe + " containerSection"}>
         <p>Hello!</p>
         <p>I'm glad you're here! Let me tell you about myself, the person behind the design. </p>

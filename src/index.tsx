@@ -7,21 +7,24 @@ import App from "./App";
 // Pages
 import { Homepage } from "./pages/homepage/Homepage";
 import { About } from "./pages/about/About";
-import { PrepDoc } from "./pages/work/prep-doc/prepDoc";
+import { PrepDoc } from "./pages/work/prepdoc/prepDoc";
 
 import reportWebVitals from "./reportWebVitals";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route index element={<Homepage />} />
-          <Route path="about" element={<About />} />
-          <Route path="work/prep-doc" element={<PrepDoc />} />
-        </Route>
-      </Routes>
-    </HashRouter>
+    <ParallaxProvider>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<App />}>
+            <Route index element={<Homepage />} />
+            <Route path="about" element={<About />} />
+            <Route path="work/prepdoc" element={<PrepDoc />} />
+          </Route>
+        </Routes>
+      </HashRouter>
+    </ParallaxProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

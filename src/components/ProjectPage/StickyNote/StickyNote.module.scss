@@ -19,13 +19,13 @@
     padding-bottom: 100%;
   }
 
-  @include media-breakpoint-down(md) {
+  @include ms-screen-md-down {
     width: 100%;
     margin: auto;
     height: 100%;
   }
 
-  @include media-breakpoint-down(sm) {
+  @include ms-screen-sm-down {
     max-width: 200px;
   }
 }

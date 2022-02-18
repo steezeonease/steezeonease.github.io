@@ -30,7 +30,7 @@ export const PrepDoc = () => {
           </ProjectSection>
           <ProjectSection header={"My Design Process"}>
             <>
-              <img width="100%" src={require("./images/designProcess.png")} />
+              <img width="100%" src={require("./images/designProcess.png")} alt="Design process" />
             </>
           </ProjectSection>
           <Ellipsis />

@@ -5,19 +5,14 @@ import mail from "../../images/mail.svg";
 import mailWhite from "../../images/mailWhite.svg";
 import monstera from "../../images/monstera.svg";
 import styles from "./Homepage.module.scss";
-import homepagebg from "../../images/homepagebg.jpg";
-import { Parallax } from "react-parallax";
+import dahlia from "../../images/dahlia-cropped.png";
+import { Parallax } from "react-scroll-parallax";
 
 export const Homepage: React.FC = () => {
   return (
     <>
-      <Parallax
-        bgImage={homepagebg}
-        bgImageAlt="home page background"
-        strength={300}
-        className={styles.homepageBg}
-      >
-        <div className={styles.topSection + " containerSection"}>
+      <div className={styles.topSection}>
+        <div className={styles.topSectionInner + " containerSection"}>
           <h1 className={styles.name}>
             <img src={monstera} alt="Monstera" />
             <span>H</span>annah Yi
@@ -39,7 +34,10 @@ export const Homepage: React.FC = () => {
             </a>
           </div>
         </div>
-      </Parallax>
+        <Parallax className={styles.testing} speed={-20}>
+          <img className={styles.dahlia} src={dahlia} alt="Dalhia flower" />
+        </Parallax>
+      </div>
       <div className={styles.aboutMe + " containerSection"}>
         <p>I'm a UX Designer based in Seattle, the city of rain.</p>
         <p>
@@ -53,55 +51,45 @@ export const Homepage: React.FC = () => {
       </div>
       <div className={styles.cardsContainer}>
         <ProjectCard
-          title={"designbysteeze"}
-          caseStudyTitle={"Behind the scenes of my portfolio coming to life from scratch."}
-          imageSrc={require("../../images/projectPreviews/designsteezecropped.jpg")}
-          bgImageStyle={{
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-            top: "-12vw",
-          }}
-          backgroundOpacity={0.4}
+          title={"careercafé"}
+          caseStudyTitle={"How might we support users in their career searching process?"}
+          imageSrc={require("../../images/projectPreviews/careercafecropped.jpg")}
+          backgroundOpacity={0.5}
+          linkTo={"careercafe"}
         />
         <ProjectCard
-          title={"careercafé"}
+          title={"Ziefah Health"}
           caseStudyTitle={
-            "A web based application to help you find your next career and connect you with knowledgeable mentors in your particular field of interest. "
+            "How might we make it easier for Muslim youth to access culturally fit therapists?"
           }
-          imageSrc={require("../../images/projectPreviews/careercafecropped.jpg")}
-          bgImageStyle={{
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-            top: "-13vw",
-          }}
+          imageSrc={require("../../images/projectPreviews/ziefahbg.jpg")}
           backgroundOpacity={0.5}
+          linkTo={"ziefah"}
         />
-
         <ProjectCard
           title={"Candidly Connecting"}
           caseStudyTitle={
-            "A business that provides tools and resources for adults to help facilitate discussions to children about diversity and inclusion."
+            "How might I help a brand new business better their business model and site?"
           }
           imageSrc={require("../../images/projectPreviews/candidlyconnecting.jpg")}
-          bgImageStyle={{
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-            top: "-9vw",
-          }}
           backgroundOpacity={0.6}
+          linkTo="candidlyconnecting"
         />
         <ProjectCard
           title={"Prep Doc"}
           caseStudyTitle={
-            "A mobile application that will help you feel more prepared for your next healthcare appointment."
+            "How might I help users feel more prepared going into their healthcare appointment?"
           }
           imageSrc={require("../../images/projectPreviews/prepdoc.jpg")}
-          bgImageStyle={{
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-            top: "-20vw",
-          }}
-          backgroundOpacity={0.0}
+          backgroundOpacity={0.3}
+          linkTo="prepdoc"
+        />
+        <ProjectCard
+          title={"designbysteeze"}
+          caseStudyTitle={"How might a husband and wife collaborate to build something beauitful?"}
+          imageSrc={require("../../images/projectPreviews/designsteezecropped.jpg")}
+          backgroundOpacity={0.4}
+          linkTo="designbysteeze"
         />
       </div>
       <div className={styles.footer}>

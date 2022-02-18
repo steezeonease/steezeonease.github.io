@@ -5,7 +5,7 @@
   font-size: 48px;
   font-weight: 600;
 
-  @include media-breakpoint-down(md) {
+  @include ms-screen-md-down {
     font-size: 36px;
   }
 }
