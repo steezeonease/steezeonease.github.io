@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.4bc0f683.css",
-    "main.js": "/static/js/main.59f60a62.js",
+    "main.css": "/static/css/main.5d3e0e85.css",
+    "main.js": "/static/js/main.02ca3673.js",
     "static/js/787.e95b87d8.chunk.js": "/static/js/787.e95b87d8.chunk.js",
+    "static/media/careercafe.jpg": "/static/media/careercafe.1de21384902f4b585a88.jpg",
     "static/media/dahlia-cropped.png": "/static/media/dahlia-cropped.60b0a80818d692073c20.png",
     "static/media/affinityMap.png": "/static/media/affinityMap.a7615f45431cfee6f57e.png",
     "static/media/aboutbg.jpg": "/static/media/aboutbg.6dccb0f057fdd392e0cb.jpg",
@@ -18,12 +19,12 @@
     "index.html": "/index.html",
     "static/media/mail.svg": "/static/media/mail.0ee5d7b279b29a53d61574df47b20fe7.svg",
     "static/media/mailWhite.svg": "/static/media/mailWhite.0a89ace2b67d2a7da368034f05a9c5f7.svg",
-    "main.4bc0f683.css.map": "/static/css/main.4bc0f683.css.map",
-    "main.59f60a62.js.map": "/static/js/main.59f60a62.js.map",
+    "main.5d3e0e85.css.map": "/static/css/main.5d3e0e85.css.map",
+    "main.02ca3673.js.map": "/static/js/main.02ca3673.js.map",
     "787.e95b87d8.chunk.js.map": "/static/js/787.e95b87d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bc0f683.css",
-    "static/js/main.59f60a62.js"
+    "static/css/main.5d3e0e85.css",
+    "static/js/main.02ca3673.js"
   ]
 }
