@@ -5,16 +5,18 @@ import mail from "../../images/mail.svg";
 import mailWhite from "../../images/mailWhite.svg";
 import monstera from "../../images/monstera.svg";
 import styles from "./Homepage.module.scss";
+import appStyles from "../../css/App.module.scss";
 import dahlia from "../../images/dahlia-cropped.png";
 import { Parallax } from "react-scroll-parallax";
+import { css } from "@fluentui/react/lib/Utilities";
 
 export const Homepage: React.FC = () => {
   return (
     <>
       <div className={styles.topSection}>
-        <div className={styles.topSectionInner + " containerSection"}>
+        <div className={css(styles.topSectionInner, appStyles.containerSection)}>
           <h1 className={styles.name}>
-            <img src={monstera} alt="Monstera" />
+            <img src={monstera} alt="" />
             <span>H</span>annah Yi
           </h1>
           <h2 className={styles.locationText}>
@@ -38,7 +40,7 @@ export const Homepage: React.FC = () => {
           <img className={styles.dahlia} src={dahlia} alt="Dalhia flower" />
         </Parallax>
       </div>
-      <div className={styles.aboutMe + " containerSection"}>
+      <div className={css(styles.aboutMe, appStyles.containerSection)}>
         <p>I'm a UX Designer based in Seattle, the city of rain.</p>
         <p>
           My joys in life is to leave a positive imprint by adding a touch of humanity to others'

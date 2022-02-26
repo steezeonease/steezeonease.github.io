@@ -1,7 +1,8 @@
 import React from "react";
 import { ParallaxBanner } from "react-scroll-parallax";
-import monstera from "../../images/monstera.svg";
+import { HLogo } from "../HLogo/HLogo";
 import styles from "./ParallaxHeader.module.scss";
+import appStyles from "../../css/App.module.scss";
 
 interface IParallaxHeader {
   backgroundImage: string;
@@ -15,12 +16,9 @@ export const ParallaxHeader: React.FC<IParallaxHeader> = (props: IParallaxHeader
   return (
     <ParallaxBanner layers={[{ image: `${backgroundImage}`, speed: -20 }]}>
       {imageOpacity && <div className={styles.imageOpacity} style={{ opacity: imageOpacity }} />}
-      <div className="containerSection">
+      <div className={appStyles.containerSection}>
         <div className={styles.topSection}>
-          <h1 className={styles.name}>
-            <img src={monstera} alt="Monstera" />
-            <span>H</span>
-          </h1>
+          <HLogo />
           {props.children}
         </div>
       </div>

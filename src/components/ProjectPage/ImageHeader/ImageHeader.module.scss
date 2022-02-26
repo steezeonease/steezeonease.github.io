@@ -1,0 +1,21 @@
+.root {
+  height: 288px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 72px;
+  font-family: "Crimson Pro";
+}
+
+.bannerRoot {
+  margin-bottom: 84px;
+}
+
+.imageOpacity {
+  position: absolute;
+  inset: 0;
+  background: #000;
+}

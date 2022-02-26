@@ -1,9 +1,11 @@
 @import "../../../css/common";
 
 .header {
-  font-family: "Crimson Text";
-  font-size: 48px;
+  font-family: "Crimson Pro";
+  font-size: 40px;
   font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 34px;
 
   @include ms-screen-md-down {
     font-size: 36px;
@@ -11,7 +13,7 @@
 }
 
 .sectionContent {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 26px;
   font-weight: 300;
 }

@@ -1,0 +1,27 @@
+@import "../../css/common";
+
+.name {
+  position: absolute;
+  font-family: "Crimson Pro";
+  margin: 0;
+  top: 67px;
+  left: $lgSidePadding;
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 300;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  span {
+    font-weight: 600;
+    transform: translateY(89px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+  }
+
+  @include ms-screen-md-down {
+    margin-bottom: 8px;
+    left: $smSidePadding;
+  }
+}

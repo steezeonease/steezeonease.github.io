@@ -2,6 +2,7 @@ import { css, IconButton } from "@fluentui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./NavigationBar.module.scss";
+import appStyles from "../../css/App.module.scss";
 
 export const NavigationBar: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -11,7 +12,7 @@ export const NavigationBar: React.FC = () => {
   };
 
   return (
-    <div className="containerSection">
+    <div className={appStyles.containerSection}>
       <div
         className={css(styles.navigationContainer, {
           [styles.isOpen]: isOpen,

@@ -1,0 +1,40 @@
+@import "./../../../css/common";
+
+.introTextContainer {
+  display: flex;
+  margin-bottom: 90px;
+
+  img {
+    margin-right: 58px;
+    max-width: 396px;
+  }
+
+  @include ms-screen-lg-down {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
+  }
+
+  .introText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.selfieContainer {
+  width: 100%;
+  max-width: 415px;
+  height: 415px;
+  margin: 40px auto;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}

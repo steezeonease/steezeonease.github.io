@@ -1,8 +1,9 @@
 import React from "react";
-import styles from "./App.module.scss";
+import styles from "./css/App.module.scss";
 import { NavigationBar } from "./components/NavigationBar/NavigationBar";
 import { initializeIcons } from "@fluentui/font-icons-mdl2";
 import { Outlet } from "react-router-dom";
+import { BackToTopButton } from "./components/BackToTopButton/BackToTopButton";
 initializeIcons();
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className={styles.app}>
       <NavigationBar />
       <Outlet />
+      <BackToTopButton />
     </div>
   );
 }

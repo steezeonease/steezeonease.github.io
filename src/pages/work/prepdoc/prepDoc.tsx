@@ -14,7 +14,7 @@ export const PrepDoc = () => {
       imageOpacity={0.4}
     >
       <>
-        <ProjectSection header={"The Challenge"}>
+        <ProjectSection header={<>The Challenge</>}>
           <>
             <div>
               How can we help get people who are non-English speakers, or speakers of a minority
@@ -25,13 +25,13 @@ export const PrepDoc = () => {
             </div>
           </>
         </ProjectSection>
-        <ProjectSection header={"My Design Process"}>
+        <ProjectSection header={<>My Design Process</>}>
           <>
             <img width="100%" src={require("./images/designProcess.png")} alt="Design process" />
           </>
         </ProjectSection>
         <Ellipsis />
-        <ProjectSection header={"Empathize"}>
+        <ProjectSection header={<>Empathize</>}>
           <>
             <div>I interviewed 10 participants:</div>
             <ul>
@@ -68,7 +68,7 @@ export const PrepDoc = () => {
           </>
         </ProjectSection>
         <Ellipsis />
-        <ProjectSection header={"Design"}>
+        <ProjectSection header={<>Design</>}>
           <>
             Through affinity mapping, I was able to synthesize my research and formulate three key
             findings:
@@ -94,7 +94,7 @@ export const PrepDoc = () => {
             </figure>
           </>
         </ProjectSection>
-        <ProjectSection header="Problem Statement">
+        <ProjectSection header={<>Problem Statement</>}>
           <>
             Patients (<strong>both</strong> English and non-English speaking) need a tool to help
             prepare for their appointments so they can communicate effectively with their healthcare

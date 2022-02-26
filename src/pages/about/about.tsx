@@ -1,20 +1,22 @@
+import React from "react";
+import { ParallaxBanner } from "react-scroll-parallax";
+import { css } from "@fluentui/utilities";
+import { HLogo } from "../../components/HLogo/HLogo";
+
+import styles from "./About.module.scss";
+import appStyles from "../../css/App.module.scss";
+
 import linkedInWhite from "../../images/linkedinWhite.svg";
 import mailWhite from "../../images/mailWhite.svg";
-import monstera from "../../images/monstera.svg";
-import styles from "./About.module.scss";
 import aboutbg from "../../images/aboutbg.jpg";
-import { ParallaxBanner } from "react-scroll-parallax";
 
 export const About: React.FC = () => {
   return (
     <>
       <ParallaxBanner layers={[{ image: `${aboutbg}`, speed: -20 }]}>
-        <div className="containerSection">
+        <div className={appStyles.containerSection}>
           <div className={styles.topSection}>
-            <h1 className={styles.name}>
-              <img src={monstera} alt="Monstera" />
-              <span>H</span>
-            </h1>
+            <HLogo />
             <div className={styles.aboutBlurb}>
               <div className={styles.header}>I am human.</div>
               <div className={styles.bodyText}>
@@ -27,7 +29,7 @@ export const About: React.FC = () => {
           </div>
         </div>
       </ParallaxBanner>
-      <div className={styles.aboutMe + " containerSection"}>
+      <div className={css(styles.aboutMe, appStyles.containerSection)}>
         <p>Hello!</p>
         <p>I'm glad you're here! Let me tell you about myself, the person behind the design. </p>
         <p>

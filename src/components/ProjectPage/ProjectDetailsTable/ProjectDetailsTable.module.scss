@@ -1,0 +1,23 @@
+@import "../../../css/common";
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  @include ms-screen-md-down {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.section {
+  border: 1px solid transparent;
+}
+
+.header {
+  font-family: "Crimson Pro";
+  font-weight: 600;
+  font-size: 30px;
+}

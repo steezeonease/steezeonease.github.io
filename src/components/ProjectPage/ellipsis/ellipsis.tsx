@@ -1,11 +1,10 @@
 import styles from "./ellipsis.module.scss";
+import appStyles from "../../../css/App.module.scss";
 
 export const Ellipsis = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.dot} />
-      <div className={styles.dot} />
-      <div className={styles.dot} />
+    <div className={appStyles.textSection}>
+      <div className={styles.container} />
     </div>
   );
 };
