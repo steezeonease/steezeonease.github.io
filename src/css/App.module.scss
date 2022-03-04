@@ -43,9 +43,23 @@
   margin-bottom: 34px;
 }
 
+.projectSmallerHeader {
+  font-family: "Crimson Pro";
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
 .fullWidthProjectImage {
   width: 100%;
   margin: 40px 0;
+}
+
+.threeQuarterWidthProjectImage {
+  max-width: 620px;
+  width: 100%;
+  margin: 40px auto;
+  display: block;
 }
 
 .smallerWidthProjectImage {

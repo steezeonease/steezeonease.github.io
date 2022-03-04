@@ -40,7 +40,7 @@ export const DesignBySteeze = () => {
     <ProjectPage
       projectName="designbysteeze"
       projectTagline="A husband and wife collaboration."
-      projectBackground={require("../../../images/designbysteeze.jpg")}
+      projectBackground={require("../../../images/projectheader/designbysteeze.jpg")}
       imageOpacity={0.4}
     >
       <>

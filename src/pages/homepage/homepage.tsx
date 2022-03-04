@@ -66,7 +66,7 @@ export const Homepage: React.FC = () => {
           }
           imageSrc={require("../../images/projectPreviews/ziefahbg.jpg")}
           backgroundOpacity={0.5}
-          linkTo={"ziefah"}
+          linkTo={"ziefahhealth"}
         />
         <ProjectCard
           title={"Candidly Connecting"}

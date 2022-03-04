@@ -13,7 +13,7 @@ export const ImageHeader: React.FC<IImageHeader> = (props: IImageHeader) => {
   const { imageSrc, headerName, color, imageOpacity } = props;
 
   return (
-    <ParallaxBanner className={styles.bannerRoot} layers={[{ image: `${imageSrc}`, speed: -20 }]}>
+    <ParallaxBanner className={styles.bannerRoot} layers={[{ image: `${imageSrc}`, speed: -5 }]}>
       {imageOpacity && <div className={styles.imageOpacity} style={{ opacity: imageOpacity }} />}
       <div className={styles.root} style={{ color: color }}>
         {headerName}

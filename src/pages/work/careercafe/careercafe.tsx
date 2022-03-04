@@ -46,7 +46,7 @@ export const CareerCafe = () => {
     <ProjectPage
       projectName="designbysteeze"
       projectTagline="A husband and wife collaboration."
-      projectBackground={require("../../../images/designbysteeze.jpg")}
+      projectBackground={require("../../../images/projectheader/careercafe.jpg")}
       imageOpacity={0.4}
     >
       <>
@@ -87,157 +87,209 @@ export const CareerCafe = () => {
           imageSrc={require("../../../images/careercafe/imageheaders/discover.jpg")}
           headerName={<>Discover</>}
         />
-        <ProjectSection header={<>Persona - The Hiring Manager</>}>
+        <ProjectSection header={<>Empathisizing with Users</>}>
           <>
-            <div>
-              We read an interesting article during my bootcamp days that provided so much insight
-              on potential user groups who would swing by and skim our portfolios. I'm not much of a
-              reader but this one stuck; I clearly can remember the article mentioning the "5 minute
-              rule."
-            </div>
+            <p>
+              We started our journey with conducting 14 interviews with participants who were
+              screened on the criteria of already switching careers in the past or currently looking
+              to switch careers.
+            </p>
+            <ul>
+              <li>Gender: 7 Male | 7 Female</li>
+              <li>Age: 12 participants were between the ages of 25–34 years old</li>
+              <li>Experience: 12 have already switched careers in the past</li>
+            </ul>
+            <p>
+              It was important for us to gain insight on the participants career journey, tools they
+              used during their career switch (human interaction vs digital tools), aspects they
+              valued in a career, and any challenges they faced throughout their personal journey.
+            </p>
             <img
               className={appStyles.fullWidthProjectImage}
-              alt={"Persona details"}
-              src={require("../../../images/designbysteeze/persona1.jpg")}
+              alt={"Information gathering with users"}
+              src={require("../../../images/careercafe/discover.jpg")}
             />
-          </>
-        </ProjectSection>
-        <ProjectSection header={<>2x2 - The Perfect Layout</>}>
-          <>
-            <div>
-              It was my first time creating a UX portfolio from scratch so I began my journey with
-              conducting secondary research. I knew I wanted to create a clean, simple, and crisp
-              look so that users could navigate through my portfolio with ease and efficiency.
-              Looking through countless number of portfolios, I stumbled across these 4 cards and
-              immediately felt that "this was the one."
-            </div>
-            <img
-              className={appStyles.smallerWidthProjectImage}
-              alt={"Card sorting"}
-              src={require("../../../images/designbysteeze/cards1.jpg")}
-            />
-          </>
-        </ProjectSection>
-        <ProjectSection header={<>To the Drawing Board</>}>
-          <>
-            <div>
-              For visuals, it was important that I captured the users attention. So my vision was to
-              utilize the vast white space and add pops of color to direct the focus. My vision was
-              to incorporate shades of green since I wanted to portray my love for plants.
-            </div>
-            <div>
-              <p>
-                Even though it felt silly to do for my own portfolio, I sketched out the pages to
-                help me visualize each page layout.
-              </p>
-            </div>
+            <p>
+              After conducting interviews, we created an affinity map to help us organize our
+              research in a digestible way. We sorted them in trends of: resources used in career
+              exploration, preferences, values, wants, and challenges.
+            </p>
             <img
               className={appStyles.fullWidthProjectImage}
-              alt="drawing board"
-              src={require("../../../images/designbysteeze/drawingboard.jpg")}
+              alt={"Affinity map"}
+              src={require("../../../images/careercafe/wants.jpg")}
+            />
+            <img
+              className={appStyles.fullWidthProjectImage}
+              alt={"Affinity map"}
+              src={require("../../../images/careercafe/affinitymap.jpg")}
             />
           </>
         </ProjectSection>
-        <ProjectSection
-          header={
-            <>
-              <span style={{ color: "#7E5EFF" }}>Bird</span>{" "}
-              <span style={{ color: "#CCDB38" }}>of</span>{" "}
-              <span style={{ color: "#F7A300" }}>Paradise</span>
-            </>
-          }
-        >
+        <ProjectSection header={<>Key Takeaways</>}>
           <>
             <p>
-              I started looking for more inspiration, but this time rather than browsing UX
-              portfolios, I browsed colors.
+              From conducting 1 on 1 user interviews, affinity mapping, and synthesizing our data we
+              concluded that:
             </p>
+            <ol>
+              <li>
+                People would like some sort of skill assessment to help find a suitable career match
+              </li>
+              <li>
+                People prefer human interaction to gain insight on a particular career of interest
+              </li>
+              <li>
+                People utilize the web heavily to research more details and information on a career
+              </li>
+            </ol>
+          </>
+        </ProjectSection>
+        <ProjectSection header={<>Scope Out the Competition</>} isLineHidden={true}>
+          <>
             <p>
-              I had recently changed and fell in love with the background color of my LinkedIn
-              profile photo - HEX<span style={{ color: "#CCDB38" }}>#CCDB38</span>, to be exact. One
-              of my favorite things I love and can do for hours is to run the color generator in
-              coolors.io. That's exactly what I did. I ran this obsessive neon green and mashed the
-              space bar until I found the perfect match.
+              We then analyzed direct and indirect competitors to identify strengths and weaknesses.
+              Conducting competitor research was crucial in helping us discover what areas of
+              opportunity existed for us.
             </p>
-            <div className={styles.selfieContainer}>
-              <img src={require("../../../images/designbysteeze/selfie.jpg")} alt="myself" />
+            <img
+              className={appStyles.fullWidthProjectImage}
+              alt="competitive analysis"
+              src={require("../../../images/careercafe/competitiveanalysis.jpg")}
+            />
+            <img
+              className={appStyles.threeQuarterWidthProjectImage}
+              alt="Comparative analysis"
+              src={require("../../../images/careercafe/comparativeanalysis.jpg")}
+            />
+          </>
+        </ProjectSection>
+        <ProjectSection header={<>Key Takeaways</>}>
+          <>
+            <div>
+              <p>Pros:</p>
+              <ul>
+                <li>Feature of career matching based on skills/personalist assessment</li>
+                <li>Users can create an account and save their career matches</li>
+                <li>Free resources available to help the user during their career search</li>
+              </ul>
             </div>
+            <div>
+              <p>Cons:</p>
+              <ul>
+                <li>Members have to pay $48/ year to use the service</li>
+                <li>Overwhelming amount of resources that are not well organized</li>
+                <li>Careers and information on websites are outdated</li>
+              </ul>
+            </div>
+          </>
+        </ProjectSection>
+        <ProjectSection header={<>Comparing Features</>} isLineHidden={true}>
+          <>
             <p>
-              I struck gold. Finding this neon purple that suited the green made my heart jump up
-              and down. It reminded me of the beautiful flower that the Bird of Paradise plant
-              bloomed in the tropics. I went onto finding more inspiration and came up with a
-              moodboard that captured my personality of radiating positive energy.
+              We then leaped into comparing the features that might be useful and important in our
+              decision making process. I took on the challenge of comparing features on various
+              platforms and took screenshots and made note of the importance.
             </p>
+          </>
+        </ProjectSection>
+        <ProjectSection header={<>Lemonade</>}>
+          <>
             <p>
-              Typography was also incredibly an important aspect to consider. Crimson Text brought a
-              serious tone while the Work Sans balanced it out with softness through its rounded
-              edges.
+              This insurance quote website screams simple and meaningful UI/UX Design because it's
+              so easy to navigate through the simple layout, bright pink affordances, and personable
+              AI feature. During our interviews, we learned that users who switched careers in the
+              past experienced uneasiness and nervousness. It was imperative and we took that into
+              account. Lemonade does a really good job in creating a comfortable space for the user
+              by incorporating a personable interactive AI questioning method.
+            </p>
+            <img
+              className={appStyles.threeQuarterWidthProjectImage}
+              alt="Lemonade screenshot"
+              src={require("../../../images/careercafe/lemonade.jpg")}
+            />
+          </>
+        </ProjectSection>
+        <ProjectSection header={<>CareerExplorer</>}>
+          <>
+            <p>
+              CareerExplorer is a direct comopetitor as it allows users to take a skill assessment
+              and get matched with careers. As we took their career assessment, we really liked the
+              progress bar feature as it gave us an idea of where we were in the assessment and how
+              much more we had left. It was a very simple structure yet so informational.
             </p>
             <img
               className={appStyles.smallerWidthProjectImage}
-              alt="moodboard"
-              src={require("../../../images/designbysteeze/moodboard.jpg")}
+              style={{
+                maxWidth: 254,
+              }}
+              alt="CareerExplorer screenshot"
+              src={require("../../../images/careercafe/careerexplorer.jpg")}
             />
           </>
         </ProjectSection>
-        <ProjectSection header={<>What Do You Think?</>}>
-          <img
-            className={appStyles.fullWidthProjectImage}
-            alt={"Feedback from classmates"}
-            src={require("../../../images/designbysteeze/whatdoyouthink.jpg")}
-          />
-        </ProjectSection>
-        <ProjectSection header={<>Develop?</>} isLineHidden={true}>
+        <ProjectSection header={<>Microsoft Reach</>}>
           <>
-            <p>Hold your horses. Not quite yet.</p>
             <p>
-              I was receiving solid constructive feedback from my fellow colleagues on the first
-              rendition of my portfolio. However, constant collaboration with my husband helped push
-              me to challenge myself in creating something further complex.
+              I personally used this site when I was trying to find mentors within the UX Designer
+              community prior to pursuing the career. This site allows you to browse mentors who
+              work at Microsoft and book a call within the website itself. We appreciated the
+              formatiting of the mentor profiles and the efficiency in booking a call to meet with a
+              mentor.
             </p>
-            <p>
-              My portfolio felt simple to navigate, yet it lacked depth and it didn't fully capture
-              my creativity...
-            </p>
+            <img
+              className={appStyles.fullWidthProjectImage}
+              alt="Microsoft Reach screenshot"
+              src={require("../../../images/careercafe/microsoftreach.jpg")}
+            />
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.3}
-          color="#ffffff"
-          imageSrc={require("../../../images/designbysteeze/imageheaders/dahlia.jpg")}
-          headerName={
-            <>
-              <div>Iteration 2</div>
-              <div>The Dahlia</div>
-            </>
-          }
+          imageOpacity={0.1}
+          color="#000"
+          imageSrc={require("../../../images/careercafe/imageheaders/define.jpg")}
+          headerName={<>Define</>}
         />
-        <ProjectSection header={<>Back to the Drawing Board</>}>
+        <ProjectSection header={<>I'd Like to Intorduce Sebas &amp; Vanessa</>}>
           <>
             <p>
-              My husband knew that I was struggling with my portfolio design. He wasn't a designer
-              himself so he didn't have much to say when I seeked direction. However, he did give me
-              several pointers that were incredibly important for my second iteration.
+              Next, we created proto-personas to represent our target audience as well as to build
+              empathy with users by capturing their motivations, goals, wants, needs, and
+              frustrations.
             </p>
             <p>
-              I was receiving solid constructive feedback from my fellow colleagues on the first
-              rendition of my portfolio. However, constant collaboration with my husband helped push
-              me to challenge myself in creating something further complex.
-            </p>
-            <p>
-              My portfolio felt simple to navigate, yet it lacked depth and it didn't fully capture
-              my creativity...
+              First up is 26 year old Sebas Villa. He is unsatisfied with his current career and is
+              looking to explore other career paths that align with his passions and will allow him
+              to grow as a person.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
-              alt={"Conversation between me and my husband"}
-              src={require("../../../images/designbysteeze/convo.jpg")}
+              alt="Sebas' persona"
+              src={require("../../../images/careercafe/sebas.jpg")}
             />
             <p>
-              As you can read, working with a developer has helped me consider points of design that
-              I've never thought about before; these are lessons or skills you don't learn in
-              bootcamp. That perspective shed so much light into my work.
+              Next is 20 year old Vanessa Liu. She is a sophomore in college and is struggling to
+              find a career that aligns with her artistic background. Vanessa has spent endless
+              hours researching careers and connecting with her counselor but is feeling
+              discouraged.
             </p>
+            <p>★ Please keep Vanessa in mind as we take you through our design journey ★</p>
+            <img
+              className={appStyles.fullWidthProjectImage}
+              alt="Vanessa's persona"
+              src={require("../../../images/careercafe/vanessa.jpg")}
+            />
+          </>
+        </ProjectSection>
+        <ProjectSection header={<>A Moment of Pivot</>}>
+          <>
+            <p>
+              There was a moment in our design process where our team went a little crazy with the
+              amount of features we wanted to implement in our platform. We ran into the issue of
+              trying to create a “one stop shop” where a user could access every helpful tool
+              possible to support them in their career search.
+            </p>
+            <p>We started with sticky noting our ideas down for all the features we wanted.</p>
           </>
         </ProjectSection>
         <ProjectSection header={<>Dahlia</>}>

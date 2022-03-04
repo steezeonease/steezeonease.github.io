@@ -8,6 +8,7 @@ import App from "./App";
 import { Homepage } from "./pages/homepage/Homepage";
 import { About } from "./pages/about/About";
 import { PrepDoc } from "./pages/work/prepdoc/prepDoc";
+import { ZiefahHealth } from "./pages/work/ziefahhealth/ziefahhealth";
 import { DesignBySteeze } from "./pages/work/designbysteeze/designbysteeze";
 import { CareerCafe } from "./pages/work/careercafe/careercafe";
 
@@ -27,6 +28,7 @@ ReactDOM.render(
               <Route path="about" element={<About />} />
               <Route path="work/prepdoc" element={<PrepDoc />} />
               <Route path="work/designbysteeze" element={<DesignBySteeze />} />
+              <Route path="work/ziefahhealth" element={<ZiefahHealth />} />
               <Route path="work/careercafe" element={<CareerCafe />} />
             </Route>
           </Routes>
