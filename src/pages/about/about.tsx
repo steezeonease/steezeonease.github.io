@@ -5,10 +5,10 @@ import { HLogo } from "../../components/HLogo/HLogo";
 
 import styles from "./About.module.scss";
 import appStyles from "../../css/App.module.scss";
-
-import linkedInWhite from "../../images/linkedinWhite.svg";
-import mailWhite from "../../images/mailWhite.svg";
 import aboutbg from "../../images/aboutbg.jpg";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 export const About: React.FC = () => {
   return (
@@ -20,9 +20,9 @@ export const About: React.FC = () => {
             <div className={styles.aboutBlurb}>
               <div className={styles.header}>I am human.</div>
               <div className={styles.bodyText}>
-                "This is to say that Hannah might be one of the most dedicated and passionate
+                &ldquo;This is to say that Hannah might be one of the most dedicated and passionate
                 designers I have ever met. She is a trusted team player and cares deeply about those
-                around her."
+                around her.&rdquo;
               </div>
               <div className={styles.author}>Samantha Chiu | UX Designer</div>
             </div>
@@ -46,19 +46,22 @@ export const About: React.FC = () => {
           Outside of the professional world, I am an avid plant collector, extreme food enthusiast,
           and an animal lover.
         </p>
-      </div>
-      <div className={styles.footer}>
-        <a
-          className={styles.socialLink}
-          href="https://www.linkedin.com/in/steeze/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={linkedInWhite} alt="LinkedIn icon" />
-        </a>
-        <a className={styles.socialLink} href="mailto: designbysteeze@gmail.com">
-          <img src={mailWhite} alt="Mail icon" />
-        </a>
+        <div className={styles.carouselContainer}>
+          <Carousel className={styles.carousel} autoPlay={true} showStatus={false}>
+            <div>
+              <img src={require("../../images/aboutpage/po.jpg")} alt="Po my cat" />
+              <p className="legend">My cat Po</p>
+            </div>
+            <div>
+              <img src={require("../../images/aboutpage/plantselfie.jpg")} alt="Me and my plants" />
+              <p className="legend">My and my plants</p>
+            </div>
+            <div>
+              <img src={require("../../images/aboutpage/kiwi.jpg")} alt="Kiwi my dog" />
+              <p className="legend">My dog Kiwi</p>
+            </div>
+          </Carousel>
+        </div>
       </div>
     </>
   );

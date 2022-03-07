@@ -1,5 +1,6 @@
 import { ParallaxHeader } from "../ParallaxHeader/ParallaxHeader";
 import styles from "./ProjectPage.module.scss";
+import appStyles from "../../css/App.module.scss";
 
 interface IProjectPage {
   projectName: string;
@@ -15,9 +16,10 @@ export const ProjectPage: React.FC<IProjectPage> = (props: IProjectPage) => {
   return (
     <>
       <ParallaxHeader backgroundImage={projectBackground} imageOpacity={imageOpacity} />
-      <h1 className={styles.projectName}>{projectName}</h1>
-      <h2 className={styles.projectTagline}>{projectTagline}</h2>
-      <div className={styles.splashContainer}></div>
+      <div className={appStyles.textSection}>
+        <h1 className={styles.projectName}>{projectName}</h1>
+        <h2 className={styles.projectTagline}>{projectTagline}</h2>
+      </div>
       {children}
     </>
   );

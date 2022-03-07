@@ -14,7 +14,7 @@ export const ProjectCard: React.FC<IProjectCard> = (props: IProjectCard) => {
   const { title, caseStudyTitle, imageSrc, backgroundOpacity, linkTo } = props;
 
   return (
-    <ParallaxBanner layers={[{ image: `${imageSrc}`, speed: -20 }]}>
+    <ParallaxBanner layers={[{ image: `${imageSrc}`, speed: -10 }]}>
       <div className={styles.cardContainer}>
         <div
           className={styles.overlay}

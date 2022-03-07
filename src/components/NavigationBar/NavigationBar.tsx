@@ -36,9 +36,15 @@ export const NavigationBar: React.FC = () => {
           )}
         </div>
         <nav>
-          <Link to="/">Work</Link>
-          <Link to="/about">About</Link>
-          <Link to="/resume">Resume</Link>
+          <Link to="/" onClick={onToggleMenu}>
+            Work
+          </Link>
+          <Link to="/about" onClick={onToggleMenu}>
+            About
+          </Link>
+          <Link to="/resume" onClick={onToggleMenu}>
+            Resume
+          </Link>
         </nav>
       </div>
     </div>

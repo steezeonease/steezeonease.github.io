@@ -1,8 +1,6 @@
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
 import linkedInLogo from "../../images/linkedin.svg";
-import linkedInWhite from "../../images/linkedinWhite.svg";
 import mail from "../../images/mail.svg";
-import mailWhite from "../../images/mailWhite.svg";
 import monstera from "../../images/monstera.svg";
 import styles from "./Homepage.module.scss";
 import appStyles from "../../css/App.module.scss";
@@ -69,43 +67,19 @@ export const Homepage: React.FC = () => {
           linkTo={"ziefahhealth"}
         />
         <ProjectCard
-          title={"Candidly Connecting"}
-          caseStudyTitle={
-            "How might I help a brand new business better their business model and site?"
-          }
-          imageSrc={require("../../images/projectPreviews/candidlyconnecting.jpg")}
-          backgroundOpacity={0.6}
-          linkTo="candidlyconnecting"
-        />
-        <ProjectCard
-          title={"Prep Doc"}
-          caseStudyTitle={
-            "How might I help users feel more prepared going into their healthcare appointment?"
-          }
-          imageSrc={require("../../images/projectPreviews/prepdoc.jpg")}
+          title={"NSE Tropicals"}
+          caseStudyTitle={"How might I redesign one of my favorite e-commerce websites?"}
+          imageSrc={require("../../images/projectPreviews/nsetropicals.jpg")}
           backgroundOpacity={0.3}
-          linkTo="prepdoc"
+          linkTo="nsetropicals"
         />
         <ProjectCard
           title={"designbysteeze"}
           caseStudyTitle={"How might a husband and wife collaborate to build something beauitful?"}
-          imageSrc={require("../../images/projectPreviews/designsteezecropped.jpg")}
+          imageSrc={require("../../images/projectPreviews/designbysteeze.jpg")}
           backgroundOpacity={0.4}
           linkTo="designbysteeze"
         />
-      </div>
-      <div className={styles.footer}>
-        <a
-          className={styles.socialLink}
-          href="https://www.linkedin.com/in/steeze/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={linkedInWhite} alt="LinkedIn icon" />
-        </a>
-        <a className={styles.socialLink} href="mailto: designbysteeze@gmail.com">
-          <img src={mailWhite} alt="Mail icon" />
-        </a>
       </div>
     </>
   );

@@ -11,6 +11,7 @@ import { PrepDoc } from "./pages/work/prepdoc/prepDoc";
 import { ZiefahHealth } from "./pages/work/ziefahhealth/ziefahhealth";
 import { DesignBySteeze } from "./pages/work/designbysteeze/designbysteeze";
 import { CareerCafe } from "./pages/work/careercafe/careercafe";
+import { NSETropicals } from "./pages/work/nsetropicals/nsetropicals";
 
 import ScrollToTop from "./ScrollToTop";
 
@@ -30,6 +31,7 @@ ReactDOM.render(
               <Route path="work/designbysteeze" element={<DesignBySteeze />} />
               <Route path="work/ziefahhealth" element={<ZiefahHealth />} />
               <Route path="work/careercafe" element={<CareerCafe />} />
+              <Route path="work/nsetropicals" element={<NSETropicals />} />
             </Route>
           </Routes>
         </ScrollToTop>

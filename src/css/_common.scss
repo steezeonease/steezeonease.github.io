@@ -4,4 +4,28 @@ $lgSidePadding: 94px;
 $smSidePadding: 26px;
 $maxWidth: 1440px;
 
-$textMaxWidth: 960px;
+$textMaxWidth: 1060px;
+
+@mixin socialLink($backgroundColor) {
+  background-color: $backgroundColor;
+  color: #23212b;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include ms-screen-sm-down {
+    height: 30px;
+    width: 30px;
+  }
+}

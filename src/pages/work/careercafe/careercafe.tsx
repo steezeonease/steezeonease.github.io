@@ -7,8 +7,7 @@ import { ProjectDetailsTable } from "../../../components/ProjectPage/ProjectDeta
 import { ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHeader";
 
 import appStyles from "../../../css/App.module.scss";
-import styles from "./careercafe.module.scss";
-import { css } from "@fluentui/react/lib/Utilities";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 export const CareerCafe = () => {
   const projectDetails: IProjectDetails = {
@@ -44,8 +43,8 @@ export const CareerCafe = () => {
 
   return (
     <ProjectPage
-      projectName="designbysteeze"
-      projectTagline="A husband and wife collaboration."
+      projectName="careercafe"
+      projectTagline="A web based application to help you find your next career and connect you with knowledgeable mentors in your particular field of interest."
       projectBackground={require("../../../images/projectheader/careercafe.jpg")}
       imageOpacity={0.4}
     >
@@ -54,7 +53,7 @@ export const CareerCafe = () => {
           <ProjectDetailsTable details={projectDetails} />
         </div>
         <Ellipsis />
-        <ProjectSection>
+        <ProjectSection isLineHidden>
           <>
             <p>
               My role as planning lead was to ensure timeliness of delivering our product. During
@@ -67,8 +66,18 @@ export const CareerCafe = () => {
             </p>
           </>
         </ProjectSection>
-        {/*TODO ADD PARALLAX IMAG HERE*/}
-
+        <ParallaxBanner
+          layers={[
+            {
+              image: `${require("../../../images/careercafe/imageheaders/careercafehighway.jpg")}`,
+              speed: -20,
+            },
+          ]}
+          style={{
+            height: 520,
+            marginBottom: 30,
+          }}
+        ></ParallaxBanner>
         <ProjectSection header={<>Challenge</>} isLineHidden={true}>
           <>
             <p>
@@ -286,124 +295,242 @@ export const CareerCafe = () => {
             <p>
               There was a moment in our design process where our team went a little crazy with the
               amount of features we wanted to implement in our platform. We ran into the issue of
-              trying to create a “one stop shop” where a user could access every helpful tool
+              trying to create a "one stop shop" where a user could access every helpful tool
               possible to support them in their career search.
             </p>
             <p>We started with sticky noting our ideas down for all the features we wanted.</p>
-          </>
-        </ProjectSection>
-        <ProjectSection header={<>Dahlia</>}>
-          <>
+            <img
+              className={appStyles.smallerWidthProjectImage}
+              alt="sticky notes"
+              src={require("../../../images/careercafe/pivot1.jpg")}
+            />
             <p>
-              Since receiving tons of positive feedback on my previous color pallette choice, I
-              decided to continue that boldness but this time I took the opposite approach of
-              utilizing black instead of white. There's something about the parallax effect and
-              midnight black that just compliment each other so welll; it's sleek, elegant, and
-              edgy.
-            </p>
-            <p>
-              I'm not huge on flowers but the bright ones really capture me and one of my favorites
-              is called the Dahlia. It is native to Mexico and Central America and it's relative to
-              the sunflower, daisy, and chrysanthemum. Dahlias add so much dimension through colors
-              and petal formation. This second style tile was heavily influenced by my favorite
-              flower.
+              Then we proceeded with a card sort to think how we would map out all of our ideated
+              features in the navigation.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
+              alt="Home navigation card sort"
+              src={require("../../../images/careercafe/navigation.jpg")}
+            />
+            <p>
+              As we divided our tasks to create sketches and wireframes with designated features, we
+              realized that we made the mistake of not defining our focus problem.
+            </p>
+            <p>
+              There was no way we were building out all these features within the time frame we had.
+              We also realized that the user would feel very overwhelmed with the amount of features
+              we had on our platform.
+            </p>
+            <p>We wanted our users to utilize our platform not scare them away.</p>
+          </>
+        </ProjectSection>
+        <ProjectSection header={<>Defining the Core Problem</>}>
+          <>
+            <p>
+              We had to remind ourselves that we couldn't help all the problems people were facing,
+              but we could focus on the most re-occuring one that was encountered during our
+              research. So we switched gears and decided to focus on creating a problem statement.
+            </p>
+            <p>
+              <div className={appStyles.projectSmallerHeader}>Problem Statement</div>
+              People exploring career options need a way to assess their characteristics and skills
+              so that they can find a suitable and fulfilling career.
+            </p>
+            <p>
+              <div className={appStyles.projectSmallerHeader}>Solution</div>A web application where
+              users can assess their passions, skills, and personality traits so they they can find
+              a suitable career and fulfilling career. As well as find and connect with knowledgable
+              mentors who can support the user through the career switching process.
+            </p>
+          </>
+        </ProjectSection>
+        <ImageHeader
+          imageOpacity={0.1}
+          color="#000"
+          imageSrc={require("../../../images/careercafe/imageheaders/develop.jpg")}
+          headerName={<>Develop</>}
+        />
+        <ProjectSection header={<>Vanessa's User Flow</>}>
+          <>
+            <p>
+              Keeping Vanessa in mind, we created a user flow to help us better understand the user
+              journey throughout utilizing our platform.
+            </p>
+            <img
+              className={appStyles.fullWidthProjectImage}
+              alt="User flow"
+              src={require("../../../images/careercafe/userflow.jpg")}
+            />
+          </>
+        </ProjectSection>
+        <ProjectSection header={<>Sketching Solutions</>}>
+          <>
+            <p>
+              Every ideation started off in the lowest fidelity so we could iterate; increase
+              efficiency and reduce waste. We intitally sketched out the home page which then led to
+              sketching out the onboarding process: taking a skill and personality assessment,
+              getting matched with careers, creating an account, and saving career matches.
+            </p>
+            <img
+              className={appStyles.threeQuarterWidthProjectImage}
+              alt="Homepage sketch"
+              src={require("../../../images/careercafe/homepagesketch.jpg")}
+            />
+            <img
+              className={appStyles.fullWidthProjectImage}
+              alt="Assessment sketch"
+              src={require("../../../images/careercafe/sketch2.jpg")}
+            />
+          </>
+        </ProjectSection>
+        <ProjectSection header={<>Bringing It To Life</>}>
+          <>
+            <p>
+              After deciding the layout of the screens, we designed low fidelity wireframes in Figma
+              based on our initial sketches. Here are snippets of the screens prior to developing a
+              higher fidelity mockup.
+            </p>
+            <img
+              alt="Higher fidelity mockup"
+              className={appStyles.fullWidthProjectImage}
+              src={require("../../../images/careercafe/mockup.jpg")}
+            />
+          </>
+        </ProjectSection>
+        <ProjectSection header={<>The Cozy Moodboard</>}>
+          <>
+            <p>
+              Before moving on to the UI design, we began designing or logo and moodboard. Our
+              vision was to create an atmosphere where users felt comfortable as if they were at a
+              cafe meeting up with a friend; very casual and inviting.
+            </p>
+            <img
+              alt="Logo ideas"
+              className={appStyles.fullWidthProjectImage}
+              src={require("../../../images/careercafe/careercafelogos.jpg")}
+            />
+            <img
               alt="Moodboard"
-              src={require("../../../images/designbysteeze/moodboard2.jpg")}
-            />
-          </>
-        </ProjectSection>
-        <ProjectSection header={<>Responsive Design</>}>
-          <>
-            <p>
-              I'm glad that my husband mentioned designing responsive. Like I said before, he really
-              pushes me to strive for more and I appreciate that very much. I figured that many
-              users going through my portfolio were most likely going to be on desktop. However, it
-              was solid practice for me to design for mobile and challenged my desicion making
-              process.
-            </p>
-            <p>
-              Oh also, don't mind the distracting bright yellow stickies on these mockups. They're
-              annotations for my husband.
-            </p>
-            <img
               className={appStyles.fullWidthProjectImage}
-              alt="Responsive designs for portfolio"
-              src={require("../../../images/designbysteeze/responsive.jpg")}
-            />
-            <p>Key changes for mobile design:</p>
-            <ul>
-              <li>
-                Moved the header image so there wouldn't be a contrast issue (white text on white
-                background)
-              </li>
-              <li>
-                Added buttons as there is no such thing as "hover state" when on a mobile device
-              </li>
-              <li>Created a hamburger menu for navigation</li>
-            </ul>
-            <img
-              className={appStyles.fullWidthProjectImage}
-              alt="Responsive designs for portfolio"
-              src={require("../../../images/designbysteeze/responsive2.jpg")}
-            />
-          </>
-        </ProjectSection>
-        <ProjectSection header={<>I Am Human</>}>
-          <>
-            <p>
-              Be sure to check out my “About” section to learn more about me as a human being. It
-              was incredibly important for me to showcase that I am not constantly a working robot
-              but that I am also human.
-            </p>
-            <p>
-              I led the this page with a beautiful sunset image with a shadow of a female figure to
-              capture the full picture of my header statement. I added one of my favorite
-              testimonials from my LinkedIn profile as it continues to tie into the humanness.
-            </p>
-            <p>
-              I'm not only empathetic through my work as a UX Designer, but I choose to be
-              empathetic with the people I encounter and the people around me.
-            </p>
-            <img
-              alt="Final portfolio designs"
-              className={appStyles.fullWidthProjectImage}
-              src={require("../../../images/designbysteeze/iamhuman.jpg")}
+              src={require("../../../images/careercafe/moodboard.jpg")}
             />
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.3}
-          color="#ffffff"
-          imageSrc={require("../../../images/designbysteeze/imageheaders/theEndForNow.jpg")}
-          headerName={<>The End... For Now</>}
+          imageOpacity={0.1}
+          color="#000"
+          imageSrc={require("../../../images/careercafe/imageheaders/iterate.jpg")}
+          headerName={<>Iterate</>}
         />
-        <ProjectSection isLineHidden={true}>
+        <ProjectSection header={<>Test Test Test</>} isLineHidden>
           <>
             <p>
-              As I constantly am growing as a UX Designer, I'll be constantly evolving my portfolio.
-              For now, I am happy where it's at and what it's become through incoporating my vision
-              and feedback into my iterations. It was truly a rewarding experience to see my designs
-              come to life... page by page.
+              We focused the end of our sprint running usability testing to iterate and refine our
+              design. With our high fidelity Figma prototype, we had the users complete these 3
+              specific tasks through our platform to clarify pain points and frustrations.
+            </p>
+            <ul>
+              <li>Take the assessment and get matched with a career</li>
+              <li>Find information on how to become a UX Designer</li>
+              <li>Find the mentor Sabrina Chen and book an appointment with her </li>
+            </ul>
+            <p>
+              We refined and iterated our design based on the feedback that was given through
+              usability testing.
+            </p>
+            <img
+              alt="User feedback from testing"
+              className={appStyles.fullWidthProjectImage}
+              src={require("../../../images/careercafe/userfeedback.jpg")}
+            />
+          </>
+        </ProjectSection>
+        <ImageHeader
+          imageOpacity={0.1}
+          color="#000"
+          imageSrc={require("../../../images/careercafe/imageheaders/deliver.jpg")}
+          headerName={<>Deliver</>}
+        />
+        <ProjectSection header={<>Introducing careercafé</>} isLineHidden>
+          <>
+            <p>I'd like to introduce our final creation: careercafé.</p>
+            <p>
+              A web application where you can take a skills assessment, get matched with suitable
+              careers, and connect with knowledgable mentors.
             </p>
             <p>
-              It was incredible to have the opportunity to collaborate with a developer. No, we
-              didn't argue one bit during our process which made it a very pleasant experience.
-              Moving forward, I plan to study more on responsive designs and what other aspects I
-              should consider when designing more complex sites and features. There is always room
-              for improvement and I look forward to working with all types of developers to
-              strengthen my skills in collaboration.
+              No more feeling alone in the dark. We're here to support you throughout your career
+              switching journey.
+            </p>
+            <img
+              alt="User feedback from testing"
+              className={appStyles.fullWidthProjectImage}
+              src={require("../../../images/careercafe/userfeedback.jpg")}
+            />
+            <div className={appStyles.flexibleContainer}>
+              <iframe
+                title={"Prototype"}
+                style={{
+                  border: "1px solid rgba(0, 0, 0, 0.1)",
+                }}
+                width="800"
+                height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGohLRf2xv3xHkl9K1tJ85D%2Fcareercaf%25C3%25A9%3Fpage-id%3D0%253A1%26node-id%3D2%253A2%26viewport%3D241%252C48%252C0.14%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A2"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </>
+        </ProjectSection>
+        <ImageHeader
+          imageOpacity={0.1}
+          color="#000"
+          imageSrc={require("../../../images/careercafe/imageheaders/thefuture.jpg")}
+          headerName={<>The Future</>}
+        />
+        <ProjectSection header={<>Next Steps</>}>
+          <>
+            <p>
+              We were passionate about the creation of careercafé as the challenge resonated with
+              each one of us on the team. Our future steps would be to:
+            </p>
+            <ul>
+              <li>
+                Conduct a second round of usability testing to identify further pain points and
+                frustrations to improve the user experience
+              </li>
+              <li>Prep design hand off to pass to developers</li>
+              <li>Launch the first version of careercafé</li>
+            </ul>
+          </>
+        </ProjectSection>
+        <ProjectSection header={<>Self Reflection</>} isLineHidden>
+          <>
+            <p>
+              This project was my first time working in a team environment within the UX field. I
+              absolutely loved working in a team as we were able to split up tasks and collaborate
+              on ideas. During collaboration, I really enjoyed observing how others work and think.
+              I realized that I actually prefer working in a team environment vs solo projects
+              because you have support from your team. I appreciated all the feedback throughout the
+              journey which has strengthened my skills as a UX Designer.
             </p>
             <p>
-              For now, I hope you enjoyed the "final" version of my portfolio. Hannah and Eddie out
-              *mic drop.*
+              As we only had 2 weeks for this sprint, we didn't have much time at the end to run
+              usability testing. I realized the importance of usability testing; it's a crucial
+              process and does wonders in uncovering user issues that we may have been blinded from
+              or neglected.
+            </p>
+            <p>
+              We were passionate about the creation of careercafé as the challenge resonated with
+              each one of us on the team. At one point in our lives, we felt what the users were
+              going through in taking that scary leap of switching careers; being in that space of
+              unknowing. It was a pleasure to collaborate with a team to create something
+              purposeful, mindful, and useful.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
-              alt={"Portfolio"}
-              src={require("../../../images/designbysteeze/iamhuman.jpg")}
+              alt={"Project team"}
+              src={require("../../../images/careercafe/teamphoto.jpg")}
             />
           </>
         </ProjectSection>
