@@ -8,6 +8,7 @@ import { ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHe
 
 import appStyles from "../../../css/App.module.scss";
 import { ParallaxBanner } from "react-scroll-parallax";
+import { css } from "@fluentui/utilities";
 
 export const NSETropicals = () => {
   const projectDetails: IProjectDetails = {
@@ -47,7 +48,7 @@ export const NSETropicals = () => {
         <Ellipsis />
         <ProjectSection isLineHidden>
           <>
-            <p>
+            <p className={appStyles.noMarginTop}>
               This was one of my earlier projects within a bootcamp setting. Since then my skills as
               a UX Designer have grown tremendously. I will show you my redesign as a beginner
               student as well as my designs towards the end of the bootcamp. Stay tuned to be wowed!
@@ -95,13 +96,13 @@ export const NSETropicals = () => {
               evaluation.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
               alt={"Heuristic Evaluation"}
               src={require("../../../images/nsetropicals/heuristiceval2.jpg")}
             />
           </>
         </ProjectSection>
-        <ProjectSection header={<>Validation</>}>
+        <ProjectSection header={<>Validation</>} isLineHidden>
           <>
             <p>
               Realizing the many issues that I encountered on the site, it was time to validate my
@@ -121,24 +122,52 @@ export const NSETropicals = () => {
               as understand further pain points.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.floatRight, appStyles.autoWidthImageNotCentered)}
               alt={"User feedback"}
-              src={require("../../../images/nsetropicals/feedback1.jpg")}
+              src={require("../../../images/nsetropicals/ratingsinterview1.jpg")}
             />
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={appStyles.autoWidthImage}
               alt={"User feedback"}
-              src={require("../../../images/nsetropicals/feedback2.jpg")}
+              style={{
+                maxWidth: 450,
+              }}
+              src={require("../../../images/nsetropicals/sortby.jpg")}
             />
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={appStyles.autoWidthImageNotCentered}
               alt={"User feedback"}
-              src={require("../../../images/nsetropicals/feedback3.jpg")}
+              src={require("../../../images/nsetropicals/ratingsinterview2.jpg")}
             />
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.autoWidthImage)}
               alt={"User feedback"}
-              src={require("../../../images/nsetropicals/feedback4.jpg")}
+              src={require("../../../images/nsetropicals/restocks.jpg")}
+            />
+            <img
+              className={appStyles.autoWidthImageNotCentered}
+              alt={"User feedback"}
+              src={require("../../../images/nsetropicals/restocksinterview.jpg")}
+            />
+            <img
+              className={appStyles.autoWidthImage}
+              alt={"User feedback"}
+              src={require("../../../images/nsetropicals/testimonialsscreenshot.jpg")}
+            />
+            <img
+              className={appStyles.autoWidthImageNotCentered}
+              alt={"User feedback"}
+              src={require("../../../images/nsetropicals/testimonialsinterview.jpg")}
+            />
+            <img
+              className={appStyles.autoWidthImage}
+              alt={"User feedback"}
+              src={require("../../../images/nsetropicals/welcometothejungle.jpg")}
+            />
+            <img
+              className={appStyles.autoWidthImageNotCentered}
+              alt={"User feedback"}
+              src={require("../../../images/nsetropicals/welcometothejunglefeedback.jpg")}
             />
             <img
               className={appStyles.fullWidthProjectImage}
@@ -323,7 +352,7 @@ export const NSETropicals = () => {
             </p>
             <img
               alt="Moodboard"
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
               src={require("../../../images/nsetropicals/moodboard.jpg")}
             />
           </>

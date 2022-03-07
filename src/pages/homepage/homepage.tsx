@@ -68,7 +68,9 @@ export const Homepage: React.FC = () => {
         />
         <ProjectCard
           title={"NSE Tropicals"}
-          caseStudyTitle={"How might I redesign one of my favorite e-commerce websites?"}
+          caseStudyTitle={
+            "How might I redesign this site to better the shopping experience for fellow plant collectors?"
+          }
           imageSrc={require("../../images/projectPreviews/nsetropicals.jpg")}
           backgroundOpacity={0.3}
           linkTo="nsetropicals"

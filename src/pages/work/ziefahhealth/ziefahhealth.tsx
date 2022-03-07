@@ -7,6 +7,8 @@ import { ProjectDetailsTable } from "../../../components/ProjectPage/ProjectDeta
 import { ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHeader";
 
 import appStyles from "../../../css/App.module.scss";
+import { ParallaxBanner } from "react-scroll-parallax";
+import { css } from "@fluentui/utilities";
 
 export const ZiefahHealth = () => {
   const projectDetails: IProjectDetails = {
@@ -54,9 +56,9 @@ export const ZiefahHealth = () => {
           <ProjectDetailsTable details={projectDetails} />
         </div>
         <Ellipsis />
-        <ProjectSection>
+        <ProjectSection isLineHidden>
           <>
-            <p>
+            <p className={appStyles.noMarginTop}>
               My role as planning lead was to ensure timeliness of delivering our product. During
               the 2 week design sprint I facilitated meetings, managed timelines, prioritized tasks,
               and helped create this application utilizing the double diamond design process.
@@ -67,8 +69,18 @@ export const ZiefahHealth = () => {
             </p>
           </>
         </ProjectSection>
-        {/*TODO ADD PARALLAX IMAG HERE*/}
-
+        <ParallaxBanner
+          layers={[
+            {
+              image: `${require("../../../images/ziefahhealth/imageheaders/ziefahheader.jpg")}`,
+              speed: -20,
+            },
+          ]}
+          style={{
+            height: 520,
+            marginBottom: 30,
+          }}
+        ></ParallaxBanner>
         <ProjectSection header={<>Challenge</>} isLineHidden={true}>
           <>
             <p>
@@ -106,7 +118,7 @@ export const ZiefahHealth = () => {
               second generation immigrants who came from a religious background which still helped
               us tremendously in learning about challenges and barriers.
             </p>
-            <p>We interviewed 4 people and received results from 16 participants.</p>
+            <p>We interviewed 4 people and received survey data from 16 participants.</p>
             <img
               className={appStyles.fullWidthProjectImage}
               alt={"Affinity map"}
@@ -232,13 +244,13 @@ export const ZiefahHealth = () => {
               wanted to build out in the future.
             </p>
             <img
-              className={appStyles.threeQuarterWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.threeQuarterWidthProjectImage)}
               alt="Feature inventory"
               src={require("../../../images/ziefahhealth/featureinventory.jpg")}
             />
           </>
         </ProjectSection>
-        <ProjectSection header={<>Language</>}>
+        <ProjectSection header={<>Language</>} isLineHidden>
           <>
             <p>
               During our interviews, a participant referenced MuzMatch which is a dating app for
@@ -409,7 +421,7 @@ export const ZiefahHealth = () => {
             />
           </>
         </ProjectSection>
-        <ProjectSection header={<>Moodboard</>}>
+        <ProjectSection header={<>Moodboard</>} isLineHidden>
           <>
             <p>
               Our colors were inspired by the ocean which sets a calm and relaxed tone by the shades
@@ -431,7 +443,7 @@ export const ZiefahHealth = () => {
           imageSrc={require("../../../images/ziefahhealth/imageheaders/iterate.jpg")}
           headerName={<>Iterate</>}
         />
-        <ProjectSection header={<>Refine</>}>
+        <ProjectSection header={<>Refine</>} isLineHidden>
           <>
             <p>
               We wanted to ensure the highest quality when developing this application so we decided
@@ -447,18 +459,42 @@ export const ZiefahHealth = () => {
             </ul>
             <img
               className={appStyles.fullWidthProjectImage}
+              style={{
+                width: "auto",
+              }}
               alt={"Usability interview"}
-              src={require("../../../images/ziefahhealth/usabilityinterview1.jpg")}
+              src={require("../../../images/ziefahhealth/interview1.jpg")}
+            />
+            <img
+              className={appStyles.autoWidthImage}
+              alt={"Usability interview"}
+              src={require("../../../images/ziefahhealth/paymentdetails.jpg")}
             />
             <img
               className={appStyles.fullWidthProjectImage}
+              style={{
+                width: "auto",
+              }}
               alt={"Usability interview"}
-              src={require("../../../images/ziefahhealth/usabilityinterview2.jpg")}
+              src={require("../../../images/ziefahhealth/interview2.jpg")}
+            />
+            <img
+              className={appStyles.autoWidthImage}
+              alt={"Usability interview"}
+              src={require("../../../images/ziefahhealth/messaging.jpg")}
             />
             <img
               className={appStyles.fullWidthProjectImage}
+              style={{
+                width: "auto",
+              }}
               alt={"Usability interview"}
-              src={require("../../../images/ziefahhealth/usabilityinterview3.jpg")}
+              src={require("../../../images/ziefahhealth/interview3.jpg")}
+            />
+            <img
+              className={appStyles.autoWidthImage}
+              alt={"Usability interview"}
+              src={require("../../../images/ziefahhealth/messaging3.jpg")}
             />
           </>
         </ProjectSection>
@@ -479,11 +515,15 @@ export const ZiefahHealth = () => {
               We've created a safe space for you to talk with people who care about and understand
               what you're going through.
             </p>
-            <img
-              className={appStyles.smallerWidthProjectImage}
-              alt={"Ziefah Health splash screen"}
-              src={require("../../../images/ziefahhealth/Splash.jpg")}
-            />
+            <div className={appStyles.flexibleContainer}>
+              <iframe
+                title={"Prototype"}
+                width="800"
+                height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiQEXe7GhUi5C3GtBiIQovb%2FZiefah-Health%3Fpage-id%3D374%253A10481%26node-id%3D374%253A12077%26viewport%3D241%252C48%252C0.08%26scaling%3Dscale-down%26starting-point-node-id%3D374%253A12077"
+                allowFullScreen
+              ></iframe>
+            </div>
           </>
         </ProjectSection>
         <ImageHeader

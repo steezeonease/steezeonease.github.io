@@ -56,15 +56,12 @@ export const About: React.FC = () => {
           >
             <div>
               <img src={require("../../images/aboutpage/po.jpg")} alt="Po my cat" />
-              <p className="legend">My cat Po</p>
             </div>
             <div>
               <img src={require("../../images/aboutpage/plantselfie.jpg")} alt="Me and my plants" />
-              <p className="legend">My and my plants</p>
             </div>
             <div>
               <img src={require("../../images/aboutpage/kiwi.jpg")} alt="Kiwi my dog" />
-              <p className="legend">My dog Kiwi</p>
             </div>
           </Carousel>
         </div>

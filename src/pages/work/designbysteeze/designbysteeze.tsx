@@ -180,7 +180,7 @@ export const DesignBySteeze = () => {
             src={require("../../../images/designbysteeze/whatdoyouthink.jpg")}
           />
         </ProjectSection>
-        <ProjectSection header={<>Develop?</>}>
+        <ProjectSection header={<>Develop?</>} isLineHidden>
           <>
             <p>Hold your horses. Not quite yet.</p>
             <p>
@@ -212,15 +212,6 @@ export const DesignBySteeze = () => {
               himself so he didn't have much to say when I seeked direction. However, he did give me
               several pointers that were incredibly important for my second iteration.
             </p>
-            <p>
-              I was receiving solid constructive feedback from my fellow colleagues on the first
-              rendition of my portfolio. However, constant collaboration with my husband helped push
-              me to challenge myself in creating something further complex.
-            </p>
-            <p>
-              My portfolio felt simple to navigate, yet it lacked depth and it didn't fully capture
-              my creativity...
-            </p>
             <img
               className={appStyles.fullWidthProjectImage}
               alt={"Conversation between me and my husband"}
@@ -250,7 +241,7 @@ export const DesignBySteeze = () => {
               flower.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
               alt="Moodboard"
               src={require("../../../images/designbysteeze/moodboard2.jpg")}
             />
@@ -292,10 +283,10 @@ export const DesignBySteeze = () => {
             />
           </>
         </ProjectSection>
-        <ProjectSection header={<>I Am Human</>}>
+        <ProjectSection header={<>I Am Human</>} isLineHidden>
           <>
             <p>
-              Be sure to check out my “About” section to learn more about me as a human being. It
+              Be sure to check out my "About" section to learn more about me as a human being. It
               was incredibly important for me to showcase that I am not constantly a working robot
               but that I am also human.
             </p>
@@ -344,7 +335,7 @@ export const DesignBySteeze = () => {
             <img
               className={appStyles.fullWidthProjectImage}
               alt={"Portfolio"}
-              src={require("../../../images/designbysteeze/iamhuman.jpg")}
+              src={require("../../../images/designbysteeze/workingtogether.jpg")}
             />
           </>
         </ProjectSection>

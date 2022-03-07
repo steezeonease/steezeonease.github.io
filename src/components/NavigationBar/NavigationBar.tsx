@@ -42,7 +42,7 @@ export const NavigationBar: React.FC = () => {
           <Link to="/about" onClick={onToggleMenu}>
             About
           </Link>
-          <Link to="/resume" onClick={onToggleMenu}>
+          <Link to="/resume/Hannah_Yi_Resume.docx" target="_blank" download>
             Resume
           </Link>
         </nav>

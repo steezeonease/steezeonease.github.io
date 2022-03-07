@@ -5,6 +5,7 @@ import { ProjectSection } from "../../../components/ProjectPage/ProjectSection/P
 import { IProjectDetails } from "../../../components/ProjectPage/ProjectDetailsTable/IProjectDetails";
 import { ProjectDetailsTable } from "../../../components/ProjectPage/ProjectDetailsTable/ProjectDetailsTable";
 import { ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHeader";
+import { css } from "@fluentui/utilities";
 
 import appStyles from "../../../css/App.module.scss";
 import { ParallaxBanner } from "react-scroll-parallax";
@@ -43,7 +44,7 @@ export const CareerCafe = () => {
 
   return (
     <ProjectPage
-      projectName="careercafe"
+      projectName="careercafé"
       projectTagline="A web based application to help you find your next career and connect you with knowledgeable mentors in your particular field of interest."
       projectBackground={require("../../../images/projectheader/careercafe.jpg")}
       imageOpacity={0.4}
@@ -55,7 +56,7 @@ export const CareerCafe = () => {
         <Ellipsis />
         <ProjectSection isLineHidden>
           <>
-            <p>
+            <p className={appStyles.noMarginTop}>
               My role as planning lead was to ensure timeliness of delivering our product. During
               the 2 week design sprint I facilitated meetings, managed timelines, prioritized tasks,
               and helped create this application utilizing the double diamond design process.
@@ -162,12 +163,12 @@ export const CareerCafe = () => {
               opportunity existed for us.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
               alt="competitive analysis"
               src={require("../../../images/careercafe/competitiveanalysis.jpg")}
             />
             <img
-              className={appStyles.threeQuarterWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.threeQuarterWidthProjectImage)}
               alt="Comparative analysis"
               src={require("../../../images/careercafe/comparativeanalysis.jpg")}
             />
@@ -202,7 +203,7 @@ export const CareerCafe = () => {
             </p>
           </>
         </ProjectSection>
-        <ProjectSection header={<>Lemonade</>}>
+        <ProjectSection header={<>Lemonade</>} isLineHidden>
           <>
             <p>
               This insurance quote website screams simple and meaningful UI/UX Design because it's
@@ -213,13 +214,13 @@ export const CareerCafe = () => {
               by incorporating a personable interactive AI questioning method.
             </p>
             <img
-              className={appStyles.threeQuarterWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.threeQuarterWidthProjectImage)}
               alt="Lemonade screenshot"
               src={require("../../../images/careercafe/lemonade.jpg")}
             />
           </>
         </ProjectSection>
-        <ProjectSection header={<>CareerExplorer</>}>
+        <ProjectSection header={<>CareerExplorer</>} isLineHidden>
           <>
             <p>
               CareerExplorer is a direct comopetitor as it allows users to take a skill assessment
@@ -228,7 +229,7 @@ export const CareerCafe = () => {
               much more we had left. It was a very simple structure yet so informational.
             </p>
             <img
-              className={appStyles.smallerWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.smallerWidthProjectImage)}
               style={{
                 maxWidth: 254,
               }}
@@ -237,7 +238,7 @@ export const CareerCafe = () => {
             />
           </>
         </ProjectSection>
-        <ProjectSection header={<>Microsoft Reach</>}>
+        <ProjectSection header={<>Microsoft Reach</>} isLineHidden>
           <>
             <p>
               I personally used this site when I was trying to find mentors within the UX Designer
@@ -247,7 +248,7 @@ export const CareerCafe = () => {
               mentor.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
               alt="Microsoft Reach screenshot"
               src={require("../../../images/careercafe/microsoftreach.jpg")}
             />
@@ -259,7 +260,7 @@ export const CareerCafe = () => {
           imageSrc={require("../../../images/careercafe/imageheaders/define.jpg")}
           headerName={<>Define</>}
         />
-        <ProjectSection header={<>I'd Like to Intorduce Sebas &amp; Vanessa</>}>
+        <ProjectSection header={<>I'd Like to Introduce Sebas &amp; Vanessa</>}>
           <>
             <p>
               Next, we created proto-personas to represent our target audience as well as to build
@@ -272,7 +273,7 @@ export const CareerCafe = () => {
               to grow as a person.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
               alt="Sebas' persona"
               src={require("../../../images/careercafe/sebas.jpg")}
             />
@@ -284,7 +285,7 @@ export const CareerCafe = () => {
             </p>
             <p>★ Please keep Vanessa in mind as we take you through our design journey ★</p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
               alt="Vanessa's persona"
               src={require("../../../images/careercafe/vanessa.jpg")}
             />
@@ -325,7 +326,7 @@ export const CareerCafe = () => {
             <p>We wanted our users to utilize our platform not scare them away.</p>
           </>
         </ProjectSection>
-        <ProjectSection header={<>Defining the Core Problem</>}>
+        <ProjectSection header={<>Defining the Core Problem</>} isLineHidden>
           <>
             <p>
               We had to remind ourselves that we couldn't help all the problems people were facing,
@@ -398,7 +399,7 @@ export const CareerCafe = () => {
             />
           </>
         </ProjectSection>
-        <ProjectSection header={<>The Cozy Moodboard</>}>
+        <ProjectSection header={<>The Cozy Moodboard</>} isLineHidden>
           <>
             <p>
               Before moving on to the UI design, we began designing or logo and moodboard. Our
@@ -407,12 +408,12 @@ export const CareerCafe = () => {
             </p>
             <img
               alt="Logo ideas"
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
               src={require("../../../images/careercafe/careercafelogos.jpg")}
             />
             <img
               alt="Moodboard"
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
               src={require("../../../images/careercafe/moodboard.jpg")}
             />
           </>
@@ -463,11 +464,6 @@ export const CareerCafe = () => {
               No more feeling alone in the dark. We're here to support you throughout your career
               switching journey.
             </p>
-            <img
-              alt="User feedback from testing"
-              className={appStyles.fullWidthProjectImage}
-              src={require("../../../images/careercafe/userfeedback.jpg")}
-            />
             <div className={appStyles.flexibleContainer}>
               <iframe
                 title={"Prototype"}
