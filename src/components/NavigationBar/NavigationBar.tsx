@@ -42,9 +42,13 @@ export const NavigationBar: React.FC = () => {
           <Link to="/about" onClick={onToggleMenu}>
             About
           </Link>
-          <Link to="/resume/Hannah_Yi_Resume.docx" target="_blank" download>
+          <a
+            href="https://dl.dropboxusercontent.com/s/dlkax1q2no4m2o8/Hannah%20Yi%20Resume.docx"
+            target="_blank"
+            rel="noreferrer"
+          >
             Resume
-          </Link>
+          </a>
         </nav>
       </div>
     </div>
