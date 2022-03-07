@@ -116,9 +116,9 @@ export const ZiefahHealth = () => {
             <p>
               However, we were able to collect data and information from people who were first or
               second generation immigrants who came from a religious background which still helped
-              us tremendously in learning about challenges and barriers.
+              us tremendously in learning about the challenges and barriers people faced.
             </p>
-            <p>We interviewed 4 people and received survey data from 16 participants.</p>
+            <p>We ended up interviewing 4 people and received survey data from 16 participants.</p>
             <img
               className={appStyles.fullWidthProjectImage}
               alt={"Affinity map"}
@@ -167,7 +167,6 @@ export const ZiefahHealth = () => {
         <ProjectSection header={<>Key Takeaways</>}>
           <>
             <ul>
-              <li>We learned that there lies mental health stigma within the Muslim community</li>
               <li>
                 Mental illness may interpret as a curse or punishment from God therefore receiving
                 treatment shows spiritual weakness
@@ -187,17 +186,16 @@ export const ZiefahHealth = () => {
         <ProjectSection header={<>Bumble Meets Flo</>} isLineHidden={true}>
           <>
             <p>
-              Our client was adamant that we include two features to be implemented into Ziefah
-              Health.
+              Our client was inspired to include two features to be implemented into Ziefah Health.
             </p>
           </>
         </ProjectSection>
         <ProjectSection header={<>1.) Bumble</>} isLineHidden={true}>
           <>
             <p>
-              Yes, the dating app. Our client wanted us to implement the swipe feature when a user
-              browses through potential therapist matches. I had my own biases with this particular
-              feature being placed in an environment with a more serious connotation.
+              Yes, the dating app. Our client wanted us to implement the swipe feature for when a
+              user browses through potential therapist matches. I had my own biases with this
+              particular feature being placed in an environment with a more serious connotation.
             </p>
             <p>We downloaded the application, tested it ourselves, and documented for reference.</p>
             <img
@@ -256,8 +254,8 @@ export const ZiefahHealth = () => {
               During our interviews, a participant referenced MuzMatch which is a dating app for
               Muslims. He mentioned that it was tailored to the Muslim community and that we could
               gain insight on language from the app. He really liked how the app had specified tags
-              nested within the bios so it was easy to target information he needed in order to
-              match with someone.
+              nested within the therapist bios which made it easy to target information he needed in
+              order to match with someone.
             </p>
             <p>So of course we tested it out!</p>
             <img
@@ -270,15 +268,15 @@ export const ZiefahHealth = () => {
         <ImageHeader
           imageOpacity={0.1}
           color="#000"
-          imageSrc={require("../../../images/ziefahhealth/imageheaders/define.jpg")}
+          imageSrc={require("../../../images/nsetropicals/imageheaders/define.jpg")}
           headerName={<>Define</>}
         />
         <ProjectSection header={<>Meet Yara &amp; Aasim</>}>
           <>
             <p>
               In this project, we wanted to make sure that we considered every detail from the users
-              perspective when designing our application. We created personas of two possible user
-              groups to better understand how we could design more inclusively.
+              perspective when designing our application. We created 2 proto-personas of two
+              possible user groups to better understand how we could design more inclusively.
             </p>
             <p>
               First up is Yara. She represents the targeted user group of being a Muslim youth and
@@ -292,8 +290,8 @@ export const ZiefahHealth = () => {
             />
             <p>
               Next up is Aasim. Even though our application would be tailored more for youth, we
-              wanted to include possible adults who would use it as well. A user who is more open to
-              talking about mental health and has had experience with therapists in the past.
+              wanted to include possible adults who would use it as well. This is a user who is more
+              open to talking about mental health and has had past experience with therapists.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -343,25 +341,26 @@ export const ZiefahHealth = () => {
             <p>
               <div className={appStyles.projectSmallerHeader}>Solution</div>A mobile application
               where Muslim youth can express their concerns, feelings, and needs so they can find a
-              therapist who's best fit.
+              therapist who's best fit. The application will also provide a safe private space where
+              Muslims can connect with their matched therapist via chat or video.
             </p>
           </>
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.3}
           color="#000"
-          imageSrc={require("../../../images/ziefahhealth/imageheaders/develop.jpg")}
+          imageSrc={require("../../../images/nsetropicals/imageheaders/develop.jpg")}
           headerName={<>Develop</>}
         />
         <ProjectSection header={<>User Flow</>}>
           <>
             <p>
-              We created 2 potential user flow based on the clients business model - a free trial
+              We created 2 potential user flows based on the clients business model - a free trial
               and a payment plan. Assuming that a younger user like Yara would be skeptical on
               paying prior to seeing their therapist options, we created a free trial which enables
-              users to see their 5 matched therapists along with their biographies and introduction
-              video. If then a user would like to schedule a free consultation or a full therapy
-              session, they would be require to purchase a plan.
+              users to see their 5 matched therapists along with their bios and introduction video.
+              If a user would then like to schedule a free consultation or a full therapy session,
+              they would be required to purchase a plan.
             </p>
             <img
               alt="User flow"
@@ -376,7 +375,8 @@ export const ZiefahHealth = () => {
               Every ideation started off in the lowest fidelity so we could iterate; increase
               efficiency and reduce waste. I sketched out the possible onboarding process of
               including a privacy screen to build trust, teaching the user how the app works, and
-              interactive questioning to gain more information for therapist matching.
+              interactive questioning to gain more personal information for the purpose of therapist
+              matching.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -393,7 +393,7 @@ export const ZiefahHealth = () => {
             </p>
             <p>
               Here would be the screens a user sees when opening up the app for the first time and
-              learns about how it works.{" "}
+              learns about how the app works.{" "}
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -402,7 +402,7 @@ export const ZiefahHealth = () => {
             />
             <p>
               Here is what the user would see when going through some interactive questions that ask
-              about preference in order to get matched with suitable therapists.
+              about preferences in order to get matched with suitable therapists.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -411,8 +411,8 @@ export const ZiefahHealth = () => {
             />
             <p>
               Here is what the user would see when getting matched with therapists. The user is
-              instructed that they can interact with the screen by swiping to go through the
-              therapists and remove or favorite their options.
+              instructed to interact with the screen by swiping to browse through the list of the
+              therapists and to remove or favorite their options.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -424,11 +424,11 @@ export const ZiefahHealth = () => {
         <ProjectSection header={<>Moodboard</>} isLineHidden>
           <>
             <p>
-              Our colors were inspired by the ocean which sets a calm and relaxed tone by the shades
-              of blue. Our goal is for the user to feel a sense of comfortability while going
-              through our application so we thought blue was a great choice. We also decided to go
-              with Ubuntu, a more curved and rounded font choice as being our main typography for
-              the application to blend in with the blue and add onto the feeling of calmness.
+              Our colors were inspired by the ocean which sets a calm and relaxing tone through the
+              shades of blue. Our goal is for the user to feel a sense of comfortability while going
+              through our app, so we thought blue was a great choice. We also decided to go with the
+              Ubuntu font which is a more curved and rounded font choice to continue the feel of
+              comfortability.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -440,7 +440,7 @@ export const ZiefahHealth = () => {
         <ImageHeader
           imageOpacity={0.3}
           color="#000"
-          imageSrc={require("../../../images/ziefahhealth/imageheaders/iterate.jpg")}
+          imageSrc={require("../../../images/nsetropicals/imageheaders/iterate.jpg")}
           headerName={<>Iterate</>}
         />
         <ProjectSection header={<>Refine</>} isLineHidden>
@@ -451,11 +451,11 @@ export const ZiefahHealth = () => {
             </p>
             <p>We completed 4 usability tests asking users to complete the tasks of:</p>
             <ul>
-              <li>Onboarding as the user Yara</li>
-              <li>Selecting free trial or payment mode</li>
-              <li>Creating an account</li>
-              <li>Favoriting a matched therapist</li>
-              <li>Scheduling a free consultation</li>
+              <li>Onboard as the user Yara</li>
+              <li>Select free trial or payment mode</li>
+              <li>Create an account</li>
+              <li>Favorite a matched therapist based on preferences</li>
+              <li>Schedule a free consultation</li>
             </ul>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -501,7 +501,7 @@ export const ZiefahHealth = () => {
         <ImageHeader
           imageOpacity={0.1}
           color="#000"
-          imageSrc={require("../../../images/ziefahhealth/imageheaders/deliver.jpg")}
+          imageSrc={require("../../../images/nsetropicals/imageheaders/deliver.jpg")}
           headerName={<>Deliver</>}
         />
         <ProjectSection header={<>Introducing Ziefah Health</>} isLineHidden={true}>
@@ -535,8 +535,8 @@ export const ZiefahHealth = () => {
         <ProjectSection header={<>Next Steps</>}>
           <>
             <p>
-              We're excited to see to see the future of this application! However, there is always
-              room for improvement and work to be done within design. Our next steps would be to:
+              We're excited to see the future of Ziefah Health! However, there is always room for
+              improvement and work to be done within design. Our next steps would be to:
             </p>
             <ul>
               <li>Conduct a second round of usability testing within our targeted user group</li>
@@ -548,26 +548,26 @@ export const ZiefahHealth = () => {
         <ProjectSection header={<>Self Reflection</>} isLineHidden>
           <>
             <p>
-              It was my first to work in a team environment with a client. I've learned and grown
-              tremendously as a UX Designer on this project. As I managed communication and led
-              meetings, I learned how to maintain a client relationship to ensure boundaries and
-              promote efficiency.
+              It was my first to work in a team environment in a client setting. I've learned and
+              grown tremendously as a UX Designer on this project. As I managed communication and
+              led meetings, I learned how to maintain a client relationship to ensure boundaries and
+              to promote efficiency.
             </p>
             <p>
               Our team was a bit nervous in the beginning of this project as the targeted user group
               for this application was difficult to recruit for user interviews. We pivoted in
-              relying heavily on insight from surveys to gain any insight on challenges people face
-              when finding therapists in general. Our next step would be run usability testing on
-              Muslim youth to gain a true understanding of pain points and frustrations from out
-              targeted user group.
+              relying heavily on insight from surveys to gain any knowledge on challenges people
+              face when pursuing therapy. Our next step would be to run usability testing on Muslim
+              youth to gain a true understanding of pain points and frustrations from out targeted
+              user group.
             </p>
             <p>
               We did not run into major bumps in the road as our client was fairly easy to work with
-              and was very open minded to changes in ideas or direction. It was a pleasure to work
-              with the client on this project and was fun to collaborate and learn from each other.
+              and was very open minded to changes in ideas and direction. It was a pleasure to work
+              with the client on this project; it was fun to collaborate and learn from one other.
               Overall, the experience was pleasurable and it was a blast to create something
-              impactful. I hope that this application takes off and will help raise awareness of
-              mental health within the Muslim community.
+              impactful. I hope that this application takes off so that it can help raise awareness
+              and increase access of mental health services within the Muslim community.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}

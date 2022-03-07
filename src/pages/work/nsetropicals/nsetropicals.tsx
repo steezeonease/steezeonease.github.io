@@ -73,7 +73,7 @@ export const NSETropicals = () => {
               Plant collectors around the world go on the e-commerce website NSE Tropicals to stay
               up to date with market prices, participate in auctions, or to simply fill their void
               with rare planty goodness. I myself have been shopping and supporting this business
-              for awhile and I decided to take a stab at redesigning the platform.
+              for many years and I've decided to take a stab at redesigning the platform.
             </p>
             <p>
               How might I redesign NSE Tropicals to better the shopping experience for fellow plant
@@ -84,19 +84,21 @@ export const NSETropicals = () => {
         <ImageHeader
           imageOpacity={0.1}
           color="#000"
-          imageSrc={require("../../../images/nsetropicals/imageheaders/discover.jpg")}
+          imageSrc={require("../../../images/careercafe/imageheaders/discover.jpg")}
           headerName={<>Discover</>}
         />
         <ProjectSection header={<>My Assumptions</>}>
           <>
             <p>
-              I began my redesign process with evaluating the website and performing a heautistic
-              analysis. Of course this is based on my assumptions that I would further validate
-              through testing. Here are some pain points and frustrations I found based on my
-              evaluation.
+              I began my redesign process with evaluating the website and performing a heuristic
+              analysis.Here are some pain points and frustrations I found based on my assumptions.
             </p>
             <img
-              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
+              className={css(
+                appStyles.dropShadow,
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginBottom
+              )}
               alt={"Heuristic Evaluation"}
               src={require("../../../images/nsetropicals/heuristiceval2.jpg")}
             />
@@ -121,11 +123,13 @@ export const NSETropicals = () => {
               they performed these tasks on the website so I could validate my assumptions as well
               as understand further pain points.
             </p>
-            <img
-              className={css(appStyles.floatRight, appStyles.autoWidthImageNotCentered)}
-              alt={"User feedback"}
-              src={require("../../../images/nsetropicals/ratingsinterview1.jpg")}
-            />
+            <ul>
+              <li>Find information about the site</li>
+              <li>Pre-order a copy of the book "Welcome to the Jungle"</li>
+              <li>Purchase a gift card</li>
+              <li>Find reviews of products</li>
+              <li>Sort shop items by average rating</li>
+            </ul>
             <img
               className={appStyles.autoWidthImage}
               alt={"User feedback"}
@@ -139,6 +143,7 @@ export const NSETropicals = () => {
               alt={"User feedback"}
               src={require("../../../images/nsetropicals/ratingsinterview2.jpg")}
             />
+            <Ellipsis />
             <img
               className={css(appStyles.dropShadow, appStyles.autoWidthImage)}
               alt={"User feedback"}
@@ -149,6 +154,7 @@ export const NSETropicals = () => {
               alt={"User feedback"}
               src={require("../../../images/nsetropicals/restocksinterview.jpg")}
             />
+            <Ellipsis />
             <img
               className={appStyles.autoWidthImage}
               alt={"User feedback"}
@@ -159,6 +165,7 @@ export const NSETropicals = () => {
               alt={"User feedback"}
               src={require("../../../images/nsetropicals/testimonialsinterview.jpg")}
             />
+            <Ellipsis />
             <img
               className={appStyles.autoWidthImage}
               alt={"User feedback"}
@@ -183,10 +190,10 @@ export const NSETropicals = () => {
             <div className={appStyles.projectSmallerHeader}>Problem Statement</div>
             <p>From conducting usability testing I learned that:</p>
             <ul>
-              <li>Took users on average roughly 55 seconds to find the book for pre-order</li>
+              <li>It took users on average 55 seconds to find the book for pre-order</li>
               <li>All 5/5 users missed specifiying gift card method during the checkout process</li>
               <li>All 5/5 users were frustrated with testimonials being not credited</li>
-              <li>All 5/5 users were confused on the sort feature of sort by average rating</li>
+              <li>All 5/5 users were confused on the sort feature "sort by average rating"</li>
             </ul>
           </>
         </ProjectSection>
@@ -201,13 +208,13 @@ export const NSETropicals = () => {
             <p>
               To help me build out personas from real people, I utilized Google surveys and sent
               them out through my plant instagram account. It was the perfect way to get responses
-              from people who were into plants!
+              from people who were into collector plants!
             </p>
             <p>
-              I'd like to introduce "The Collector" who is on the higher end of the spectrum of
-              collecting rare plants. She is someone who has targeted goals of purchasing a rare
-              wishlist plant, keeping up to date on plant market prices, and participating auctions
-              when on NSE Tropicals.
+              I'd like to introduce "The Collector." This persona is someone who is on the higher
+              end of the spectrum of collecting rare plants. She is someone who has targeted goals
+              of purchasing a rare wishlist plant, keeping up to date on plant market prices, and
+              participating auctions when on NSE Tropicals.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -216,8 +223,8 @@ export const NSETropicals = () => {
             />
             <p>
               The next is titled as "The Enthusiast."" She is someone who rarely goes on NSE
-              Tropicals but has been in the past to order a special plant for a friend and
-              pre-ordered a copy of the book "Welcome to the Jungle."
+              Tropicals but has been in the past to order a special plant for a friend and to
+              pre-order a copy of the book "Welcome to the Jungle."
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -227,9 +234,9 @@ export const NSETropicals = () => {
             <p>
               Most of the users going onto the website fall under the category of "The Collector"
               persona, however it was important that I took into consideration of "The Enthusiast"
-              as the pain points anf frustrations were still 100% valid. Taking a step back and
+              as the pain points and frustrations were still 100% valid. Taking a step back and
               looking at the perspective as a whole, I was able to redesign the website tailored to
-              their feedback.
+              all user feedback.
             </p>
           </>
         </ProjectSection>
@@ -239,7 +246,7 @@ export const NSETropicals = () => {
               During the usability testing, all users were not able to identify that the "Welcome to
               the Jungle" tab in the navigation was the place to pre-order the book as they did not
               know what the book was called. They went straight into the "Shop" tab to try and find
-              the book and were confused why they couldn't find it.
+              the book and were confused that they couldn't find it.
             </p>
             <p>
               I then focused on trying to make the navigation more efficient, concise, and
@@ -258,7 +265,7 @@ export const NSETropicals = () => {
             />
             <p>
               After identifying what the new navigation should look and feel like, I decided to
-              validate this through a closed card sorting with new people than the initial sort.
+              validate this through a closed card sort with new people than the initial sort.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -273,7 +280,7 @@ export const NSETropicals = () => {
               I was able to validate and gain confidence on my newly redesigned navigation bar and
               footer. This would help users navigate through the website with ease and efficiency,
               which was my ultimate goal. Here I have created site maps of both the navigation bar
-              and footer prior to laying out in my wireframes.
+              and footer prior to implementing them in my wireframes.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -300,7 +307,7 @@ export const NSETropicals = () => {
               alt="sketches"
               src={require("../../../images/nsetropicals/sketches.jpg")}
             />
-            <p>I created low fidelity wireframe through Figma based on my sketches.</p>
+            <p>I then created low fidelity wireframe through Figma based on my sketches.</p>
             <img
               className={appStyles.fullWidthProjectImage}
               alt="wireframes"
@@ -318,10 +325,10 @@ export const NSETropicals = () => {
           <>
             <p>
               I was fairly proud of this project as it was my second UX project ever. As I presented
-              this iteration to my classmates, I was receiving tons of feedback which at the time
-              was dissapointing. I've learned to take this feedback and use it to make my redesign
-              so much better. Also please note that during this time in bootcamp we didn't touch
-              typography or colors.
+              this initial iteration to my classmates, I was receiving tons of feedback which at the
+              time time felt dissapointing. I've learned to take this feedback and use it to make my
+              redesign so much better. Also please note that during this time, we did not learn
+              about typography or color in bootcamp.
             </p>
             <img
               alt="Feedback from classmates"
@@ -348,7 +355,7 @@ export const NSETropicals = () => {
               colors. I decided to go back into this project and create a moodboard for redesigning
               my redesign. I remembered noting that a lot of the users during testing really loved
               being greeted by the dramatic image of the draping leaves and the bold statement
-              "Welcome to the Jungle." I decided to keep that theme going.
+              "Welcome to the Jungle" so I decided to keep that theme going.
             </p>
             <img
               alt="Moodboard"
@@ -363,8 +370,8 @@ export const NSETropicals = () => {
             <p>
               It's time to finally reveal the pages! I will show you a series of images: left being
               my first version and right being my final redesign. You can clearly see my visual
-              progression which I was hesitant to show but I feel that it's important to showcase my
-              growth.
+              progression which I was hesitant to show at first but now I feel the importantance of
+              showcasing my growth.
             </p>
             <img
               alt="Redesign concepts for home page"
@@ -374,7 +381,7 @@ export const NSETropicals = () => {
             <div className={appStyles.projectSmallerHeader}>Testimonials</div>
             <p>
               I added names and verified purchase details to the testimonials page which adds a huge
-              amount of credability.
+              feel of credability.
             </p>
             <img
               alt="Redesign concepts for testimonials"
@@ -383,8 +390,8 @@ export const NSETropicals = () => {
             />
             <div className={appStyles.projectSmallerHeader}>Gift Cards</div>
             <p>
-              I added an option where users can specify delivery method of gift card which will
-              alleviate user error and faulty delivery.
+              I added an option where users can specify the delivery method when purchasing a gift
+              card to alleviate user error and faulty delivery.
             </p>
             <img
               alt="Redesign concepts for gift cards"
@@ -394,9 +401,9 @@ export const NSETropicals = () => {
             <div className={appStyles.projectSmallerHeader}>Plants</div>
             <p>
               A majority of the survey participants really wanted a better layout of how the plants
-              are sorted depending on in and out of stock inventory. I re-organized the items so
+              were sorted depending on in and out of stock inventory. I re-organized the items so
               that in stock items always show up at the top. I also have the default sorting as
-              "Sort by newest" and two other sorting options of sorting by price.
+              "Sort by newest" and added 2 other sorting options of sorting by price.
             </p>
             <img
               alt="Redesign concepts"
@@ -408,7 +415,7 @@ export const NSETropicals = () => {
         <ImageHeader
           imageOpacity={0.1}
           color="#000"
-          imageSrc={require("../../../images/nsetropicals/imageheaders/whatsnext.jpg")}
+          imageSrc={require("../../../images/ziefahhealth/imageheaders/movingforward.jpg")}
           headerName={<>What&rsquo;s Next?</>}
         />
         <ProjectSection header={<>Next Steps</>}>
@@ -425,10 +432,9 @@ export const NSETropicals = () => {
           <>
             <p>
               I was seriously so proud of this project initially as it was my second design sprint
-              ever. I'm really glad to have taken the feedback that was shared with me and improve
-              my design. I can confidently show you and say that I am a stronger visual designer now
-              than I was before. It was so awesome to take the short time to redo the pages as I've
-              grown.
+              ever. I'm really glad to have taken the feedback that was shared with me to improve my
+              design. I can confidently show you and say that I am a stronger visual designer now
+              than I was before.
             </p>
             <p>
               Like I said before, I was super nervous to show you the horrid screens of my first

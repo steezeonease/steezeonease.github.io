@@ -47,7 +47,7 @@ export const CareerCafe = () => {
       projectName="careercafé"
       projectTagline="A web based application to help you find your next career and connect you with knowledgeable mentors in your particular field of interest."
       projectBackground={require("../../../images/projectheader/careercafe.jpg")}
-      imageOpacity={0.4}
+      imageOpacity={0.5}
     >
       <>
         <div className={appStyles.textSection}>
@@ -97,7 +97,7 @@ export const CareerCafe = () => {
           imageSrc={require("../../../images/careercafe/imageheaders/discover.jpg")}
           headerName={<>Discover</>}
         />
-        <ProjectSection header={<>Empathisizing with Users</>}>
+        <ProjectSection header={<>Empathizing with Users</>}>
           <>
             <p>
               We started our journey with conducting 14 interviews with participants who were
@@ -105,7 +105,7 @@ export const CareerCafe = () => {
               to switch careers.
             </p>
             <ul>
-              <li>Gender: 7 Male | 7 Female</li>
+              <li>Gender: 7 male | 7 female</li>
               <li>Age: 12 participants were between the ages of 25–34 years old</li>
               <li>Experience: 12 have already switched careers in the past</li>
             </ul>
@@ -179,7 +179,7 @@ export const CareerCafe = () => {
             <div>
               <p>Pros:</p>
               <ul>
-                <li>Feature of career matching based on skills/personalist assessment</li>
+                <li>Feature of career matching based on skills/personality assessment</li>
                 <li>Users can create an account and save their career matches</li>
                 <li>Free resources available to help the user during their career search</li>
               </ul>
@@ -187,7 +187,7 @@ export const CareerCafe = () => {
             <div>
               <p>Cons:</p>
               <ul>
-                <li>Members have to pay $48/ year to use the service</li>
+                <li>Members have to pay $48 a year to use the service</li>
                 <li>Overwhelming amount of resources that are not well organized</li>
                 <li>Careers and information on websites are outdated</li>
               </ul>
@@ -206,12 +206,13 @@ export const CareerCafe = () => {
         <ProjectSection header={<>Lemonade</>} isLineHidden>
           <>
             <p>
-              This insurance quote website screams simple and meaningful UI/UX Design because it's
-              so easy to navigate through the simple layout, bright pink affordances, and personable
-              AI feature. During our interviews, we learned that users who switched careers in the
-              past experienced uneasiness and nervousness. It was imperative and we took that into
-              account. Lemonade does a really good job in creating a comfortable space for the user
-              by incorporating a personable interactive AI questioning method.
+              This website screams simple and meaningful UI/UX Design because it's so easy to
+              navigate through the layout, bright pink affordances, and user friendly AI feature.
+              During our interviews, we learned that users who switched careers in the past
+              experienced uneasiness and nervousness. It was imperative that we took that into
+              account throughout our design. Lemonade does a really great job in creating a
+              comfortable space for the user through the use of a personable interactive AI
+              questioning method.
             </p>
             <img
               className={css(appStyles.dropShadow, appStyles.threeQuarterWidthProjectImage)}
@@ -223,10 +224,10 @@ export const CareerCafe = () => {
         <ProjectSection header={<>CareerExplorer</>} isLineHidden>
           <>
             <p>
-              CareerExplorer is a direct comopetitor as it allows users to take a skill assessment
-              and get matched with careers. As we took their career assessment, we really liked the
-              progress bar feature as it gave us an idea of where we were in the assessment and how
-              much more we had left. It was a very simple structure yet so informational.
+              CareerExplorer is a direct competitor as it allows users to take a skill assessment
+              and get matched with careers based on the results. As we took their career assessment,
+              we really liked the progress bar feature as it gave us an idea of where we were in the
+              assessment. It was a very simple structure yet so informational.
             </p>
             <img
               className={css(appStyles.dropShadow, appStyles.smallerWidthProjectImage)}
@@ -241,14 +242,17 @@ export const CareerCafe = () => {
         <ProjectSection header={<>Microsoft Reach</>} isLineHidden>
           <>
             <p>
-              I personally used this site when I was trying to find mentors within the UX Designer
-              community prior to pursuing the career. This site allows you to browse mentors who
-              work at Microsoft and book a call within the website itself. We appreciated the
-              formatiting of the mentor profiles and the efficiency in booking a call to meet with a
-              mentor.
+              I personally used this site when I was trying to find mentors within the UX Design
+              community. This site allows you to browse mentors who work at Microsoft and book a
+              call with them through the website itself. We appreciated the formatting of the mentor
+              profiles and the efficiency in booking a call.
             </p>
             <img
-              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
+              className={css(
+                appStyles.dropShadow,
+                appStyles.noMarginTop,
+                appStyles.fullWidthProjectImage
+              )}
               alt="Microsoft Reach screenshot"
               src={require("../../../images/careercafe/microsoftreach.jpg")}
             />
@@ -257,13 +261,13 @@ export const CareerCafe = () => {
         <ImageHeader
           imageOpacity={0.1}
           color="#000"
-          imageSrc={require("../../../images/careercafe/imageheaders/define.jpg")}
+          imageSrc={require("../../../images/nsetropicals/imageheaders/define.jpg")}
           headerName={<>Define</>}
         />
         <ProjectSection header={<>I'd Like to Introduce Sebas &amp; Vanessa</>}>
           <>
             <p>
-              Next, we created proto-personas to represent our target audience as well as to build
+              Next, we created 2 proto-personas to represent our target audience as well as to build
               empathy with users by capturing their motivations, goals, wants, needs, and
               frustrations.
             </p>
@@ -280,7 +284,7 @@ export const CareerCafe = () => {
             <p>
               Next is 20 year old Vanessa Liu. She is a sophomore in college and is struggling to
               find a career that aligns with her artistic background. Vanessa has spent endless
-              hours researching careers and connecting with her counselor but is feeling
+              hours researching careers and has connected with her counselor, but is still feeling
               discouraged.
             </p>
             <p>★ Please keep Vanessa in mind as we take you through our design journey ★</p>
@@ -294,20 +298,20 @@ export const CareerCafe = () => {
         <ProjectSection header={<>A Moment of Pivot</>}>
           <>
             <p>
-              There was a moment in our design process where our team went a little crazy with the
+              There was a moment in our design process where our team went a little wild with the
               amount of features we wanted to implement in our platform. We ran into the issue of
               trying to create a "one stop shop" where a user could access every helpful tool
               possible to support them in their career search.
             </p>
-            <p>We started with sticky noting our ideas down for all the features we wanted.</p>
+            <p>We initially brainstormed all of our ideas.</p>
             <img
               className={appStyles.smallerWidthProjectImage}
               alt="sticky notes"
               src={require("../../../images/careercafe/pivot1.jpg")}
             />
             <p>
-              Then we proceeded with a card sort to think how we would map out all of our ideated
-              features in the navigation.
+              Then we proceeded with a card sort to map out all of our features we wanted to cram
+              into the navigation.
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -315,7 +319,7 @@ export const CareerCafe = () => {
               src={require("../../../images/careercafe/navigation.jpg")}
             />
             <p>
-              As we divided our tasks to create sketches and wireframes with designated features, we
+              As we divided our tasks to create sketches and wireframes with our features, we
               realized that we made the mistake of not defining our focus problem.
             </p>
             <p>
@@ -323,7 +327,7 @@ export const CareerCafe = () => {
               We also realized that the user would feel very overwhelmed with the amount of features
               we had on our platform.
             </p>
-            <p>We wanted our users to utilize our platform not scare them away.</p>
+            <p>We wanted our users to utilize our platform, not scare them away.</p>
           </>
         </ProjectSection>
         <ProjectSection header={<>Defining the Core Problem</>} isLineHidden>
@@ -339,17 +343,18 @@ export const CareerCafe = () => {
               so that they can find a suitable and fulfilling career.
             </p>
             <p>
-              <div className={appStyles.projectSmallerHeader}>Solution</div>A web application where
-              users can assess their passions, skills, and personality traits so they they can find
-              a suitable career and fulfilling career. As well as find and connect with knowledgable
-              mentors who can support the user through the career switching process.
+              <div className={appStyles.projectSmallerHeader}>Solution</div>A web based application
+              where users can assess their passions, skills, and personality traits so they they can
+              find a suitable career and fulfilling career. As well as being a place where one can
+              find and connect with knowledgable mentors to support them through the career
+              switching journey.
             </p>
           </>
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.1}
           color="#000"
-          imageSrc={require("../../../images/careercafe/imageheaders/develop.jpg")}
+          imageSrc={require("../../../images/nsetropicals/imageheaders/develop.jpg")}
           headerName={<>Develop</>}
         />
         <ProjectSection header={<>Vanessa's User Flow</>}>
@@ -402,7 +407,7 @@ export const CareerCafe = () => {
         <ProjectSection header={<>The Cozy Moodboard</>} isLineHidden>
           <>
             <p>
-              Before moving on to the UI design, we began designing or logo and moodboard. Our
+              Before moving on to the UI design, we began designing our logo and moodboard. Our
               vision was to create an atmosphere where users felt comfortable as if they were at a
               cafe meeting up with a friend; very casual and inviting.
             </p>
@@ -421,7 +426,7 @@ export const CareerCafe = () => {
         <ImageHeader
           imageOpacity={0.1}
           color="#000"
-          imageSrc={require("../../../images/careercafe/imageheaders/iterate.jpg")}
+          imageSrc={require("../../../images/nsetropicals/imageheaders/iterate.jpg")}
           headerName={<>Iterate</>}
         />
         <ProjectSection header={<>Test Test Test</>} isLineHidden>
@@ -434,7 +439,7 @@ export const CareerCafe = () => {
             <ul>
               <li>Take the assessment and get matched with a career</li>
               <li>Find information on how to become a UX Designer</li>
-              <li>Find the mentor Sabrina Chen and book an appointment with her </li>
+              <li>Find the mentor Sabrina Chen and book a mentor appointment with her </li>
             </ul>
             <p>
               We refined and iterated our design based on the feedback that was given through
@@ -450,7 +455,7 @@ export const CareerCafe = () => {
         <ImageHeader
           imageOpacity={0.1}
           color="#000"
-          imageSrc={require("../../../images/careercafe/imageheaders/deliver.jpg")}
+          imageSrc={require("../../../images/nsetropicals/imageheaders/deliver.jpg")}
           headerName={<>Deliver</>}
         />
         <ProjectSection header={<>Introducing careercafé</>} isLineHidden>
@@ -478,7 +483,7 @@ export const CareerCafe = () => {
         <ImageHeader
           imageOpacity={0.1}
           color="#000"
-          imageSrc={require("../../../images/careercafe/imageheaders/thefuture.jpg")}
+          imageSrc={require("../../../images/ziefahhealth/imageheaders/movingforward.jpg")}
           headerName={<>The Future</>}
         />
         <ProjectSection header={<>Next Steps</>}>

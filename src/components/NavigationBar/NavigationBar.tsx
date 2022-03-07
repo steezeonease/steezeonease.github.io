@@ -1,6 +1,6 @@
 import { css, IconButton } from "@fluentui/react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./NavigationBar.module.scss";
 import appStyles from "../../css/App.module.scss";
 
@@ -10,6 +10,9 @@ export const NavigationBar: React.FC = () => {
   const onToggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const location = useLocation();
+  console.log(location);
 
   return (
     <div className={appStyles.containerSection}>

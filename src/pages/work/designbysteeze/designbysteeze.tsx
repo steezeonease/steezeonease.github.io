@@ -72,7 +72,7 @@ export const DesignBySteeze = () => {
         <ImageHeader
           imageOpacity={0.3}
           color="#ffffff"
-          imageSrc={require("../../../images/designbysteeze/imageheaders/theBirdOfParadise.jpg")}
+          imageSrc={require("../../../images/designbysteeze/imageheaders/thebirdofparadise.jpg")}
           headerName={
             <>
               <div>Iteration 1</div>
@@ -80,13 +80,13 @@ export const DesignBySteeze = () => {
             </>
           }
         />
-        <ProjectSection header={<>Persona - The Hiring Manager</>}>
+        <ProjectSection header={<>&ldquo;The Hiring Manager&rdquo;</>}>
           <>
             <div>
-              We read an interesting article during my bootcamp days that provided so much insight
-              on potential user groups who would swing by and skim our portfolios. I'm not much of a
-              reader but this one stuck; I clearly can remember the article mentioning the "5 minute
-              rule."
+              I read an interesting article during my bootcamp days that pSrovided so much insight
+              on potential user groups who would swing by and skim our portfolios. I decided to
+              build a proto-persona to help remind me of the user group looking through my
+              portfolio.
             </div>
             <img
               className={appStyles.fullWidthProjectImage}
@@ -95,14 +95,14 @@ export const DesignBySteeze = () => {
             />
           </>
         </ProjectSection>
-        <ProjectSection header={<>2x2 - The Perfect Layout</>}>
+        <ProjectSection header={<>The Perfect Layout</>}>
           <>
             <div>
               It was my first time creating a UX portfolio from scratch so I began my journey with
               conducting secondary research. I knew I wanted to create a clean, simple, and crisp
-              look so that users could navigate through my portfolio with ease and efficiency.
-              Looking through countless number of portfolios, I stumbled across these 4 cards and
-              immediately felt that "this was the one."
+              look so users could navigate through my portfolio with ease and efficiency. Looking
+              through countless number of portfolios, I stumbled across these 4 cards and
+              immediately felt that this was the one.
             </div>
             <img
               className={appStyles.smallerWidthProjectImage}
@@ -115,13 +115,13 @@ export const DesignBySteeze = () => {
           <>
             <div>
               For visuals, it was important that I captured the users attention. So my vision was to
-              utilize the vast white space and add pops of color to direct the focus. My vision was
-              to incorporate shades of green since I wanted to portray my love for plants.
+              utilize the vast white space and add pops of color to direct the users focus. My
+              vision was to incorporate shades of green to portray my love for plants.
             </div>
             <div>
               <p>
                 Even though it felt silly to do for my own portfolio, I sketched out the pages to
-                help me visualize each page layout.
+                help me visualize the layout of each page.
               </p>
             </div>
             <img
@@ -131,35 +131,27 @@ export const DesignBySteeze = () => {
             />
           </>
         </ProjectSection>
-        <ProjectSection
-          header={
-            <>
-              <span style={{ color: "#7E5EFF" }}>Bird</span>{" "}
-              <span style={{ color: "#CCDB38" }}>of</span>{" "}
-              <span style={{ color: "#F7A300" }}>Paradise</span>
-            </>
-          }
-        >
+        <ProjectSection header={<>Bird of Paradise</>}>
           <>
             <p>
-              I started looking for more inspiration, but this time rather than browsing UX
+              I started looking for more inspiration but this time rather than browsing UX
               portfolios, I browsed colors.
             </p>
             <p>
               I had recently changed and fell in love with the background color of my LinkedIn
               profile photo - HEX<span style={{ color: "#CCDB38" }}>#CCDB38</span>, to be exact. One
               of my favorite things I love and can do for hours is to run the color generator in
-              coolors.io. That's exactly what I did. I ran this obsessive neon green and mashed the
-              space bar until I found the perfect match.
+              coolors.io. I ran this obsessive neon green and mashed the space bar until I found the
+              perfect match.
             </p>
             <div className={styles.selfieContainer}>
               <img src={require("../../../images/designbysteeze/selfie.jpg")} alt="myself" />
             </div>
             <p>
-              I struck gold. Finding this neon purple that suited the green made my heart jump up
-              and down. It reminded me of the beautiful flower that the Bird of Paradise plant
-              bloomed in the tropics. I went onto finding more inspiration and came up with a
-              moodboard that captured my personality of radiating positive energy.
+              I struck gold! Finding this neon purple that suited the green made my heart jump up
+              and down. It reminded me of the beautiful flower, the Bird of Paradise that bloomed in
+              the tropics. I went onto finding more inspiration and came up with a moodboard that
+              captured my personality of radiating positive energy.
             </p>
             <p>
               Typography was also incredibly an important aspect to consider. Crimson Text brought a
@@ -167,7 +159,7 @@ export const DesignBySteeze = () => {
               edges.
             </p>
             <img
-              className={appStyles.smallerWidthProjectImage}
+              className={css(appStyles.dropShadow, appStyles.smallerWidthProjectImage)}
               alt="moodboard"
               src={require("../../../images/designbysteeze/moodboard.jpg")}
             />
@@ -234,11 +226,10 @@ export const DesignBySteeze = () => {
               edgy.
             </p>
             <p>
-              I'm not huge on flowers but the bright ones really capture me and one of my favorites
-              is called the Dahlia. It is native to Mexico and Central America and it's relative to
-              the sunflower, daisy, and chrysanthemum. Dahlias add so much dimension through colors
-              and petal formation. This second style tile was heavily influenced by my favorite
-              flower.
+              I'm not huge on flowers but the Dahlia has my heart. It is native to Mexico and
+              Central America and it's relative to the sunflower, daisy, and chrysanthemum. Dahlias
+              add so much dimension through colors and petal formation. This second style tile was
+              heavily influenced by them.
             </p>
             <img
               className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
@@ -288,7 +279,7 @@ export const DesignBySteeze = () => {
             <p>
               Be sure to check out my "About" section to learn more about me as a human being. It
               was incredibly important for me to showcase that I am not constantly a working robot
-              but that I am also human.
+              but that I am a human being just like you.
             </p>
             <p>
               I led the this page with a beautiful sunset image with a shadow of a female figure to
@@ -321,16 +312,16 @@ export const DesignBySteeze = () => {
               come to life... page by page.
             </p>
             <p>
-              It was incredible to have the opportunity to collaborate with a developer. No, we
-              didn't argue one bit during our process which made it a very pleasant experience.
-              Moving forward, I plan to study more on responsive designs and what other aspects I
-              should consider when designing more complex sites and features. There is always room
-              for improvement and I look forward to working with all types of developers to
-              strengthen my skills in collaboration.
+              It was an incredible opportunity to collaborate with a developer. No, we didn't argue
+              one bit during the process which made it a very pleasant experience. Moving forward, I
+              plan to study more on responsive designs and what other aspects I should consider when
+              designing more complex sites and features. There is always room for improvement and I
+              look forward to working with all types of developers to strengthen my skills in
+              collaboration.
             </p>
             <p>
-              For now, I hope you enjoyed the "final" version of my portfolio. Hannah and Eddie out
-              *mic drop.*
+              For now, I hope you enjoyed the "final" version of my portfolio.
+              <p>Hannah and Eddie out (mic drop).</p>
             </p>
             <img
               className={appStyles.fullWidthProjectImage}
