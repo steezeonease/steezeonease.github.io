@@ -142,4 +142,8 @@
     padding: 0;
     text-align: center;
   }
+
+  :global(.slide .legend) {
+    font-size: 18px !important;
+  }
 }
