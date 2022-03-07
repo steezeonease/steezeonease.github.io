@@ -47,7 +47,13 @@ export const About: React.FC = () => {
           and an animal lover.
         </p>
         <div className={styles.carouselContainer}>
-          <Carousel className={styles.carousel} autoPlay={true} showStatus={false}>
+          <Carousel
+            className={styles.carousel}
+            autoPlay={true}
+            showStatus={false}
+            infiniteLoop={true}
+            interval={5000}
+          >
             <div>
               <img src={require("../../images/aboutpage/po.jpg")} alt="Po my cat" />
               <p className="legend">My cat Po</p>
