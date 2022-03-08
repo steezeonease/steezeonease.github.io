@@ -1,17 +1,34 @@
 @import "../../css/_common";
 
+.root {
+  @include ms-screen-lg-up {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+  }
+}
+
 .navigationContainer {
   display: flex;
   position: absolute;
   font-size: 24px;
   justify-content: flex-end;
+  margin: 0 auto;
   left: 0;
   right: 0;
-  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   z-index: 1;
   font-family: "Crimson Pro";
   gap: 66px;
   padding-right: $lgSidePadding;
+
+  @include ms-screen-lg-up {
+    &.hasShadow {
+      background: #14111c;
+      box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);
+    }
+  }
 
   .iconButton {
     color: #fff;
@@ -32,8 +49,18 @@
     display: none;
   }
 
+  .navParent {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
   nav {
-    display: contents;
+    display: flex;
+    gap: 66px;
+
     a {
       text-decoration: none;
       color: #fff;
@@ -53,15 +80,19 @@
     font-size: 20px;
     margin-top: 24px;
     margin-bottom: 30px;
-    padding-right: $smSidePadding;
+    padding: 0 $smSidePadding;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    padding-left: $smSidePadding;
     gap: 40px;
     align-items: flex-end;
 
     &.isOpen {
       nav {
-        display: contents;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-end;
       }
     }
 
