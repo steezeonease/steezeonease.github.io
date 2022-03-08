@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5860c6e1.css",
-    "main.js": "/static/js/main.4c77133e.js",
+    "main.js": "/static/js/main.f9257bfa.js",
     "static/js/787.e95b87d8.chunk.js": "/static/js/787.e95b87d8.chunk.js",
     "static/media/designbysteeze.jpg": "/static/media/designbysteeze.2e83db7925497eb9fef3.jpg",
     "static/media/movingforward.jpg": "/static/media/movingforward.56996228933be6c456de.jpg",
@@ -49,6 +49,7 @@
     "static/media/muzmatch.jpg": "/static/media/muzmatch.7242f72b57c347422bfc.jpg",
     "static/media/userflow.jpg": "/static/media/userflow.0dfc29a1102ddac342d2.jpg",
     "static/media/bumble.jpg": "/static/media/bumble.f52ae2b9cf43b092b159.jpg",
+    "static/media/textinterview.jpg": "/static/media/textinterview.977d046fb642135b7529.jpg",
     "static/media/deliver.jpg": "/static/media/deliver.5d291ff3b9826f651afc.jpg",
     "static/media/wireframes.jpg": "/static/media/wireframes.9f2718d8523f3da65b5b.jpg",
     "static/media/ziefahhealth.jpg": "/static/media/ziefahhealth.aba17a4ee18e29e4a579.jpg",
@@ -73,7 +74,6 @@
     "static/media/userfeedback.jpg": "/static/media/userfeedback.df9ef188258946faa7f2.jpg",
     "static/media/careercafelogos.jpg": "/static/media/careercafelogos.15eaa892e1a482109db0.jpg",
     "static/media/dahlia.jpg": "/static/media/dahlia.f31cba37dfc0569d6cf8.jpg",
-    "static/media/textinterview.jpg": "/static/media/textinterview.4254746a253c9bb69e06.jpg",
     "static/media/testimonialsscreenshot.jpg": "/static/media/testimonialsscreenshot.46511d760f4b7c79e53c.jpg",
     "static/media/pivot1.jpg": "/static/media/pivot1.814cae69b8516d1f4244.jpg",
     "static/media/messaging.jpg": "/static/media/messaging.0286bbd681eee109c072.jpg",
@@ -110,11 +110,11 @@
     "static/media/mailWhite.svg": "/static/media/mailWhite.0a89ace2b67d2a7da368034f05a9c5f7.svg",
     "static/media/backToTopChevron.svg": "/static/media/backToTopChevron.e5bb606abc50d7ebfb8d0a8c617a25d5.svg",
     "main.5860c6e1.css.map": "/static/css/main.5860c6e1.css.map",
-    "main.4c77133e.js.map": "/static/js/main.4c77133e.js.map",
+    "main.f9257bfa.js.map": "/static/js/main.f9257bfa.js.map",
     "787.e95b87d8.chunk.js.map": "/static/js/787.e95b87d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5860c6e1.css",
-    "static/js/main.4c77133e.js"
+    "static/js/main.f9257bfa.js"
   ]
 }
