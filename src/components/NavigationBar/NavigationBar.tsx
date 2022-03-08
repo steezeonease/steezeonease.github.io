@@ -53,7 +53,7 @@ export const NavigationBar: React.FC = () => {
             onToggleMenu={onToggleMenu}
           />
           <a
-            href="https://dl.dropboxusercontent.com/s/dlkax1q2no4m2o8/Hannah%20Yi%20Resume.docx"
+            href="https://dl.dropboxusercontent.com/s/bhrbenkkdwn50em/Hannah%20Yi%20Resume.pdf"
             target="_blank"
             rel="noreferrer"
           >
