@@ -26,6 +26,7 @@ ReactDOM.render(
           <Routes>
             <Route path="/" element={<App />}>
               <Route index element={<Homepage />} />
+              <Route path="work" element={<Homepage />} />
               <Route path="about" element={<About />} />
               <Route path="work/prepdoc" element={<PrepDoc />} />
               <Route path="work/designbysteeze" element={<DesignBySteeze />} />

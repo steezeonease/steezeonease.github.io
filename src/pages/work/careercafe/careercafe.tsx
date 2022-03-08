@@ -97,7 +97,7 @@ export const CareerCafe = () => {
           imageSrc={require("../../../images/careercafe/imageheaders/discover.jpg")}
           headerName={<>Discover</>}
         />
-        <ProjectSection header={<>Empathizing with Users</>}>
+        <ProjectSection header={<>Empathizing with Users</>} isLineHidden>
           <>
             <p>
               We started our journey with conducting 14 interviews with participants who were
@@ -271,13 +271,17 @@ export const CareerCafe = () => {
               empathy with users by capturing their motivations, goals, wants, needs, and
               frustrations.
             </p>
-            <p>
+            <p className={appStyles.noMarginBottom}>
               First up is 26 year old Sebas Villa. He is unsatisfied with his current career and is
               looking to explore other career paths that align with his passions and will allow him
               to grow as a person.
             </p>
             <img
-              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
+              className={css(
+                appStyles.dropShadow,
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginBottom
+              )}
               alt="Sebas' persona"
               src={require("../../../images/careercafe/sebas.jpg")}
             />
@@ -287,9 +291,15 @@ export const CareerCafe = () => {
               hours researching careers and has connected with her counselor, but is still feeling
               discouraged.
             </p>
-            <p>★ Please keep Vanessa in mind as we take you through our design journey ★</p>
+            <p className={appStyles.noMarginBottom}>
+              ★ Please keep Vanessa in mind as we take you through our design journey ★
+            </p>
             <img
-              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
+              className={css(
+                appStyles.dropShadow,
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginBottom
+              )}
               alt="Vanessa's persona"
               src={require("../../../images/careercafe/vanessa.jpg")}
             />
@@ -390,7 +400,7 @@ export const CareerCafe = () => {
             />
           </>
         </ProjectSection>
-        <ProjectSection header={<>Bringing It To Life</>}>
+        <ProjectSection header={<>Bringing it to Life</>}>
           <>
             <p>
               After deciding the layout of the screens, we designed low fidelity wireframes in Figma
@@ -399,7 +409,11 @@ export const CareerCafe = () => {
             </p>
             <img
               alt="Higher fidelity mockup"
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginBottom,
+                appStyles.noMarginTop
+              )}
               src={require("../../../images/careercafe/mockup.jpg")}
             />
           </>
@@ -413,7 +427,11 @@ export const CareerCafe = () => {
             </p>
             <img
               alt="Logo ideas"
-              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
+              className={css(
+                appStyles.dropShadow,
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop
+              )}
               src={require("../../../images/careercafe/careercafelogos.jpg")}
             />
             <img

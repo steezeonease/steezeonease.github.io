@@ -125,7 +125,7 @@ export const ZiefahHealth = () => {
               src={require("../../../images/ziefahhealth/affinitymap.jpg")}
             />
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.fullWidthProjectImage, appStyles.noMarginBottom)}
               alt={"Phone conversation on therapist qualities"}
               src={require("../../../images/ziefahhealth/textinterview.jpg")}
             />
@@ -284,7 +284,11 @@ export const ZiefahHealth = () => {
             </p>
             <p>★ Please keep Yara in mind as we take you through our design journey ★</p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop,
+                appStyles.noMarginBottom
+              )}
               alt="Sebas' persona"
               src={require("../../../images/ziefahhealth/yara.jpg")}
             />
@@ -294,7 +298,11 @@ export const ZiefahHealth = () => {
               open to talking about mental health and has had past experience with therapists.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop,
+                appStyles.noMarginBottom
+              )}
               alt="Aasim's persona"
               src={require("../../../images/ziefahhealth/aasim.jpg")}
             />
@@ -322,7 +330,11 @@ export const ZiefahHealth = () => {
               therapist through a Google search.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.noMarginTop,
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginBottom
+              )}
               alt="User journey map"
               src={require("../../../images/ziefahhealth/userjourneymap.jpg")}
             />
@@ -333,16 +345,17 @@ export const ZiefahHealth = () => {
             <p>
               Creating and empathizing Yara's persona helped us better understand the problem space.
             </p>
-            <p>
-              <div className={appStyles.projectSmallerHeader}>Problem Statement</div>
+            <div className={appStyles.projectSmallerHeader}>Problem Statement</div>
+            <p className={appStyles.noMarginTop}>
               Muslim youth need a better way to find and connect with Muslim therapists to feel
               connected and understood.
             </p>
-            <p>
-              <div className={appStyles.projectSmallerHeader}>Solution</div>A mobile application
-              where Muslim youth can express their concerns, feelings, and needs so they can find a
-              therapist who's best fit. The application will also provide a safe private space where
-              Muslims can connect with their matched therapist via chat or video.
+            <div className={appStyles.projectSmallerHeader}>Solution</div>
+            <p className={appStyles.noMarginTop}>
+              A mobile application where Muslim youth can express their concerns, feelings, and
+              needs so they can find a therapist who's best fit. The application will also provide a
+              safe private space where Muslims can connect with their matched therapist via chat or
+              video.
             </p>
           </>
         </ProjectSection>
@@ -364,7 +377,11 @@ export const ZiefahHealth = () => {
             </p>
             <img
               alt="User flow"
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.noMarginTop,
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginBottom
+              )}
               src={require("../../../images/ziefahhealth/userflow.jpg")}
             />
           </>
@@ -379,7 +396,11 @@ export const ZiefahHealth = () => {
               matching.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.noMarginTop,
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginBottom
+              )}
               alt={"Sketches"}
               src={require("../../../images/ziefahhealth/sketches.jpg")}
             />
@@ -400,7 +421,7 @@ export const ZiefahHealth = () => {
               alt={"Wireframes"}
               src={require("../../../images/ziefahhealth/wireframes.jpg")}
             />
-            <p>
+            <p className={appStyles.noMarginTop}>
               Here is what the user would see when going through some interactive questions that ask
               about preferences in order to get matched with suitable therapists.
             </p>
@@ -409,13 +430,13 @@ export const ZiefahHealth = () => {
               alt={"Wireframes"}
               src={require("../../../images/ziefahhealth/wireframes2.jpg")}
             />
-            <p>
+            <p className={css(appStyles.noMarginTop, appStyles.noMarginBottom)}>
               Here is what the user would see when getting matched with therapists. The user is
               instructed to interact with the screen by swiping to browse through the list of the
               therapists and to remove or favorite their options.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.fullWidthProjectImage, appStyles.noMarginBottom)}
               alt={"Wireframes"}
               src={require("../../../images/ziefahhealth/wireframes3.jpg")}
             />
@@ -431,7 +452,7 @@ export const ZiefahHealth = () => {
               comfortability.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.noMarginTop, appStyles.fullWidthProjectImage)}
               alt={"Moodboard"}
               src={require("../../../images/ziefahhealth/moodboard.jpg")}
             />
@@ -470,8 +491,9 @@ export const ZiefahHealth = () => {
               alt={"Usability interview"}
               src={require("../../../images/ziefahhealth/paymentdetails.jpg")}
             />
+            <Ellipsis />
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.noMarginTop, appStyles.fullWidthProjectImage)}
               style={{
                 width: "auto",
               }}
@@ -483,8 +505,9 @@ export const ZiefahHealth = () => {
               alt={"Usability interview"}
               src={require("../../../images/ziefahhealth/messaging.jpg")}
             />
+            <Ellipsis />
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.noMarginTop, appStyles.fullWidthProjectImage)}
               style={{
                 width: "auto",
               }}

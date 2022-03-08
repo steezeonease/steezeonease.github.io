@@ -39,12 +39,14 @@ export const Homepage: React.FC = () => {
         </Parallax>
       </div>
       <div className={css(styles.aboutMe, appStyles.containerSection)}>
-        <p>I'm a UX Designer based in Seattle, the city of rain.</p>
+        <p className={appStyles.noMarginTop}>
+          I'm a UX Designer based in Seattle, the city of rain.
+        </p>
         <p>
           My joys in life is to leave a positive imprint by adding a touch of humanity to others'
           daily life experiences.
         </p>
-        <p>
+        <p className={appStyles.noMarginBottom}>
           I put my curiosity to work by listening, engaging, and connecting with individuals to
           design better products for communities at large.
         </p>

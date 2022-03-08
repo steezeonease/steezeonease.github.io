@@ -89,7 +89,7 @@ export const DesignBySteeze = () => {
               portfolio.
             </div>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.fullWidthProjectImage, appStyles.noMarginBottom)}
               alt={"Persona details"}
               src={require("../../../images/designbysteeze/persona1.jpg")}
             />
@@ -167,7 +167,11 @@ export const DesignBySteeze = () => {
         </ProjectSection>
         <ProjectSection header={<>What Do You Think?</>}>
           <img
-            className={appStyles.fullWidthProjectImage}
+            className={css(
+              appStyles.fullWidthProjectImage,
+              appStyles.noMarginTop,
+              appStyles.noMarginBottom
+            )}
             alt={"Feedback from classmates"}
             src={require("../../../images/designbysteeze/whatdoyouthink.jpg")}
           />
@@ -205,7 +209,11 @@ export const DesignBySteeze = () => {
               several pointers that were incredibly important for my second iteration.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop,
+                appStyles.noMarginBottom
+              )}
               alt={"Conversation between me and my husband"}
               src={require("../../../images/designbysteeze/convo.jpg")}
             />
@@ -232,7 +240,12 @@ export const DesignBySteeze = () => {
               heavily influenced by them.
             </p>
             <img
-              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
+              className={css(
+                appStyles.dropShadow,
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop,
+                appStyles.noMarginBottom
+              )}
               alt="Moodboard"
               src={require("../../../images/designbysteeze/moodboard2.jpg")}
             />
@@ -252,7 +265,11 @@ export const DesignBySteeze = () => {
               annotations for my husband.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop,
+                appStyles.noMarginBottom
+              )}
               alt="Responsive designs for portfolio"
               src={require("../../../images/designbysteeze/responsive.jpg")}
             />
@@ -268,7 +285,11 @@ export const DesignBySteeze = () => {
               <li>Created a hamburger menu for navigation</li>
             </ul>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop,
+                appStyles.noMarginBottom
+              )}
               alt="Responsive designs for portfolio"
               src={require("../../../images/designbysteeze/responsive2.jpg")}
             />
@@ -292,7 +313,7 @@ export const DesignBySteeze = () => {
             </p>
             <img
               alt="Final portfolio designs"
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.fullWidthProjectImage, appStyles.noMarginTop)}
               src={require("../../../images/designbysteeze/iamhuman.jpg")}
             />
           </>
@@ -305,7 +326,7 @@ export const DesignBySteeze = () => {
         />
         <ProjectSection isLineHidden={true}>
           <>
-            <p>
+            <p className={appStyles.noMarginTop}>
               As I constantly am growing as a UX Designer, I'll be constantly evolving my portfolio.
               For now, I am happy where it's at and what it's become through incoporating my vision
               and feedback into my iterations. It was truly a rewarding experience to see my designs

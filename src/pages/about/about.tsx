@@ -30,7 +30,7 @@ export const About: React.FC = () => {
         </div>
       </ParallaxBanner>
       <div className={css(styles.aboutMe, appStyles.containerSection)}>
-        <p>Hello!</p>
+        <p className={appStyles.noMarginTop}>Hello!</p>
         <p>I'm glad you're here! Let me tell you about myself, the person behind the design. </p>
         <p>
           My drive to learn from human beings and my desire to make life easier for others inspired

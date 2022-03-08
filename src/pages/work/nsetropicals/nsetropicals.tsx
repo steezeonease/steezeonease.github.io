@@ -97,7 +97,8 @@ export const NSETropicals = () => {
               className={css(
                 appStyles.dropShadow,
                 appStyles.fullWidthProjectImage,
-                appStyles.noMarginBottom
+                appStyles.noMarginBottom,
+                appStyles.noMarginTop
               )}
               alt={"Heuristic Evaluation"}
               src={require("../../../images/nsetropicals/heuristiceval2.jpg")}
@@ -217,7 +218,11 @@ export const NSETropicals = () => {
               participating auctions when on NSE Tropicals.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop,
+                appStyles.noMarginBottom
+              )}
               alt="Collector persona"
               src={require("../../../images/nsetropicals/collector.jpg")}
             />
@@ -227,7 +232,11 @@ export const NSETropicals = () => {
               pre-order a copy of the book "Welcome to the Jungle."
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop,
+                appStyles.noMarginBottom
+              )}
               alt="Enthusiast persona"
               src={require("../../../images/nsetropicals/enthusiast.jpg")}
             />
@@ -259,7 +268,11 @@ export const NSETropicals = () => {
               src={require("../../../images/nsetropicals/cardsort.jpg")}
             />
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop,
+                appStyles.noMarginBottom
+              )}
               alt="Card sorting"
               src={require("../../../images/nsetropicals/cardsort2.jpg")}
             />
@@ -268,7 +281,11 @@ export const NSETropicals = () => {
               validate this through a closed card sort with new people than the initial sort.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop,
+                appStyles.noMarginBottom
+              )}
               alt="Card sorting"
               src={require("../../../images/nsetropicals/cardsort3.jpg")}
             />
@@ -283,7 +300,7 @@ export const NSETropicals = () => {
               and footer prior to implementing them in my wireframes.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.fullWidthProjectImage, appStyles.noMarginTop)}
               alt="Site map ideas"
               src={require("../../../images/nsetropicals/sitemap.jpg")}
             />
@@ -303,13 +320,17 @@ export const NSETropicals = () => {
               detail pages.
             </p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop,
+                appStyles.noMarginBottom
+              )}
               alt="sketches"
               src={require("../../../images/nsetropicals/sketches.jpg")}
             />
             <p>I then created low fidelity wireframe through Figma based on my sketches.</p>
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.fullWidthProjectImage, appStyles.noMarginTop)}
               alt="wireframes"
               src={require("../../../images/nsetropicals/wireframes.jpg")}
             />
@@ -359,7 +380,12 @@ export const NSETropicals = () => {
             </p>
             <img
               alt="Moodboard"
-              className={css(appStyles.dropShadow, appStyles.fullWidthProjectImage)}
+              className={css(
+                appStyles.dropShadow,
+                appStyles.fullWidthProjectImage,
+                appStyles.noMarginTop,
+                appStyles.noMarginBottom
+              )}
               src={require("../../../images/nsetropicals/moodboard.jpg")}
             />
           </>
