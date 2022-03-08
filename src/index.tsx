@@ -17,6 +17,8 @@ import ScrollToTop from "./ScrollToTop";
 
 import reportWebVitals from "./reportWebVitals";
 import { ParallaxProvider } from "react-scroll-parallax";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "html5-device-mockups/dist/device-mockups.min.css";
 
 ReactDOM.render(
   <React.StrictMode>

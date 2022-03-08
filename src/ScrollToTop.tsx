@@ -8,7 +8,6 @@ interface IScrollToTop {
 const ScrollToTop = (props: IScrollToTop) => {
   const location = useLocation();
   useEffect(() => {
-    console.log("test");
     window.scrollTo(0, 0);
   }, [location]);
 

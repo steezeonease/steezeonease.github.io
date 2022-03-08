@@ -6,8 +6,13 @@ import { IProjectDetails } from "../../../components/ProjectPage/ProjectDetailsT
 import { ProjectDetailsTable } from "../../../components/ProjectPage/ProjectDetailsTable/ProjectDetailsTable";
 import { HeaderNames, ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHeader";
 import { css } from "@fluentui/utilities";
+import * as images from "./images/index";
 
 import appStyles from "../../../css/App.module.scss";
+import {
+  IImage,
+  LaptopCarousel,
+} from "../../../components/ProjectPage/LaptopCarousel/LaptopCarousel";
 
 export const CareerCafe = () => {
   const projectDetails: IProjectDetails = {
@@ -41,6 +46,41 @@ export const CareerCafe = () => {
     },
   };
 
+  const galleryImages: IImage[] = [
+    {
+      imagePath: images.homepage,
+      altText: "Homepage",
+    },
+    {
+      imagePath: images.careers,
+      altText: "Careers",
+    },
+    {
+      imagePath: images.careers2,
+      altText: "Careers",
+    },
+    {
+      imagePath: images.assessments,
+      altText: "Assessments",
+    },
+    {
+      imagePath: images.mentors,
+      altText: "Mentors",
+    },
+    {
+      imagePath: images.mentors2,
+      altText: "Mentors",
+    },
+    {
+      imagePath: images.onboarding,
+      altText: "Onboarding",
+    },
+    {
+      imagePath: images.onboarding2,
+      altText: "onboarding",
+    },
+  ];
+
   return (
     <ProjectPage
       projectName="careercafé"
@@ -49,6 +89,7 @@ export const CareerCafe = () => {
       imageOpacity={0.5}
     >
       <>
+        <LaptopCarousel images={galleryImages} />
         <ImageHeader
           imageOpacity={0.1}
           headerImageName={HeaderNames.Background}
@@ -324,17 +365,17 @@ export const CareerCafe = () => {
               but we could focus on the most re-occuring one that was encountered during our
               research. So we switched gears and decided to focus on creating a problem statement.
             </p>
-            <p>
-              <div className={appStyles.projectSmallerHeader}>Problem Statement</div>
+            <div className={appStyles.projectSmallerHeader}>Problem Statement</div>
+            <p className={appStyles.noMarginTop}>
               People exploring career options need a way to assess their characteristics and skills
               so that they can find a suitable and fulfilling career.
             </p>
-            <p>
-              <div className={appStyles.projectSmallerHeader}>Solution</div>A web based application
-              where users can assess their passions, skills, and personality traits so they they can
-              find a suitable career and fulfilling career. As well as being a place where one can
-              find and connect with knowledgable mentors to support them through the career
-              switching journey.
+            <div className={appStyles.projectSmallerHeader}>Solution</div>
+            <p className={appStyles.noMarginTop}>
+              A web based application where users can assess their passions, skills, and personality
+              traits so they they can find a suitable career and fulfilling career. As well as being
+              a place where one can find and connect with knowledgable mentors to support them
+              through the career switching journey.
             </p>
           </>
         </ProjectSection>

@@ -1,0 +1,13 @@
+.root {
+  position: relative;
+  max-width: 1074px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+:global(.device .screen) {
+  border-radius: 5px;
+  overflow: hidden;
+}

@@ -7,8 +7,10 @@ import { ProjectDetailsTable } from "../../../components/ProjectPage/ProjectDeta
 import { HeaderNames, ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHeader";
 
 import appStyles from "../../../css/App.module.scss";
-import { ParallaxBanner } from "react-scroll-parallax";
 import { css } from "@fluentui/utilities";
+import { IPhoneCarousel } from "../../../components/ProjectPage/IPhoneCarousel/IPhoneCarousel";
+import * as images from "./images/index";
+import { IImage } from "../../../components/ProjectPage/LaptopCarousel/LaptopCarousel";
 
 export const ZiefahHealth = () => {
   const projectDetails: IProjectDetails = {
@@ -44,6 +46,52 @@ export const ZiefahHealth = () => {
     },
   };
 
+  const galleryImages: IImage[] = [
+    {
+      imagePath: images.image1,
+      altText: "Homepage",
+    },
+    {
+      imagePath: images.image2,
+      altText: "Careers",
+    },
+    {
+      imagePath: images.image3,
+      altText: "Careers",
+    },
+    {
+      imagePath: images.image4,
+      altText: "Assessments",
+    },
+    {
+      imagePath: images.image5,
+      altText: "Mentors",
+    },
+    {
+      imagePath: images.image6,
+      altText: "Mentors",
+    },
+    {
+      imagePath: images.image7,
+      altText: "Onboarding",
+    },
+    {
+      imagePath: images.image8,
+      altText: "onboarding",
+    },
+    {
+      imagePath: images.image9,
+      altText: "onboarding",
+    },
+    {
+      imagePath: images.image10,
+      altText: "onboarding",
+    },
+    {
+      imagePath: images.image11,
+      altText: "onboarding",
+    },
+  ];
   return (
     <ProjectPage
       projectName="Ziefah Health"
@@ -52,6 +100,7 @@ export const ZiefahHealth = () => {
       imageOpacity={0.4}
     >
       <>
+        <IPhoneCarousel images={galleryImages} />
         <ImageHeader
           imageOpacity={0.1}
           headerImageName={HeaderNames.Background}
@@ -61,19 +110,6 @@ export const ZiefahHealth = () => {
           <ProjectDetailsTable details={projectDetails} />
         </div>
         <Ellipsis />
-        {/* <ProjectSection isLineHidden>
-          <>
-            <p className={appStyles.noMarginTop}>
-              My role as planning lead was to ensure timeliness of delivering our product. During
-              the 2 week design sprint I facilitated meetings, managed timelines, prioritized tasks,
-              and helped create this application utilizing the double diamond design process.
-            </p>
-            <p>
-              It was a pleasure to work with these delightful individuals and I'd do it all over
-              again.
-            </p>
-          </>
-        </ProjectSection> */}
         <ProjectSection header={<>Challenge</>} isLineHidden={true}>
           <>
             <p>
