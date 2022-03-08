@@ -52,11 +52,16 @@ export const ZiefahHealth = () => {
       imageOpacity={0.4}
     >
       <>
+        <ImageHeader
+          imageOpacity={0.1}
+          headerImageName={HeaderNames.Background}
+          headerName={<>Background</>}
+        />
         <div className={appStyles.textSection}>
           <ProjectDetailsTable details={projectDetails} />
         </div>
         <Ellipsis />
-        <ProjectSection isLineHidden>
+        {/* <ProjectSection isLineHidden>
           <>
             <p className={appStyles.noMarginTop}>
               My role as planning lead was to ensure timeliness of delivering our product. During
@@ -68,19 +73,7 @@ export const ZiefahHealth = () => {
               again.
             </p>
           </>
-        </ProjectSection>
-        <ParallaxBanner
-          layers={[
-            {
-              image: `${require("../../../images/ziefahhealth/imageheaders/ziefahheader.jpg")}`,
-              speed: -20,
-            },
-          ]}
-          style={{
-            height: 520,
-            marginBottom: 30,
-          }}
-        ></ParallaxBanner>
+        </ProjectSection> */}
         <ProjectSection header={<>Challenge</>} isLineHidden={true}>
           <>
             <p>

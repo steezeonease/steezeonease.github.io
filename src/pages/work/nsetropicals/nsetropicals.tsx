@@ -42,6 +42,11 @@ export const NSETropicals = () => {
       imageOpacity={0.4}
     >
       <>
+        <ImageHeader
+          imageOpacity={0.1}
+          headerImageName={HeaderNames.Background}
+          headerName={<>Background</>}
+        />
         <div className={appStyles.textSection}>
           <ProjectDetailsTable details={projectDetails} />
         </div>
@@ -55,18 +60,6 @@ export const NSETropicals = () => {
             </p>
           </>
         </ProjectSection>
-        <ParallaxBanner
-          layers={[
-            {
-              image: `${require("../../../images/nsetropicals/imageheaders/plantsheader.jpg")}`,
-              speed: -20,
-            },
-          ]}
-          style={{
-            height: 520,
-            marginBottom: 30,
-          }}
-        ></ParallaxBanner>
         <ProjectSection header={<>Challenge</>} isLineHidden={true}>
           <>
             <p>
