@@ -71,7 +71,6 @@ export const DesignBySteeze = () => {
         </div>
         <ImageHeader
           imageOpacity={0.3}
-          color="#ffffff"
           imageSrc={require("../../../images/designbysteeze/imageheaders/thebirdofparadise.jpg")}
           headerName={
             <>
@@ -83,10 +82,9 @@ export const DesignBySteeze = () => {
         <ProjectSection header={<>&ldquo;The Hiring Manager&rdquo;</>}>
           <>
             <div>
-              I read an interesting article during my bootcamp days that pSrovided so much insight
-              on potential user groups who would swing by and skim our portfolios. I decided to
-              build a proto-persona to help remind me of the user group looking through my
-              portfolio.
+              I read an interesting article during my bootcamp days that provided so much insight on
+              potential user groups who would swing by and skim our portfolios. I decided to build a
+              proto-persona to help remind me of the user group looking through my portfolio.
             </div>
             <img
               className={css(appStyles.fullWidthProjectImage, appStyles.noMarginBottom)}
@@ -192,7 +190,6 @@ export const DesignBySteeze = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.3}
-          color="#ffffff"
           imageSrc={require("../../../images/designbysteeze/imageheaders/dahlia.jpg")}
           headerName={
             <>
@@ -320,7 +317,6 @@ export const DesignBySteeze = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.3}
-          color="#ffffff"
           imageSrc={require("../../../images/designbysteeze/imageheaders/theEndForNow.jpg")}
           headerName={<>The End... For Now</>}
         />

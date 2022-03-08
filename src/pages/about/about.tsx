@@ -5,7 +5,7 @@ import { HLogo } from "../../components/HLogo/HLogo";
 
 import styles from "./About.module.scss";
 import appStyles from "../../css/App.module.scss";
-import aboutbg from "../../images/aboutbg.jpg";
+import aboutbg from "./images/aboutbg.jpg";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";

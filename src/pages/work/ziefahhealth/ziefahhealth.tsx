@@ -4,7 +4,7 @@ import { ProjectPage } from "../../../components/ProjectPage/ProjectPage";
 import { ProjectSection } from "../../../components/ProjectPage/ProjectSection/ProjectSection";
 import { IProjectDetails } from "../../../components/ProjectPage/ProjectDetailsTable/IProjectDetails";
 import { ProjectDetailsTable } from "../../../components/ProjectPage/ProjectDetailsTable/ProjectDetailsTable";
-import { ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHeader";
+import { HeaderNames, ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHeader";
 
 import appStyles from "../../../css/App.module.scss";
 import { ParallaxBanner } from "react-scroll-parallax";
@@ -97,8 +97,7 @@ export const ZiefahHealth = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.1}
-          color="#000"
-          imageSrc={require("../../../images/careercafe/imageheaders/discover.jpg")}
+          headerImageName={HeaderNames.Discover}
           headerName={<>Discover</>}
         />
         <ProjectSection header={<>Dealing with Constraints</>}>
@@ -267,8 +266,7 @@ export const ZiefahHealth = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.1}
-          color="#000"
-          imageSrc={require("../../../images/nsetropicals/imageheaders/define.jpg")}
+          headerImageName={HeaderNames.Define}
           headerName={<>Define</>}
         />
         <ProjectSection header={<>Meet Yara &amp; Aasim</>}>
@@ -361,8 +359,7 @@ export const ZiefahHealth = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.3}
-          color="#000"
-          imageSrc={require("../../../images/nsetropicals/imageheaders/develop.jpg")}
+          headerImageName={HeaderNames.Develop}
           headerName={<>Develop</>}
         />
         <ProjectSection header={<>User Flow</>}>
@@ -460,8 +457,7 @@ export const ZiefahHealth = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.3}
-          color="#000"
-          imageSrc={require("../../../images/nsetropicals/imageheaders/iterate.jpg")}
+          headerImageName={HeaderNames.Iterate}
           headerName={<>Iterate</>}
         />
         <ProjectSection header={<>Refine</>} isLineHidden>
@@ -523,8 +519,7 @@ export const ZiefahHealth = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.1}
-          color="#000"
-          imageSrc={require("../../../images/nsetropicals/imageheaders/deliver.jpg")}
+          headerImageName={HeaderNames.Deliver}
           headerName={<>Deliver</>}
         />
         <ProjectSection header={<>Introducing Ziefah Health</>} isLineHidden={true}>
@@ -551,9 +546,8 @@ export const ZiefahHealth = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.1}
-          color="#000"
-          imageSrc={require("../../../images/ziefahhealth/imageheaders/movingforward.jpg")}
-          headerName={<>Moving Forward</>}
+          headerImageName={HeaderNames.TheFuture}
+          headerName={<>The Future</>}
         />
         <ProjectSection header={<>Next Steps</>}>
           <>

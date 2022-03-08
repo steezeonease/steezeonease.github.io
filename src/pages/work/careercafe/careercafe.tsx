@@ -4,11 +4,10 @@ import { ProjectPage } from "../../../components/ProjectPage/ProjectPage";
 import { ProjectSection } from "../../../components/ProjectPage/ProjectSection/ProjectSection";
 import { IProjectDetails } from "../../../components/ProjectPage/ProjectDetailsTable/IProjectDetails";
 import { ProjectDetailsTable } from "../../../components/ProjectPage/ProjectDetailsTable/ProjectDetailsTable";
-import { ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHeader";
+import { HeaderNames, ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHeader";
 import { css } from "@fluentui/utilities";
 
 import appStyles from "../../../css/App.module.scss";
-import { ParallaxBanner } from "react-scroll-parallax";
 
 export const CareerCafe = () => {
   const projectDetails: IProjectDetails = {
@@ -50,35 +49,15 @@ export const CareerCafe = () => {
       imageOpacity={0.5}
     >
       <>
+        <ImageHeader
+          imageOpacity={0.1}
+          headerImageName={HeaderNames.Background}
+          headerName={<>Background</>}
+        />
         <div className={appStyles.textSection}>
           <ProjectDetailsTable details={projectDetails} />
         </div>
         <Ellipsis />
-        <ProjectSection isLineHidden>
-          <>
-            <p className={appStyles.noMarginTop}>
-              My role as planning lead was to ensure timeliness of delivering our product. During
-              the 2 week design sprint I facilitated meetings, managed timelines, prioritized tasks,
-              and helped create this application utilizing the double diamond design process.
-            </p>
-            <p>
-              It was a pleasure to work with these delightful individuals and I'd do it all over
-              again.
-            </p>
-          </>
-        </ProjectSection>
-        <ParallaxBanner
-          layers={[
-            {
-              image: `${require("../../../images/careercafe/imageheaders/careercafehighway.jpg")}`,
-              speed: -20,
-            },
-          ]}
-          style={{
-            height: 520,
-            marginBottom: 30,
-          }}
-        ></ParallaxBanner>
         <ProjectSection header={<>Challenge</>} isLineHidden={true}>
           <>
             <p>
@@ -93,8 +72,7 @@ export const CareerCafe = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.1}
-          color="#000"
-          imageSrc={require("../../../images/careercafe/imageheaders/discover.jpg")}
+          headerImageName={HeaderNames.Discover}
           headerName={<>Discover</>}
         />
         <ProjectSection header={<>Empathizing with Users</>} isLineHidden>
@@ -260,8 +238,7 @@ export const CareerCafe = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.1}
-          color="#000"
-          imageSrc={require("../../../images/nsetropicals/imageheaders/define.jpg")}
+          headerImageName={HeaderNames.Define}
           headerName={<>Define</>}
         />
         <ProjectSection header={<>I'd Like to Introduce Sebas &amp; Vanessa</>}>
@@ -363,8 +340,7 @@ export const CareerCafe = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.1}
-          color="#000"
-          imageSrc={require("../../../images/nsetropicals/imageheaders/develop.jpg")}
+          headerImageName={HeaderNames.Develop}
           headerName={<>Develop</>}
         />
         <ProjectSection header={<>Vanessa's User Flow</>}>
@@ -443,8 +419,7 @@ export const CareerCafe = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.1}
-          color="#000"
-          imageSrc={require("../../../images/nsetropicals/imageheaders/iterate.jpg")}
+          headerImageName={HeaderNames.Iterate}
           headerName={<>Iterate</>}
         />
         <ProjectSection header={<>Test Test Test</>} isLineHidden>
@@ -472,8 +447,7 @@ export const CareerCafe = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.1}
-          color="#000"
-          imageSrc={require("../../../images/nsetropicals/imageheaders/deliver.jpg")}
+          headerImageName={HeaderNames.Deliver}
           headerName={<>Deliver</>}
         />
         <ProjectSection header={<>Introducing careercafé</>} isLineHidden>
@@ -500,8 +474,7 @@ export const CareerCafe = () => {
         </ProjectSection>
         <ImageHeader
           imageOpacity={0.1}
-          color="#000"
-          imageSrc={require("../../../images/ziefahhealth/imageheaders/movingforward.jpg")}
+          headerImageName={HeaderNames.TheFuture}
           headerName={<>The Future</>}
         />
         <ProjectSection header={<>Next Steps</>}>
