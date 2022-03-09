@@ -254,7 +254,7 @@ export const DesignBySteeze = () => {
             <SpeechBubble isCentered>
               It helps to hand off designs that are pixel perfect. Try and get the alignment exact.
             </SpeechBubble>
-            <img src={require("./images/husband.jpg").default} alt="Husband" />
+            <img src={require("./images/husband.jpg")} alt="Husband" />
             <p>
               As you can read, working with a developer has helped me consider points of design that
               I've never thought about before; these are lessons or skills you don't learn in
@@ -377,10 +377,8 @@ export const DesignBySteeze = () => {
               look forward to working with all types of developers to strengthen my skills in
               collaboration.
             </p>
-            <p>
-              For now, I hope you enjoyed the "final" version of my portfolio.
-              <p>Hannah and Eddie out (mic drop).</p>
-            </p>
+            <p>For now, I hope you enjoyed the "final" version of my portfolio.</p>
+            <p>Hannah and Eddie out (mic drop).</p>
             <img
               className={appStyles.fullWidthProjectImage}
               alt={"Portfolio"}
