@@ -26,19 +26,19 @@ export const LaptopCarousel: React.FC<ICarouselProps> = (props: ICarouselProps) 
 
   return (
     <div className={styles.root}>
-      <MacbookPro width={"100%"}>
-        <Carousel
-          className={styles.carousel}
-          autoPlay={true}
-          showStatus={false}
-          infiniteLoop={true}
-          interval={3000}
-          showArrows={false}
-          renderThumbs={undefined}
-        >
-          {renderedCarousel}
-        </Carousel>
-      </MacbookPro>
+      <Carousel
+        className={styles.carousel}
+        autoPlay={true}
+        showStatus={false}
+        infiniteLoop={true}
+        interval={3000}
+        showArrows={false}
+        renderThumbs={undefined}
+      >
+        {renderedCarousel}
+      </Carousel>
+      {/* <MacbookPro width={"100%"}>
+      </MacbookPro> */}
     </div>
   );
 };

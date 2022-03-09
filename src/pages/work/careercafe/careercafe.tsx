@@ -1,18 +1,14 @@
 import React from "react";
+import { css } from "@fluentui/utilities";
 import { Ellipsis } from "../../../components/ProjectPage/ellipsis/ellipsis";
 import { ProjectPage } from "../../../components/ProjectPage/ProjectPage";
 import { ProjectSection } from "../../../components/ProjectPage/ProjectSection/ProjectSection";
 import { IProjectDetails } from "../../../components/ProjectPage/ProjectDetailsTable/IProjectDetails";
 import { ProjectDetailsTable } from "../../../components/ProjectPage/ProjectDetailsTable/ProjectDetailsTable";
 import { HeaderNames, ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHeader";
-import { css } from "@fluentui/utilities";
-import * as images from "./images/index";
 
 import appStyles from "../../../css/App.module.scss";
-import {
-  IImage,
-  LaptopCarousel,
-} from "../../../components/ProjectPage/LaptopCarousel/LaptopCarousel";
+import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
 
 export const CareerCafe = () => {
   const projectDetails: IProjectDetails = {
@@ -46,41 +42,6 @@ export const CareerCafe = () => {
     },
   };
 
-  const galleryImages: IImage[] = [
-    {
-      imagePath: images.homepage,
-      altText: "Homepage",
-    },
-    {
-      imagePath: images.careers,
-      altText: "Careers",
-    },
-    {
-      imagePath: images.careers2,
-      altText: "Careers",
-    },
-    {
-      imagePath: images.assessments,
-      altText: "Assessments",
-    },
-    {
-      imagePath: images.mentors,
-      altText: "Mentors",
-    },
-    {
-      imagePath: images.mentors2,
-      altText: "Mentors",
-    },
-    {
-      imagePath: images.onboarding,
-      altText: "Onboarding",
-    },
-    {
-      imagePath: images.onboarding2,
-      altText: "onboarding",
-    },
-  ];
-
   return (
     <ProjectPage
       projectName="careercafé"
@@ -89,7 +50,7 @@ export const CareerCafe = () => {
       imageOpacity={0.5}
     >
       <>
-        <LaptopCarousel images={galleryImages} />
+        <VideoPlayer videoSrc={require("./videos/careercafe.mp4")} />
         <ImageHeader
           imageOpacity={0.1}
           headerImageName={HeaderNames.Background}

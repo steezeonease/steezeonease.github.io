@@ -4,11 +4,12 @@ import { ProjectPage } from "../../../components/ProjectPage/ProjectPage";
 import { ProjectSection } from "../../../components/ProjectPage/ProjectSection/ProjectSection";
 import { IProjectDetails } from "../../../components/ProjectPage/ProjectDetailsTable/IProjectDetails";
 import { ProjectDetailsTable } from "../../../components/ProjectPage/ProjectDetailsTable/ProjectDetailsTable";
-import { ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHeader";
+import { HeaderNames, ImageHeader } from "../../../components/ProjectPage/ImageHeader/ImageHeader";
 
 import appStyles from "../../../css/App.module.scss";
 import styles from "./designbysteeze.module.scss";
 import { css } from "@fluentui/react/lib/Utilities";
+import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
 
 export const DesignBySteeze = () => {
   const projectDetails: IProjectDetails = {
@@ -44,6 +45,12 @@ export const DesignBySteeze = () => {
       imageOpacity={0.4}
     >
       <>
+        <VideoPlayer videoSrc={require("./videos/designbysteezeprototype.mp4")} />
+        <ImageHeader
+          imageOpacity={0.1}
+          headerImageName={HeaderNames.Background}
+          headerName={<>Background</>}
+        />
         <div className={appStyles.textSection}>
           <ProjectDetailsTable details={projectDetails} />
         </div>

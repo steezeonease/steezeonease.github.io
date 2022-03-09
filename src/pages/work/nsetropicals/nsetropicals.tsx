@@ -9,11 +9,7 @@ import { HeaderNames, ImageHeader } from "../../../components/ProjectPage/ImageH
 import appStyles from "../../../css/App.module.scss";
 import { css } from "@fluentui/utilities";
 
-import * as images from "./images";
-import {
-  IImage,
-  LaptopCarousel,
-} from "../../../components/ProjectPage/LaptopCarousel/LaptopCarousel";
+import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
 
 export const NSETropicals = () => {
   const projectDetails: IProjectDetails = {
@@ -39,25 +35,6 @@ export const NSETropicals = () => {
     },
   };
 
-  const galleryImages: IImage[] = [
-    {
-      imagePath: images.image1,
-      altText: "",
-    },
-    {
-      imagePath: images.image2,
-      altText: "",
-    },
-    {
-      imagePath: images.image3,
-      altText: "",
-    },
-    {
-      imagePath: images.image4,
-      altText: "",
-    },
-  ];
-
   return (
     <ProjectPage
       projectName="NSE Tropicals"
@@ -66,7 +43,8 @@ export const NSETropicals = () => {
       imageOpacity={0.4}
     >
       <>
-        <LaptopCarousel images={galleryImages} />
+        <VideoPlayer videoSrc={require("./videos/nsetropicalsvideo.mp4")} />
+        {/* <LaptopCarousel images={galleryImages} /> */}
         <ImageHeader
           imageOpacity={0.1}
           headerImageName={HeaderNames.Background}

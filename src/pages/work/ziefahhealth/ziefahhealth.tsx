@@ -8,9 +8,7 @@ import { HeaderNames, ImageHeader } from "../../../components/ProjectPage/ImageH
 
 import appStyles from "../../../css/App.module.scss";
 import { css } from "@fluentui/utilities";
-import { IPhoneCarousel } from "../../../components/ProjectPage/IPhoneCarousel/IPhoneCarousel";
-import * as images from "./images/index";
-import { IImage } from "../../../components/ProjectPage/LaptopCarousel/LaptopCarousel";
+import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
 
 export const ZiefahHealth = () => {
   const projectDetails: IProjectDetails = {
@@ -46,52 +44,6 @@ export const ZiefahHealth = () => {
     },
   };
 
-  const galleryImages: IImage[] = [
-    {
-      imagePath: images.image1,
-      altText: "Homepage",
-    },
-    {
-      imagePath: images.image2,
-      altText: "Careers",
-    },
-    {
-      imagePath: images.image3,
-      altText: "Careers",
-    },
-    {
-      imagePath: images.image4,
-      altText: "Assessments",
-    },
-    {
-      imagePath: images.image5,
-      altText: "Mentors",
-    },
-    {
-      imagePath: images.image6,
-      altText: "Mentors",
-    },
-    {
-      imagePath: images.image7,
-      altText: "Onboarding",
-    },
-    {
-      imagePath: images.image8,
-      altText: "onboarding",
-    },
-    {
-      imagePath: images.image9,
-      altText: "onboarding",
-    },
-    {
-      imagePath: images.image10,
-      altText: "onboarding",
-    },
-    {
-      imagePath: images.image11,
-      altText: "onboarding",
-    },
-  ];
   return (
     <ProjectPage
       projectName="Ziefah Health"
@@ -100,7 +52,7 @@ export const ZiefahHealth = () => {
       imageOpacity={0.4}
     >
       <>
-        <IPhoneCarousel images={galleryImages} />
+        <VideoPlayer maxWidth={420} videoSrc={require("./videos/Ziefah video.mp4")} />
         <ImageHeader
           imageOpacity={0.1}
           headerImageName={HeaderNames.Background}
