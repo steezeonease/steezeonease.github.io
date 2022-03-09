@@ -19,6 +19,7 @@ import reportWebVitals from "./reportWebVitals";
 import { ParallaxProvider } from "react-scroll-parallax";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "html5-device-mockups/dist/device-mockups.min.css";
+import "react-medium-image-zoom/dist/styles.css";
 
 ReactDOM.render(
   <React.StrictMode>

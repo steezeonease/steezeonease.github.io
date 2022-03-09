@@ -1,7 +1,14 @@
+$bgColor: #f3cf82;
+
 .root {
   padding: 16px 24px 24px 24px;
   background-color: #f3cf82;
   max-width: 420px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 30px;
   margin: 40px 0 60px;
   position: relative;
@@ -11,19 +18,21 @@
   }
 
   &:before {
-    content: "";
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
+    border-left: 1.5vh solid transparent;
+    border-right: 1.5vh solid transparent;
+    border-top: 8vh solid #f3cf82;
     position: absolute;
-    border-left: 24px solid #f3cf82;
-    border-right: 12px solid transparent;
-    border-top: 12px solid #f3cf82;
-    border-bottom: 20px solid transparent;
-    left: 32px;
-    bottom: -24px;
+    top: 25%;
+    left: -1%;
+    transform: rotate(70deg);
+    content: "";
+    z-index: -1;
   }
 
   p {
+    margin-bottom: 0;
     &:first-of-type {
       margin-top: 0;
     }

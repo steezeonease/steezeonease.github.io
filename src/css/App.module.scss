@@ -165,6 +165,12 @@ p {
   justify-content: space-between;
 }
 
+.flexCentered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .flexThird {
   flex: 0 0 36%;
 }

@@ -8,6 +8,7 @@ import { HeaderNames, ImageHeader } from "../../../components/ProjectPage/ImageH
 
 import appStyles from "../../../css/App.module.scss";
 import { css } from "@fluentui/utilities";
+import Zoom from "react-medium-image-zoom";
 import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
 import { YellowButton } from "../../../components/YellowButton/YellowButton";
 import { SpeechBubble } from "../../../components/SpeechBubble/SpeechBubble";
@@ -115,11 +116,13 @@ export const ZiefahHealth = () => {
               us tremendously in learning about the challenges and barriers people faced.
             </p>
             <p>We ended up interviewing 4 people and received survey data from 16 participants.</p>
-            <img
-              className={appStyles.fullWidthProjectImage}
-              alt={"Affinity map"}
-              src={require("../../../images/ziefahhealth/affinitymap.jpg")}
-            />
+            <Zoom>
+              <img
+                className={appStyles.fullWidthProjectImage}
+                alt={"Affinity map"}
+                src={require("../../../images/ziefahhealth/affinitymap.jpg")}
+              />
+            </Zoom>
             <div className={appStyles.quote}>
               “What qualities did you look for when searching for a therapist?”
             </div>
@@ -244,11 +247,15 @@ export const ZiefahHealth = () => {
               a Muslim therapist. So we dug into some platforms to gain inspiration and learn areas
               of weakness.
             </p>
-            <img
-              className={appStyles.threeQuarterWidthProjectImage}
-              alt="Comparative Analysis"
-              src={require("../../../images/ziefahhealth/comparativeanalysis.jpg")}
-            />
+            <div className={appStyles.flexCentered}>
+              <Zoom>
+                <img
+                  className={appStyles.threeQuarterWidthProjectImage}
+                  alt="Comparative Analysis"
+                  src={require("../../../images/ziefahhealth/comparativeanalysis.jpg")}
+                />
+              </Zoom>
+            </div>
             <p>
               We also researched and tested out other mobile applications where they had the feature
               of meeting an in house therapist as this was something that the client eventually
@@ -341,15 +348,17 @@ export const ZiefahHealth = () => {
               map to understand her pain points and frustrations when trying to find a Muslim
               therapist through a Google search.
             </p>
-            <img
-              className={css(
-                appStyles.noMarginTop,
-                appStyles.fullWidthProjectImage,
-                appStyles.noMarginBottom
-              )}
-              alt="User journey map"
-              src={require("../../../images/ziefahhealth/userjourneymap.jpg")}
-            />
+            <Zoom>
+              <img
+                className={css(
+                  appStyles.noMarginTop,
+                  appStyles.fullWidthProjectImage,
+                  appStyles.noMarginBottom
+                )}
+                alt="User journey map"
+                src={require("../../../images/ziefahhealth/userjourneymap.jpg")}
+              />
+            </Zoom>
           </>
         </ProjectSection>
         <ProjectSection header={<>Defining the Core Problem</>} isLineHidden={true}>
@@ -386,15 +395,17 @@ export const ZiefahHealth = () => {
               If a user would then like to schedule a free consultation or a full therapy session,
               they would be required to purchase a plan.
             </p>
-            <img
-              alt="User flow"
-              className={css(
-                appStyles.noMarginTop,
-                appStyles.fullWidthProjectImage,
-                appStyles.noMarginBottom
-              )}
-              src={require("../../../images/ziefahhealth/userflow.jpg")}
-            />
+            <Zoom>
+              <img
+                alt="User flow"
+                className={css(
+                  appStyles.noMarginTop,
+                  appStyles.fullWidthProjectImage,
+                  appStyles.noMarginBottom
+                )}
+                src={require("../../../images/ziefahhealth/userflow.jpg")}
+              />
+            </Zoom>
           </>
         </ProjectSection>
         <ProjectSection header={<>Sketching Solutions</>}>
@@ -463,9 +474,13 @@ export const ZiefahHealth = () => {
               comfortability.
             </p>
             <img
-              className={css(appStyles.noMarginTop, appStyles.fullWidthProjectImage)}
+              className={css(
+                appStyles.noMarginTop,
+                appStyles.fullWidthProjectImage,
+                appStyles.dropShadow
+              )}
               alt={"Moodboard"}
-              src={require("../../../images/ziefahhealth/moodboard.jpg")}
+              src={require("./images/moodboard.jpg")}
             />
           </>
         </ProjectSection>
@@ -569,7 +584,7 @@ export const ZiefahHealth = () => {
             Along with delivering the MVP to the client, we also attached a style guide for her
             future developers to reference.
             <img
-              className={appStyles.fullWidthProjectImage}
+              className={css(appStyles.fullWidthProjectImage, appStyles.dropShadow)}
               alt={"Style guide"}
               src={require("./images/styleguide.jpg")}
             />

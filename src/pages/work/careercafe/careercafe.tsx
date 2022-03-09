@@ -121,7 +121,7 @@ export const CareerCafe = () => {
                   <div className={appStyles.quote}>
                     “Looking back, what would you have been useful when making a career change?”
                   </div>
-                  <SpeechBubble>
+                  <SpeechBubble isCentered>
                     It would have been eye opening to find a career that matched well with my
                     skills.
                     <br />I would have then been more open and confident in switching careers.
@@ -129,7 +129,7 @@ export const CareerCafe = () => {
                   <div className={appStyles.quote}>
                     “Do you prefer human interaction or digital tools?”
                   </div>
-                  <SpeechBubble>
+                  <SpeechBubble isCentered>
                     I prefer human interaction. As a minority, I had a Latino professor who
                     instilled a mindset that I can accomplish anything regardless of my background
                     and that is what kept me going. He was a mentor to me.
