@@ -58,6 +58,11 @@ export const ZiefahHealth = () => {
           <YellowButton
             className={appStyles.viewPrototypeButton}
             text={"View Full Prototype"}
+            iconProps={{
+              imageProps: {
+                src: require("../../../images/figma.svg").default,
+              },
+            }}
             linkTo={
               "https://www.figma.com/proto/iQEXe7GhUi5C3GtBiIQovb/Ziefah-Health?kind=&node-id=374%3A12077&page-id=374%3A10481&scaling=scale-down&starting-point-node-id=374%3A12077&viewport=241%2C48%2C0.08"
             }

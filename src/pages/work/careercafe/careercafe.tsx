@@ -62,8 +62,7 @@ export const CareerCafe = () => {
             text={"View Full Prototype"}
             iconProps={{
               imageProps: {
-                src: figma,
-                // src: "https://via.placeholder.com/24x24",
+                src: require("../../../images/figma.svg").default,
               },
             }}
             linkTo={

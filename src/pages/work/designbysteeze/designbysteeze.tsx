@@ -12,8 +12,6 @@ import { css } from "@fluentui/react/lib/Utilities";
 import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
 import { YellowButton } from "../../../components/YellowButton/YellowButton";
 
-import figma from "../../../images/figma.svg";
-
 export const DesignBySteeze = () => {
   const projectDetails: IProjectDetails = {
     team: [
@@ -55,7 +53,7 @@ export const DesignBySteeze = () => {
             text={"View Full Prototype"}
             iconProps={{
               imageProps: {
-                src: figma,
+                src: require("../../../images/figma.svg").default,
               },
             }}
             linkTo={
