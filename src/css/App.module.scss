@@ -99,6 +99,8 @@
   height: 0;
   overflow: hidden;
   margin-bottom: 40px;
+  border: 1px solid #bbb;
+  box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);
 
   iframe {
     position: absolute;
@@ -121,4 +123,25 @@
 p {
   margin-block-start: 40px;
   margin-block-end: 40px;
+}
+
+.viewPrototypeButton {
+  margin: 0 auto 40px;
+}
+
+.videoContainer {
+  text-align: center;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.speechBubbleContainer {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
 }

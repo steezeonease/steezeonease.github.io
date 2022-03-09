@@ -9,6 +9,8 @@ import { HeaderNames, ImageHeader } from "../../../components/ProjectPage/ImageH
 
 import appStyles from "../../../css/App.module.scss";
 import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
+import { YellowButton } from "../../../components/YellowButton/YellowButton";
+import { SpeechBubble } from "../../../components/SpeechBubble/SpeechBubble";
 
 export const CareerCafe = () => {
   const projectDetails: IProjectDetails = {
@@ -50,9 +52,18 @@ export const CareerCafe = () => {
       imageOpacity={0.5}
     >
       <>
-        <VideoPlayer videoSrc={require("./videos/careercafe.mp4")} />
+        <div className={appStyles.videoContainer}>
+          <VideoPlayer videoSrc={require("./videos/careercafe.mp4")} />
+          <YellowButton
+            className={appStyles.viewPrototypeButton}
+            text={"View Full Prototype"}
+            linkTo={
+              "https://www.figma.com/proto/9Hm7GXgphRMNURK4avCxZd/careercaf%C3%A9-(Copy)?node-id=2%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2"
+            }
+          />
+        </div>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0.0}
           headerImageName={HeaderNames.Background}
           headerName={<>Background</>}
         />
@@ -73,7 +84,7 @@ export const CareerCafe = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0.0}
           headerImageName={HeaderNames.Discover}
           headerName={<>Discover</>}
         />
@@ -94,11 +105,36 @@ export const CareerCafe = () => {
               used during their career switch (human interaction vs digital tools), aspects they
               valued in a career, and any challenges they faced throughout their personal journey.
             </p>
-            <img
-              className={appStyles.fullWidthProjectImage}
-              alt={"Information gathering with users"}
-              src={require("../../../images/careercafe/discover.jpg")}
-            />
+            <ProjectSection isLineHidden>
+              <>
+                <div
+                  style={{
+                    padding: "20px 0",
+                  }}
+                >
+                  <div className={appStyles.quote}>
+                    “Looking back, what would you have been useful when making a career change?”
+                  </div>
+                  <div className={appStyles.speechBubbleContainer}>
+                    <SpeechBubble>
+                      It would have been eye opening to find a career that matched well with my
+                      skills.
+                      <br />I would have then been more open and confident in switching careers.
+                    </SpeechBubble>
+                  </div>
+                  <div className={appStyles.quote}>
+                    “Do you prefer human interaction or digital tools?”
+                  </div>
+                  <div className={appStyles.speechBubbleContainer}>
+                    <SpeechBubble>
+                      I prefer human interaction. As a minority, I had a Latino professor who
+                      instilled a mindset that I can accomplish anything regardless of my background
+                      and that is what kept me going. He was a mentor to me.
+                    </SpeechBubble>
+                  </div>
+                </div>
+              </>
+            </ProjectSection>
             <p>
               After conducting interviews, we created an affinity map to help us organize our
               research in a digestible way. We sorted them in trends of: resources used in career
@@ -239,7 +275,7 @@ export const CareerCafe = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0.0}
           headerImageName={HeaderNames.Define}
           headerName={<>Define</>}
         />
@@ -341,7 +377,7 @@ export const CareerCafe = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Develop}
           headerName={<>Develop</>}
         />
@@ -420,7 +456,7 @@ export const CareerCafe = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Iterate}
           headerName={<>Iterate</>}
         />
@@ -448,7 +484,7 @@ export const CareerCafe = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Deliver}
           headerName={<>Deliver</>}
         />
@@ -475,7 +511,7 @@ export const CareerCafe = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.TheFuture}
           headerName={<>The Future</>}
         />

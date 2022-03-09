@@ -47,7 +47,7 @@ export const DesignBySteeze = () => {
       <>
         <VideoPlayer videoSrc={require("./videos/designbysteezeprototype.mp4")} />
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Background}
           headerName={<>Background</>}
         />
@@ -196,8 +196,8 @@ export const DesignBySteeze = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.3}
-          imageSrc={require("../../../images/designbysteeze/imageheaders/dahlia.jpg")}
+          imageOpacity={0.2}
+          headerImageName={HeaderNames.Define}
           headerName={
             <>
               <div>Iteration 2</div>
@@ -323,9 +323,9 @@ export const DesignBySteeze = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.3}
-          imageSrc={require("../../../images/designbysteeze/imageheaders/theEndForNow.jpg")}
-          headerName={<>The End... For Now</>}
+          imageOpacity={0}
+          headerImageName={HeaderNames.TheFuture}
+          headerName={<>The Future</>}
         />
         <ProjectSection isLineHidden={true}>
           <>

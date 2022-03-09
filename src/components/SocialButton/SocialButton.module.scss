@@ -1,0 +1,23 @@
+.root {
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgWrapper {
+  height: 45px;
+  width: 45px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 25px;
+  }
+}

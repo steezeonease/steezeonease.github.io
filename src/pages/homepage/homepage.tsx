@@ -7,6 +7,7 @@ import appStyles from "../../css/App.module.scss";
 import dahlia from "../../images/dahlia-cropped.png";
 import { Parallax } from "react-scroll-parallax";
 import { css } from "@fluentui/react/lib/Utilities";
+import { SocialButton } from "../../components/SocialButton/SocialButton";
 
 export const Homepage: React.FC = () => {
   return (
@@ -21,17 +22,12 @@ export const Homepage: React.FC = () => {
             UX Designer | <span className={styles.location}>Seattle, WA</span>
           </h2>
           <div className={styles.socialContainer}>
-            <a
-              className={styles.socialLink}
-              href="https://www.linkedin.com/in/steeze/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <SocialButton href="https://www.linkedin.com/in/steeze/">
               <img src={linkedInLogo} alt="LinkedIn icon" />
-            </a>
-            <a className={styles.socialLink} href="mailto: designbysteeze@gmail.com">
+            </SocialButton>
+            <SocialButton href="mailto: designbysteeze@gmail.com">
               <img src={mail} alt="Mail icon" />
-            </a>
+            </SocialButton>
           </div>
         </div>
         <Parallax className={styles.testing} speed={-20}>

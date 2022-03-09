@@ -44,9 +44,8 @@ export const NSETropicals = () => {
     >
       <>
         <VideoPlayer videoSrc={require("./videos/nsetropicalsvideo.mp4")} />
-        {/* <LaptopCarousel images={galleryImages} /> */}
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Background}
           headerName={<>Background</>}
         />
@@ -78,7 +77,7 @@ export const NSETropicals = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Discover}
           headerName={<>Discover</>}
         />
@@ -194,7 +193,7 @@ export const NSETropicals = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Define}
           headerName={<>Define</>}
         />
@@ -301,7 +300,7 @@ export const NSETropicals = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Develop}
           headerName={<>Develop</>}
         />
@@ -330,7 +329,7 @@ export const NSETropicals = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Iterate}
           headerName={<>Iterate</>}
         />
@@ -355,7 +354,7 @@ export const NSETropicals = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Deliver}
           headerName={<>Deliver</>}
         />
@@ -430,7 +429,7 @@ export const NSETropicals = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.TheFuture}
           headerName={<>The Future</>}
         />

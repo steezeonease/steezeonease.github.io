@@ -9,6 +9,7 @@ import { HeaderNames, ImageHeader } from "../../../components/ProjectPage/ImageH
 import appStyles from "../../../css/App.module.scss";
 import { css } from "@fluentui/utilities";
 import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
+import { YellowButton } from "../../../components/YellowButton/YellowButton";
 
 export const ZiefahHealth = () => {
   const projectDetails: IProjectDetails = {
@@ -52,9 +53,18 @@ export const ZiefahHealth = () => {
       imageOpacity={0.4}
     >
       <>
-        <VideoPlayer maxWidth={420} videoSrc={require("./videos/Ziefah video.mp4")} />
+        <div className={appStyles.videoContainer}>
+          <VideoPlayer maxWidth={420} videoSrc={require("./videos/Ziefah video.mp4")} />
+          <YellowButton
+            className={appStyles.viewPrototypeButton}
+            text={"View Full Prototype"}
+            linkTo={
+              "https://www.figma.com/proto/iQEXe7GhUi5C3GtBiIQovb/Ziefah-Health?kind=&node-id=374%3A12077&page-id=374%3A10481&scaling=scale-down&starting-point-node-id=374%3A12077&viewport=241%2C48%2C0.08"
+            }
+          />
+        </div>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Background}
           headerName={<>Background</>}
         />
@@ -77,7 +87,7 @@ export const ZiefahHealth = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Discover}
           headerName={<>Discover</>}
         />
@@ -246,7 +256,7 @@ export const ZiefahHealth = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Define}
           headerName={<>Define</>}
         />
@@ -339,7 +349,7 @@ export const ZiefahHealth = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.3}
+          imageOpacity={0}
           headerImageName={HeaderNames.Develop}
           headerName={<>Develop</>}
         />
@@ -437,7 +447,7 @@ export const ZiefahHealth = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.3}
+          imageOpacity={0}
           headerImageName={HeaderNames.Iterate}
           headerName={<>Iterate</>}
         />
@@ -499,7 +509,7 @@ export const ZiefahHealth = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.Deliver}
           headerName={<>Deliver</>}
         />
@@ -526,7 +536,7 @@ export const ZiefahHealth = () => {
           </>
         </ProjectSection>
         <ImageHeader
-          imageOpacity={0.1}
+          imageOpacity={0}
           headerImageName={HeaderNames.TheFuture}
           headerName={<>The Future</>}
         />

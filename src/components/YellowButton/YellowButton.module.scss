@@ -1,0 +1,19 @@
+.root {
+  padding: 10px 50px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f3cf82;
+  border: 0;
+  color: #000;
+
+  &:hover {
+    background-color: #e9c372;
+    border: 0;
+    color: #000;
+  }
+
+  &:active {
+    background-color: #e0ba67;
+    border: 0;
+    color: #000;
+  }
+}
