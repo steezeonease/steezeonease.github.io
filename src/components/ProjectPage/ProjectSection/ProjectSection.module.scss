@@ -10,10 +10,18 @@
   @include ms-screen-md-down {
     font-size: 36px;
   }
+
+  @include ms-screen-sm-down {
+    font-size: 26px;
+  }
 }
 
 .sectionContent {
   font-size: 24px;
   line-height: 26px;
   font-weight: 300;
+
+  @include ms-screen-md-down {
+    font-size: 20px;
+  }
 }

@@ -120,6 +120,10 @@
   margin-bottom: 0;
 }
 
+.paddingBottom {
+  padding-bottom: 40px;
+}
+
 p {
   margin-block-start: 40px;
   margin-block-end: 40px;
@@ -132,6 +136,15 @@ p {
   :global(.ms-Icon) {
     height: auto;
     margin-right: 10px;
+
+    @include ms-screen-md-down {
+      height: 24px;
+
+      :global(.ms-Image-image),
+      :global(.ms-Image) {
+        height: 100%;
+      }
+    }
   }
 }
 
@@ -146,8 +159,16 @@ p {
   margin-top: 16px;
 }
 
-.speechBubbleContainer {
+.centeredFlex {
   display: flex;
-  justify-content: center;
-  margin: 40px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexThird {
+  flex: 0 0 36%;
+}
+
+.arrowRight {
+  flex: 0 0 auto;
 }

@@ -11,6 +11,7 @@ import { css } from "@fluentui/utilities";
 
 import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
 import { YellowButton } from "../../../components/YellowButton/YellowButton";
+import { SpeechBubble } from "../../../components/SpeechBubble/SpeechBubble";
 
 export const NSETropicals = () => {
   const projectDetails: IProjectDetails = {
@@ -68,15 +69,6 @@ export const NSETropicals = () => {
           <ProjectDetailsTable details={projectDetails} />
         </div>
         <Ellipsis />
-        <ProjectSection isLineHidden>
-          <>
-            <p className={appStyles.noMarginTop}>
-              This was one of my earlier projects within a bootcamp setting. Since then my skills as
-              a UX Designer have grown tremendously. I will show you my redesign as a beginner
-              student as well as my designs towards the end of the bootcamp. Stay tuned to be wowed!
-            </p>
-          </>
-        </ProjectSection>
         <ProjectSection header={<>Challenge</>} isLineHidden={true}>
           <>
             <p>
@@ -148,44 +140,43 @@ export const NSETropicals = () => {
               }}
               src={require("../../../images/nsetropicals/sortby.jpg")}
             />
-            <img
-              className={appStyles.autoWidthImageNotCentered}
-              alt={"User feedback"}
-              src={require("../../../images/nsetropicals/ratingsinterview2.jpg")}
-            />
-            <Ellipsis />
+            <SpeechBubble isCentered>
+              I have no idea why this is a selection when there are no ratings.
+            </SpeechBubble>
             <img
               className={css(appStyles.dropShadow, appStyles.autoWidthImage)}
               alt={"User feedback"}
               src={require("../../../images/nsetropicals/restocks.jpg")}
             />
-            <img
-              className={appStyles.autoWidthImageNotCentered}
-              alt={"User feedback"}
-              src={require("../../../images/nsetropicals/restocksinterview.jpg")}
-            />
+            <SpeechBubble isCentered>
+              Gift cards shouldn't be in restocks since there is an unlimited amount.
+            </SpeechBubble>
+            <SpeechBubble isCentered>
+              Why is there an out of stock item mixed in with the restock items?
+            </SpeechBubble>
             <Ellipsis />
             <img
               className={appStyles.autoWidthImage}
               alt={"User feedback"}
               src={require("../../../images/nsetropicals/testimonialsscreenshot.jpg")}
             />
-            <img
-              className={appStyles.autoWidthImageNotCentered}
-              alt={"User feedback"}
-              src={require("../../../images/nsetropicals/testimonialsinterview.jpg")}
-            />
+
+            <SpeechBubble isCentered>
+              It's not credible at all, there is no reference to who wrote the reviews. This is
+              pointless.
+            </SpeechBubble>
+            <SpeechBubble isCentered>Maybe at least associate a name to the quotes?</SpeechBubble>
             <Ellipsis />
             <img
               className={appStyles.autoWidthImage}
               alt={"User feedback"}
               src={require("../../../images/nsetropicals/welcometothejungle.jpg")}
             />
-            <img
-              className={appStyles.autoWidthImageNotCentered}
-              alt={"User feedback"}
-              src={require("../../../images/nsetropicals/welcometothejunglefeedback.jpg")}
-            />
+            <SpeechBubble isCentered>I am going to try to find the book in the shop.</SpeechBubble>
+            <SpeechBubble isCentered>
+              You wouldn't even know she had a book available to pre-order unless you clicked
+              through the navigation bar.
+            </SpeechBubble>
             <img
               className={appStyles.fullWidthProjectImage}
               alt={"Affinity map"}
@@ -357,15 +348,15 @@ export const NSETropicals = () => {
               redesign so much better. Also please note that during this time, we did not learn
               about typography or color in bootcamp.
             </p>
-            <img
-              alt="Feedback from classmates"
-              className={appStyles.fullWidthProjectImage}
-              src={require("../../../images/nsetropicals/feedback.jpg")}
-              style={{
-                maxWidth: 420,
-                width: "100%",
-              }}
-            />
+            <div className={appStyles.paddingBottom}>
+              <SpeechBubble isCentered>
+                There were some UI design elements that still seemed dated or confusing even (to me
+                at least), like the striped home page.
+              </SpeechBubble>
+              <SpeechBubble isCentered>
+                My only feedback would be to maybe strengthen the design on figma during the break!
+              </SpeechBubble>
+            </div>
           </>
         </ProjectSection>
         <ImageHeader
@@ -397,13 +388,13 @@ export const NSETropicals = () => {
         </ProjectSection>
         <ProjectSection header={<>Redesigning My Redesign</>} isLineHidden>
           <>
-            <div className={appStyles.projectSmallerHeader}>Home Page</div>
             <p>
               It's time to finally reveal the pages! I will show you a series of images: left being
               my first version and right being my final redesign. You can clearly see my visual
               progression which I was hesitant to show at first but now I feel the importantance of
               showcasing my growth.
             </p>
+            <div className={appStyles.projectSmallerHeader}>Home Page</div>
             <img
               alt="Redesign concepts for home page"
               className={appStyles.fullWidthProjectImage}

@@ -7,6 +7,7 @@
   img {
     margin-right: 40px;
     max-width: 396px;
+    width: 100%;
   }
 
   @include ms-screen-lg-down {
@@ -30,12 +31,31 @@
 .selfieContainer {
   width: 100%;
   max-width: 415px;
-  height: 415px;
   margin: 40px auto;
   border-radius: 50%;
   overflow: hidden;
 
   img {
     width: 100%;
+  }
+}
+
+.flexSide {
+  display: flex;
+  gap: 60px;
+
+  @include ms-screen-lg-down {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.flexVertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include ms-screen-lg-down {
+    align-items: center;
   }
 }

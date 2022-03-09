@@ -12,8 +12,6 @@ import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPl
 import { YellowButton } from "../../../components/YellowButton/YellowButton";
 import { SpeechBubble } from "../../../components/SpeechBubble/SpeechBubble";
 
-import figma from "../../../images/figma.svg";
-
 export const CareerCafe = () => {
   const projectDetails: IProjectDetails = {
     team: [
@@ -123,23 +121,19 @@ export const CareerCafe = () => {
                   <div className={appStyles.quote}>
                     “Looking back, what would you have been useful when making a career change?”
                   </div>
-                  <div className={appStyles.speechBubbleContainer}>
-                    <SpeechBubble>
-                      It would have been eye opening to find a career that matched well with my
-                      skills.
-                      <br />I would have then been more open and confident in switching careers.
-                    </SpeechBubble>
-                  </div>
+                  <SpeechBubble>
+                    It would have been eye opening to find a career that matched well with my
+                    skills.
+                    <br />I would have then been more open and confident in switching careers.
+                  </SpeechBubble>
                   <div className={appStyles.quote}>
                     “Do you prefer human interaction or digital tools?”
                   </div>
-                  <div className={appStyles.speechBubbleContainer}>
-                    <SpeechBubble>
-                      I prefer human interaction. As a minority, I had a Latino professor who
-                      instilled a mindset that I can accomplish anything regardless of my background
-                      and that is what kept me going. He was a mentor to me.
-                    </SpeechBubble>
-                  </div>
+                  <SpeechBubble>
+                    I prefer human interaction. As a minority, I had a Latino professor who
+                    instilled a mindset that I can accomplish anything regardless of my background
+                    and that is what kept me going. He was a mentor to me.
+                  </SpeechBubble>
                 </div>
               </>
             </ProjectSection>
@@ -484,11 +478,43 @@ export const CareerCafe = () => {
               We refined and iterated our design based on the feedback that was given through
               usability testing.
             </p>
-            <img
-              alt="User feedback from testing"
-              className={appStyles.fullWidthProjectImage}
-              src={require("../../../images/careercafe/userfeedback.jpg")}
-            />
+            <div className={appStyles.centeredFlex}>
+              <SpeechBubble className={appStyles.flexThird}>
+                I'm confused after clicking “Go to Dashboard.”
+              </SpeechBubble>
+              <img
+                className={appStyles.arrowRight}
+                src={require("../../../images/arrowright.svg").default}
+                alt=""
+              />
+              <div className={appStyles.flexThird}>
+                User now needs to register before booking a session.
+              </div>
+            </div>
+            <div className={appStyles.centeredFlex}>
+              <SpeechBubble className={appStyles.flexThird}>
+                I don't like the sliding “Next” button for booking a mentor. I feel like the button
+                should be visible at all times.{" "}
+              </SpeechBubble>
+              <img
+                className={appStyles.arrowRight}
+                src={require("../../../images/arrowright.svg").default}
+                alt=""
+              />
+              <div className={appStyles.flexThird}>Added instant animation to scroll down.</div>
+            </div>
+            <div className={appStyles.centeredFlex}>
+              <SpeechBubble className={appStyles.flexThird}>
+                One of the answer choices should have a netural answer choice for people who are
+                unsure about their skills.{" "}
+              </SpeechBubble>
+              <img
+                className={appStyles.arrowRight}
+                src={require("../../../images/arrowright.svg").default}
+                alt=""
+              />
+              <div className={appStyles.flexThird}>Added a neutral answer option.</div>
+            </div>
           </>
         </ProjectSection>
         <ImageHeader
@@ -515,6 +541,24 @@ export const CareerCafe = () => {
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGohLRf2xv3xHkl9K1tJ85D%2Fcareercaf%25C3%25A9%3Fpage-id%3D0%253A1%26node-id%3D2%253A2%26viewport%3D241%252C48%252C0.14%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A2"
                 allowFullScreen
               ></iframe>
+            </div>
+            <div
+              style={{
+                textAlign: "center",
+              }}
+            >
+              <YellowButton
+                className={appStyles.viewPrototypeButton}
+                text={"View Full Prototype"}
+                iconProps={{
+                  imageProps: {
+                    src: require("../../../images/figma.svg").default,
+                  },
+                }}
+                linkTo={
+                  "https://www.figma.com/proto/9Hm7GXgphRMNURK4avCxZd/careercaf%C3%A9-(Copy)?node-id=2%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2"
+                }
+              />
             </div>
           </>
         </ProjectSection>

@@ -1,3 +1,5 @@
+@import "../../../css/common";
+
 .root {
   height: 288px;
   position: relative;
@@ -9,6 +11,11 @@
   font-size: 72px;
   font-family: "Crimson Pro";
   color: #fff;
+
+  @include ms-screen-sm-down {
+    font-size: 36px;
+    height: 120px;
+  }
 }
 
 .bannerRoot {

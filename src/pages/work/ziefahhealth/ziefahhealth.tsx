@@ -10,6 +10,7 @@ import appStyles from "../../../css/App.module.scss";
 import { css } from "@fluentui/utilities";
 import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
 import { YellowButton } from "../../../components/YellowButton/YellowButton";
+import { SpeechBubble } from "../../../components/SpeechBubble/SpeechBubble";
 
 export const ZiefahHealth = () => {
   const projectDetails: IProjectDetails = {
@@ -119,11 +120,28 @@ export const ZiefahHealth = () => {
               alt={"Affinity map"}
               src={require("../../../images/ziefahhealth/affinitymap.jpg")}
             />
-            <img
-              className={css(appStyles.fullWidthProjectImage, appStyles.noMarginBottom)}
-              alt={"Phone conversation on therapist qualities"}
-              src={require("../../../images/ziefahhealth/textinterview.jpg")}
-            />
+            <div className={appStyles.quote}>
+              “What qualities did you look for when searching for a therapist?”
+            </div>
+            <SpeechBubble isCentered>
+              <p>
+                Sunni, Shia, Sufi, Ahmadi, etc- would like to know what kind of branch of Islam they
+                follow.
+              </p>
+              <p>
+                I wish they were culturally similar... sometimes I feel that I may do better with
+                one more culturally fit.
+              </p>
+            </SpeechBubble>
+            <SpeechBubble isCentered>I knew I wanted someone who looked like me.</SpeechBubble>
+            <SpeechBubble isCentered>
+              I wanted a therapist who would understand Hispanic culture because I felt like a lot
+              of my issues related to my relationship with my family.
+            </SpeechBubble>
+            <SpeechBubble isCentered>
+              Similar background of being an immigrant or understanding the struggles of being a
+              child of immigrants.
+            </SpeechBubble>
           </>
         </ProjectSection>
         <ProjectSection header={<>Key Takeaways</>}>
@@ -470,42 +488,29 @@ export const ZiefahHealth = () => {
               <li>Favorite a matched therapist based on preferences</li>
               <li>Schedule a free consultation</li>
             </ul>
-            <img
-              className={appStyles.fullWidthProjectImage}
-              style={{
-                width: "auto",
-              }}
-              alt={"Usability interview"}
-              src={require("../../../images/ziefahhealth/interview1.jpg")}
-            />
+            <SpeechBubble isCentered>
+              Can you add a PayPal payment option so I don't have to get my card out?
+            </SpeechBubble>
+            <SpeechBubble isCentered>
+              The testimonials are a bit much now that it has come up 3 times.
+            </SpeechBubble>
             <img
               className={appStyles.autoWidthImage}
               alt={"Usability interview"}
               src={require("../../../images/ziefahhealth/paymentdetails.jpg")}
             />
-            <Ellipsis />
-            <img
-              className={css(appStyles.noMarginTop, appStyles.fullWidthProjectImage)}
-              style={{
-                width: "auto",
-              }}
-              alt={"Usability interview"}
-              src={require("../../../images/ziefahhealth/interview2.jpg")}
-            />
+            <SpeechBubble isCentered>
+              I feel like the dark mode messaging option is out of place.
+            </SpeechBubble>
             <img
               className={appStyles.autoWidthImage}
               alt={"Usability interview"}
               src={require("../../../images/ziefahhealth/messaging.jpg")}
             />
-            <Ellipsis />
-            <img
-              className={css(appStyles.noMarginTop, appStyles.fullWidthProjectImage)}
-              style={{
-                width: "auto",
-              }}
-              alt={"Usability interview"}
-              src={require("../../../images/ziefahhealth/interview3.jpg")}
-            />
+            <SpeechBubble isCentered>
+              Should have more than one path of scheduling besides only through message.{" "}
+            </SpeechBubble>
+
             <img
               className={appStyles.autoWidthImage}
               alt={"Usability interview"}
@@ -538,6 +543,36 @@ export const ZiefahHealth = () => {
                 allowFullScreen
               ></iframe>
             </div>
+
+            <div
+              style={{
+                textAlign: "center",
+              }}
+            >
+              <YellowButton
+                className={appStyles.viewPrototypeButton}
+                text={"View Full Prototype"}
+                iconProps={{
+                  imageProps: {
+                    src: require("../../../images/figma.svg").default,
+                  },
+                }}
+                linkTo={
+                  "https://www.figma.com/proto/iQEXe7GhUi5C3GtBiIQovb/Ziefah-Health?kind=&node-id=374%3A12077&page-id=374%3A10481&scaling=scale-down&starting-point-node-id=374%3A12077&viewport=241%2C48%2C0.08"
+                }
+              />
+            </div>
+          </>
+        </ProjectSection>
+        <ProjectSection header={<>Style Guide</>} isLineHidden>
+          <>
+            Along with delivering the MVP to the client, we also attached a style guide for her
+            future developers to reference.
+            <img
+              className={appStyles.fullWidthProjectImage}
+              alt={"Style guide"}
+              src={require("./images/styleguide.jpg")}
+            />
           </>
         </ProjectSection>
         <ImageHeader

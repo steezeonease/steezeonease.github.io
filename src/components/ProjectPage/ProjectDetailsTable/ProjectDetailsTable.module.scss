@@ -8,6 +8,7 @@
 
   @include ms-screen-md-down {
     display: grid;
+    font-size: 20px;
     grid-template-columns: 1fr 1fr;
   }
 }

@@ -11,6 +11,7 @@ import styles from "./designbysteeze.module.scss";
 import { css } from "@fluentui/react/lib/Utilities";
 import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
 import { YellowButton } from "../../../components/YellowButton/YellowButton";
+import { SpeechBubble } from "../../../components/SpeechBubble/SpeechBubble";
 
 export const DesignBySteeze = () => {
   const projectDetails: IProjectDetails = {
@@ -186,15 +187,31 @@ export const DesignBySteeze = () => {
           </>
         </ProjectSection>
         <ProjectSection header={<>What Do You Think?</>}>
-          <img
-            className={css(
-              appStyles.fullWidthProjectImage,
-              appStyles.noMarginTop,
-              appStyles.noMarginBottom
-            )}
-            alt={"Feedback from classmates"}
-            src={require("../../../images/designbysteeze/whatdoyouthink.jpg")}
-          />
+          <>
+            <div className={styles.flexSide}>
+              <div className={styles.flexVertical}>
+                <SpeechBubble className={appStyles.noMarginTop}>
+                  Love this quote!!!! Really adds a nice touch and it's true. Like how do you make
+                  bright colors go together so beautifully?!???
+                </SpeechBubble>
+                <SpeechBubble>The colors and imagery shows that you're approachable</SpeechBubble>
+                <SpeechBubble>
+                  Love the idea that you put "review" here. A great way to emphasize people who you
+                  are.
+                </SpeechBubble>
+                <SpeechBubble>
+                  This looks great! Bright and vibrant, great polish. Very professional look.
+                </SpeechBubble>
+              </div>
+              <div>
+                <img
+                  className={css(appStyles.smallerWidthProjectImage)}
+                  alt="home screenshot"
+                  src={require("./images/homescreenshot.jpg")}
+                />
+              </div>
+            </div>
+          </>
         </ProjectSection>
         <ProjectSection header={<>Develop?</>} isLineHidden>
           <>
@@ -227,15 +244,17 @@ export const DesignBySteeze = () => {
               himself so he didn't have much to say when I seeked direction. However, he did give me
               several pointers that were incredibly important for my second iteration.
             </p>
-            <img
-              className={css(
-                appStyles.fullWidthProjectImage,
-                appStyles.noMarginTop,
-                appStyles.noMarginBottom
-              )}
-              alt={"Conversation between me and my husband"}
-              src={require("../../../images/designbysteeze/convo.jpg")}
-            />
+            <SpeechBubble className={appStyles.noMarginTop} isCentered>
+              Take a look at parallax examples. That might be a cool flare to add.
+            </SpeechBubble>
+            <SpeechBubble isCentered>
+              Make sure to save all the assets when handing off this design.
+            </SpeechBubble>
+            <SpeechBubble isCentered>Have you considered responsive break points?</SpeechBubble>
+            <SpeechBubble isCentered>
+              It helps to hand off designs that are pixel perfect. Try and get the alignment exact.
+            </SpeechBubble>
+            <img src={require("./images/husband.jpg").default} alt="Husband" />
             <p>
               As you can read, working with a developer has helped me consider points of design that
               I've never thought about before; these are lessons or skills you don't learn in

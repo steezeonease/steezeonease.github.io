@@ -3,7 +3,12 @@
   background-color: #f3cf82;
   max-width: 420px;
   border-radius: 30px;
+  margin: 40px 0 60px;
   position: relative;
+
+  &.isCentered {
+    margin: 40px auto 60px;
+  }
 
   &:before {
     content: "";
@@ -16,5 +21,15 @@
     border-bottom: 20px solid transparent;
     left: 32px;
     bottom: -24px;
+  }
+
+  p {
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
