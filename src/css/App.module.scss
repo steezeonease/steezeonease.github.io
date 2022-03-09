@@ -127,6 +127,12 @@ p {
 
 .viewPrototypeButton {
   margin: 0 auto 40px;
+  height: auto;
+
+  :global(.ms-Icon) {
+    height: auto;
+    margin-right: 10px;
+  }
 }
 
 .videoContainer {

@@ -10,6 +10,9 @@ import appStyles from "../../../css/App.module.scss";
 import { css } from "@fluentui/utilities";
 
 import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
+import { YellowButton } from "../../../components/YellowButton/YellowButton";
+
+import figma from "../../../images/figma.svg";
 
 export const NSETropicals = () => {
   const projectDetails: IProjectDetails = {
@@ -43,7 +46,21 @@ export const NSETropicals = () => {
       imageOpacity={0.4}
     >
       <>
-        <VideoPlayer videoSrc={require("./videos/nsetropicalsvideo.mp4")} />
+        <div className={appStyles.videoContainer}>
+          <VideoPlayer videoSrc={require("./videos/nsetropicalsvideo.mp4")} />
+          <YellowButton
+            className={appStyles.viewPrototypeButton}
+            text={"View Full Prototype"}
+            iconProps={{
+              imageProps: {
+                src: figma,
+              },
+            }}
+            linkTo={
+              "https://www.figma.com/proto/9Tooj3JeRoRDX8vpUHPKuO/NSE-Tropicals-Prototype?page-id=0%3A1&node-id=308%3A73&viewport=241%2C48%2C0.17&scaling=scale-down&starting-point-node-id=308%3A73"
+            }
+          />
+        </div>
         <ImageHeader
           imageOpacity={0}
           headerImageName={HeaderNames.Background}
@@ -116,7 +133,7 @@ export const NSETropicals = () => {
             <p>
               These tests were done fully remote and I had the participants share their screen as
               they performed these tasks on the website so I could validate my assumptions as well
-              as understand further pain points.
+              as understand further pain points. Some tasks included:
             </p>
             <ul>
               <li>Find information about the site</li>

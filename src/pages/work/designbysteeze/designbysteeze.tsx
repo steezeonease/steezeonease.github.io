@@ -10,6 +10,9 @@ import appStyles from "../../../css/App.module.scss";
 import styles from "./designbysteeze.module.scss";
 import { css } from "@fluentui/react/lib/Utilities";
 import { VideoPlayer } from "../../../components/ProjectPage/VideoPlayer/VideoPlayer";
+import { YellowButton } from "../../../components/YellowButton/YellowButton";
+
+import figma from "../../../images/figma.svg";
 
 export const DesignBySteeze = () => {
   const projectDetails: IProjectDetails = {
@@ -45,7 +48,21 @@ export const DesignBySteeze = () => {
       imageOpacity={0.4}
     >
       <>
-        <VideoPlayer videoSrc={require("./videos/designbysteezeprototype.mp4")} />
+        <div className={appStyles.videoContainer}>
+          <VideoPlayer videoSrc={require("./videos/designbysteezeprototype.mp4")} />
+          <YellowButton
+            className={appStyles.viewPrototypeButton}
+            text={"View Full Prototype"}
+            iconProps={{
+              imageProps: {
+                src: figma,
+              },
+            }}
+            linkTo={
+              "https://www.figma.com/proto/gaSY7tumBMCHaDjNF54IUj/Portfolio?page-id=0%3A1&node-id=550%3A326&viewport=241%2C48%2C1&scaling=scale-down&starting-point-node-id=550%3A326"
+            }
+          />
+        </div>
         <ImageHeader
           imageOpacity={0}
           headerImageName={HeaderNames.Background}
