@@ -1,6 +1,6 @@
 import React from "react";
 import { PageContainer } from "../../components/PageComponents/PageContainer/pagecontainer";
-import { HeaderSize, HeaderText } from "../../components/ProjectPage/HeaderText/headertext";
+import { HeaderSize } from "../../components/ProjectPage/HeaderText/headertext";
 import { PageSection } from "../../components/PageComponents/ProjectSection/projectsection";
 import { TopTextHeader } from "../../components/TopTextHeader/toptextheader";
 import { PageParagraph } from "../../components/PageComponents/PageParagraph/PageParagraph";

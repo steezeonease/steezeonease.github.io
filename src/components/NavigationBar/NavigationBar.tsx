@@ -25,14 +25,16 @@ export const NavigationBar: React.FC = () => {
   return (
     <div className="flex justify-between my-20 mx-20">
       <div className="flex flex-col">
-        <div className="relative font-header text-3xl mb-4">
-          <img
-            className="absolute bottom-[calc(100%-15px)] left-0"
-            src={require("./images/monstera.svg").default}
-            alt=""
-          />
-          Hannah Yi
-        </div>
+        <Link className="mb-4" to="/">
+          <div className="relative font-header text-3xl">
+            <img
+              className="absolute bottom-[calc(100%-15px)] left-0"
+              src={require("./images/monstera.svg").default}
+              alt=""
+            />
+            Hannah Yi
+          </div>
+        </Link>
         <SocialBar />
       </div>
       <nav className="flex space-x-16 self-start">
