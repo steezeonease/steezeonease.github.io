@@ -6,10 +6,13 @@ import App from "./App";
 
 // Pages
 import { Homepage } from "./pages/homepage/homepage";
-import { Work } from "./pages/work/work";
-import { About } from "./pages/about/about";
+import { ZiefahHealth } from "./pages/ziefahhealth/ziefahhealth";
 
 import reportWebVitals from "./reportWebVitals";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "react-medium-image-zoom/dist/styles.css";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,8 +20,8 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Homepage />} />
-          <Route path="work" element={<Work />} />
-          <Route path="about" element={<About />} />
+          <Route path="work/ziefahhealth" element={<ZiefahHealth />} />
+          {/* <Route path="work/nsetropicals" element={<NSETropicals />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
