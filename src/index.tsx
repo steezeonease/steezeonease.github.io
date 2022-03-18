@@ -7,6 +7,7 @@ import App from "./App";
 // Pages
 import { Homepage } from "./pages/homepage/homepage";
 import { ZiefahHealth } from "./pages/ziefahhealth/ziefahhealth";
+import { About } from "./pages/about/about";
 
 import reportWebVitals from "./reportWebVitals";
 import "swiper/css";
@@ -20,6 +21,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Homepage />} />
+          <Route path="about" element={<About />} />
           <Route path="work/ziefahhealth" element={<ZiefahHealth />} />
           {/* <Route path="work/nsetropicals" element={<NSETropicals />} /> */}
         </Route>

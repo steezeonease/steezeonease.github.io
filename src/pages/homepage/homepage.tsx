@@ -1,14 +1,17 @@
 import React from "react";
+import { PageContainer } from "../../components/PageComponents/PageContainer/pagecontainer";
+import { TopTextHeader } from "../../components/TopTextHeader/toptextheader";
 import { ProjectCard } from "./projectcard/projectcard";
 
 export const Homepage: React.FC = () => {
   return (
-    <div className="text-center max-w-5xl self-center w-full flex flex-col justify-center">
-      <div className="font-body text-lg mb-5">UX Designer based in Seattle, WA</div>
-      <div className="font-header text-3xl mb-20 max-w-4xl self-center">
+    <PageContainer isMaxWidth={true}>
+      <TopTextHeader
+        subHeaderText="UX Designer based in Seattle, WA"
+        headerText="
         My joys in life is to leave a positive imprint by adding a touch of humananity to others'
-        daily life experiences.
-      </div>
+        daily life experiences."
+      />
       <ProjectCard
         backgroundColor="#DCE3FF"
         backgroundImgSrc={require("./images/ziefah_preview.png")}
@@ -23,6 +26,6 @@ export const Homepage: React.FC = () => {
         projectTagline="How might I redesign this site to better the shopping experience for fellow plant collectors?"
         linkToProject="/work/nsetropicals"
       />
-    </div>
+    </PageContainer>
   );
 };

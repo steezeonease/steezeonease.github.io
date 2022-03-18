@@ -1,10 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    colors: {
-      link: "#278eff",
-      linkHover: "#2769ff",
-    },
     extend: {
       fontFamily: {
         body: ['"Proxima Nova"'],
@@ -12,6 +8,10 @@ module.exports = {
       },
       aspectRatio: {
         projectCard: "477 / 169",
+      },
+      colors: {
+        link: "#278eff",
+        linkHover: "#2769ff",
       },
     },
   },

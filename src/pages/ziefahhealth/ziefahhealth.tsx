@@ -8,8 +8,8 @@ import { HeaderSize, HeaderText } from "../../components/ProjectPage/HeaderText/
 import { ProjectContainer } from "../../components/ProjectPage/ProjectContainer/projectcontainer";
 import { ProjectDetailsTable } from "../../components/ProjectPage/ProjectDetailsTable/projectdetailstable";
 import { ProjectIntro } from "../../components/ProjectPage/ProjectIntro/projectintro";
-import { ProjectParagraph } from "../../components/ProjectPage/ProjectParagraph/projectparagraph";
-import { ProjectSection } from "../../components/ProjectPage/ProjectSection/projectsection";
+import { PageParagraph } from "../../components/PageComponents/PageParagraph/PageParagraph";
+import { PageSection } from "../../components/PageComponents/ProjectSection/projectsection";
 import { PrototypeFrame } from "../../components/ProjectPage/PrototypeFrame/prototypeframe";
 import { Icon } from "@fluentui/react";
 
@@ -102,28 +102,28 @@ export const ZiefahHealth: React.FC = () => {
           },
         ]}
       />
-      <ProjectSection backgroundColor={ProjectSectionBG}>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Background">
+      <PageSection backgroundColor={ProjectSectionBG}>
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Background">
           In November 2018, Bilal tried to end his life. For years, Bilal struggled with anxiety and
           depression. However, due to shame and lack of resources he never got the help he needed.
           Muslim mental health is real and has been an ongoing challenge for too long as there lies
           stigma around mental health and the religion.
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Challenge">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Challenge">
           How might we make it easier for Muslim youth to access culturally fit therapists?
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Solution">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Solution">
           <div className="mb-4">
             Our team designed and created a mobile application where Muslim youth can find and
             connect with in house Muslim therapists based on their needs and preferences.
           </div>
           <div className="mb-4">Check out the clickable prototype below.</div>
           <PrototypeFrame src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQQXnt9NCVmrY9v8tIG1pCp%2FZiefah-Health-(Copy)%3Fpage-id%3D538%253A12600%26node-id%3D538%253A14230%26viewport%3D241%252C48%252C0.65%26scaling%3Dscale-down%26starting-point-node-id%3D538%253A14230" />
-        </ProjectParagraph>
-      </ProjectSection>
-      <ProjectSection>
+        </PageParagraph>
+      </PageSection>
+      <PageSection>
         <HeaderText headerSize={HeaderSize.large}>Discover</HeaderText>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Primary Research">
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Primary Research">
           I conducted primary research with both interviews and surveys to gain insight on Muslim
           experiences with mental health and therapy (testing plan&nbsp;
           <a
@@ -135,16 +135,16 @@ export const ZiefahHealth: React.FC = () => {
             here
           </a>
           ).
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.small} headerText="Objective">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.small} headerText="Objective">
           <ul className="list-disc list-inside">
             <li>Understand the needs and wants when searching for a therapist</li>
             <li>Learn about pain points, challenges, and frustrations when seeking therapy</li>
             <li>Discover current methods and resources when looking into therapy</li>
           </ul>
-        </ProjectParagraph>
+        </PageParagraph>
         <div className="flex space-x-28">
-          <ProjectParagraph headerSize={HeaderSize.small} headerText="User Interviews">
+          <PageParagraph headerSize={HeaderSize.small} headerText="User Interviews">
             <ul className="list-disc list-inside">
               <li>Method: Remote ZOOM calls</li>
               <li>Participants: 4</li>
@@ -152,18 +152,18 @@ export const ZiefahHealth: React.FC = () => {
               <li>Religion: Muslim, Catholic, Christian</li>
               <li>Duration: 15 - 20 mins</li>
             </ul>
-          </ProjectParagraph>
-          <ProjectParagraph headerSize={HeaderSize.small} headerText="Surveys">
+          </PageParagraph>
+          <PageParagraph headerSize={HeaderSize.small} headerText="Surveys">
             <ul className="list-disc list-inside">
               <li>Method: Google Surveys</li>
               <li>Participants: 12</li>
               <li>Age: Teens - 40+</li>
               <li>Religion: Muslim, Catholic, Christian, Jewish</li>
             </ul>
-          </ProjectParagraph>
+          </PageParagraph>
         </div>
         {/* ADD IN EMOJI STUFF HERE */}
-        <ProjectParagraph headerSize={HeaderSize.small} headerText="Research Synthesis">
+        <PageParagraph headerSize={HeaderSize.small} headerText="Research Synthesis">
           I transcribed the interview notes into Miro and then as a group we synthesized our
           findings by grouping them in trends (research findings documented{" "}
           <a
@@ -176,13 +176,13 @@ export const ZiefahHealth: React.FC = () => {
           </a>
           ).
           <img className="mx-auto" src={require("./images/affinitymap.jpg")} alt="Affinity map" />
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.small} headerText="Key Takeaways">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.small} headerText="Key Takeaways">
           The information that was presented to us was crucial in learning about challenges present
           in mental health. Regardless of needing to interview our targeted user group, we learned
           that mental health stigma and challenges were present everywhere.
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.small} headerText="Insights to Needs">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.small} headerText="Insights to Needs">
           <div className="flex flex-col items-center">
             <div>
               <div className="flex space-x-6">
@@ -219,12 +219,12 @@ export const ZiefahHealth: React.FC = () => {
               </div>
             </div>
           </div>
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Secondary Research">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Secondary Research">
           Next, I conducted a series of secondary research about the Muslim religion, direct and
           indirect competition, and comparative features.
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.small} headerText="Muslim Religion">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.small} headerText="Muslim Religion">
           <div className="mb-4">
             It was very important that we as a team learned about the Muslim religion to design
             mindful and inclusive. Through my research, I learned that:
@@ -241,8 +241,8 @@ export const ZiefahHealth: React.FC = () => {
               community
             </li>
           </ul>
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.small} headerText="Competitive Analysis">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.small} headerText="Competitive Analysis">
           <div className="mb-4">
             I looked into direct competitors that existed to see areas of growth for us at Ziefah
             Health.
@@ -277,35 +277,35 @@ export const ZiefahHealth: React.FC = () => {
               alt="Competitive analysis table"
             />
           </div>
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.small} headerText="Comparative Analysis">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.small} headerText="Comparative Analysis">
           I then dug into researching features that the client proposed to be implemented into our
           design.
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.small} headerText="Bumble">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.small} headerText="Bumble">
           <div className="mb-8">
             Our client was inspired by the matching and swiping features of this dating application.
           </div>
           <img className="w-full" src={require("./images/bumble.jpg")} alt="Bumble app" />
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.small} headerText="Flo">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.small} headerText="Flo">
           <div className="mb-8">
             Our client was inspired by the symptom tracker while we were inspired by the interactive
             questionnaire of this menstural tracking application.
           </div>
           <img className="w-full" src={require("./images/flo.jpg")} alt="Flo app" />
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.small} headerText="MuzMatch">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.small} headerText="MuzMatch">
           <div className="mb-8">
             One of the interview participants mentioned this dating application for Muslims. This
             helped us with UX content strategy when designing Ziefah Health.
           </div>
           <img className="w-full" src={require("./images/muzmatch.jpg")} alt="Muz Match app" />
-        </ProjectParagraph>
-      </ProjectSection>
-      <ProjectSection backgroundColor={ProjectSectionBG}>
+        </PageParagraph>
+      </PageSection>
+      <PageSection backgroundColor={ProjectSectionBG}>
         <HeaderText headerSize={HeaderSize.large}>Define</HeaderText>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Personas">
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Personas">
           <div className="mb-4">
             I created two proto-personas to ensure we were designing with our targeted users in
             mind.
@@ -327,36 +327,36 @@ export const ZiefahHealth: React.FC = () => {
             src={require("./images/aasimpersona.jpg")}
             alt="Aasim's persona"
           />
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Empathy Map">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Empathy Map">
           <div className="mb-4">
             I had our team collaborate in this exercise so we could reflect and share our views on
             what we thought our targeted user would be thinking, doing, seeing, and feeling when
             considering therapy.
           </div>
           <img src={require("./images/feelingtable.png")} alt="Empathy Map" />
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="User Journey Map">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.medium} headerText="User Journey Map">
           <Zoom>
             <img src={require("./images/userjourneymap.png")} alt="User journey map" />
           </Zoom>
-        </ProjectParagraph>
+        </PageParagraph>
         <div className="mb-8">
           <HeaderText headerSize={HeaderSize.medium}>Define</HeaderText>
         </div>
-        <ProjectParagraph headerSize={HeaderSize.small} headerText="Problem Statement">
+        <PageParagraph headerSize={HeaderSize.small} headerText="Problem Statement">
           Muslim youth need a better way to find and connect with Muslim therapists to feel
           connected and understood.
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.small} headerText="Solution">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.small} headerText="Solution">
           A mobile application where Muslim youth can express their concerns, feelings, and needs so
           they can find a therapist who's best fit. The application will also provide a safe private
           space where Muslims can connect with their matched therapist via chat and video.
-        </ProjectParagraph>
-      </ProjectSection>
-      <ProjectSection>
+        </PageParagraph>
+      </PageSection>
+      <PageSection>
         <HeaderText headerSize={HeaderSize.large}>Develop</HeaderText>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="User Flow">
+        <PageParagraph headerSize={HeaderSize.medium} headerText="User Flow">
           <div className="mb-4">
             I created a user flow based on the clients business model - a free trial and payment
             plan.
@@ -364,14 +364,14 @@ export const ZiefahHealth: React.FC = () => {
           <Zoom>
             <img src={require("./images/userflow.png")} alt="User flow" />
           </Zoom>
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Sketches">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Sketches">
           <div className="mb-4">
             These are my early sketches of the onboarding process of Ziefah Health.
           </div>
           <img src={require("./images/sketches.png")} alt="App sketches" />
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Wireframes">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Wireframes">
           <div className="mb-4">From our sketches, I created mid-fidelity wireframes.</div>
           <div className="mb-8">
             These screens are what the user sees when opening up Ziefah Health for the first time.
@@ -428,8 +428,8 @@ export const ZiefahHealth: React.FC = () => {
             These are the screens the users see when getting matched with therapists.
           </div>
           <img src={require("./images/appscreenshots.jpg")} alt="App screenshots" />
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Moodboard">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Moodboard">
           <div className="flex space-x-8">
             <img
               className="w-3/5 shadow-md"
@@ -444,11 +444,11 @@ export const ZiefahHealth: React.FC = () => {
               <div>Blue reminded us of health, relaxation, and calmness. </div>
             </div>
           </div>
-        </ProjectParagraph>
-      </ProjectSection>
-      <ProjectSection backgroundColor={ProjectSectionBG}>
+        </PageParagraph>
+      </PageSection>
+      <PageSection backgroundColor={ProjectSectionBG}>
         <HeaderText headerSize={HeaderSize.large}>Iterate</HeaderText>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Usability Testing">
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Usability Testing">
           <div className="mb-4">
             Prior to building our high-fidelity prototype, we wanted to gain feedback and insights
             to improve our design before building out our final application.
@@ -524,11 +524,11 @@ export const ZiefahHealth: React.FC = () => {
               alt="Payment details after"
             />
           </div>
-        </ProjectParagraph>
-      </ProjectSection>
-      <ProjectSection>
+        </PageParagraph>
+      </PageSection>
+      <PageSection>
         <HeaderText headerSize={HeaderSize.large}>Deliver</HeaderText>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Prototype">
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Prototype">
           <div className="mb-4">Here is our final MVP prototype we delivered to our client.</div>
           <div className="mb-4">
             Ziefah Health is a place where Muslim youth can find and connect with therapists based
@@ -537,18 +537,18 @@ export const ZiefahHealth: React.FC = () => {
           </div>
           <div className="mb-4">Clickable prototype below.</div>
           <PrototypeFrame src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQQXnt9NCVmrY9v8tIG1pCp%2FZiefah-Health-(Copy)%3Fpage-id%3D538%253A12600%26node-id%3D538%253A14230%26viewport%3D241%252C48%252C0.65%26scaling%3Dscale-down%26starting-point-node-id%3D538%253A14230" />
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Style Guide">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Style Guide">
           <div className="mb-4">
             Along with delivering our MVP, we formulated a style guide for future developers to
             reference.
           </div>
           <img className="shadow-md" src={require("./images/styleguide.png")} alt="Style guide" />
-        </ProjectParagraph>
-      </ProjectSection>
-      <ProjectSection backgroundColor={ProjectSectionBG}>
+        </PageParagraph>
+      </PageSection>
+      <PageSection backgroundColor={ProjectSectionBG}>
         <HeaderText headerSize={HeaderSize.large}>Reflection</HeaderText>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Next Steps">
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Next Steps">
           <div className="mb-4">
             We're excited to see the future of Ziefah Health. However, there is always room for
             improvement and work to be done.
@@ -559,8 +559,8 @@ export const ZiefahHealth: React.FC = () => {
             <li>Build out the therapist side of the application</li>
             <li>Review language and content with therapists</li>
           </ul>
-        </ProjectParagraph>
-        <ProjectParagraph headerSize={HeaderSize.medium} headerText="Looking Back">
+        </PageParagraph>
+        <PageParagraph headerSize={HeaderSize.medium} headerText="Looking Back">
           <div className="mb-4">
             I've learned and grown tremendously as a UX Designer on this project. As I managed
             communication and led meetings, I learned how to maintain a client relationship to
@@ -582,8 +582,8 @@ export const ZiefahHealth: React.FC = () => {
             increase access of mental health services within the Muslim community.
           </div>
           <img src={require("./images/teamphoto.jpg")} alt="Team" />
-        </ProjectParagraph>
-      </ProjectSection>
+        </PageParagraph>
+      </PageSection>
     </ProjectContainer>
   );
 };

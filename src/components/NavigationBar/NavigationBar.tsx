@@ -40,7 +40,7 @@ export const NavigationBar: React.FC = () => {
           return (
             <Link
               key={idx}
-              className="text-lg hover:text-shadow focus:outline-1 focus:outline-black focus:outline focus:outline-offset-8"
+              className="text-lg hover:text-shadow focus-visible:outline-1 focus-visible:outline-black focus-visible:outline focus-visible:outline-offset-8"
               to={navLink.toUrl}
             >
               {navLink.text}

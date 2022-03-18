@@ -14,7 +14,7 @@ export const ProjectCard: React.FC<IProjectCardProps> = (props: IProjectCardProp
 
   return (
     <>
-      <div className="max-w-full mb-28">
+      <div className="max-w-full w-full mb-28">
         <Link
           className="group aspect-projectCard flex justify-center items-center rounded-md shadow-md mb-7 relative"
           style={{

@@ -4,10 +4,10 @@ interface IProjectSectionProps {
   backgroundColor?: string;
 }
 
-export const ProjectSection = (props: React.PropsWithChildren<IProjectSectionProps>) => {
+export const PageSection = (props: React.PropsWithChildren<IProjectSectionProps>) => {
   const { backgroundColor, children } = props;
 
-  const contentElement = <div className="max-w-5xl text-left w-full mt-8 mb-4">{children}</div>;
+  const contentElement = <div className="max-w-5xl text-left w-full mt-8">{children}</div>;
 
   if (backgroundColor) {
     return (
