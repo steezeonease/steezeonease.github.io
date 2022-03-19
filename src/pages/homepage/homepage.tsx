@@ -26,6 +26,13 @@ export const Homepage: React.FC = () => {
         projectTagline="How might I redesign this site to better the shopping experience for fellow plant collectors?"
         linkToProject="/work/nsetropicals"
       />
+      <ProjectCard
+        backgroundColor="#FFE9D8"
+        backgroundImgSrc={require("./images/nse_preview.png")}
+        projectName="designbysteeze"
+        projectTagline="How might a husband and wife collaborate to build something beauitful?"
+        linkToProject="/work/designbysteeze"
+      />
     </PageContainer>
   );
 };

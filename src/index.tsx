@@ -9,6 +9,7 @@ import { Homepage } from "./pages/homepage/homepage";
 import { About } from "./pages/about/about";
 import { ZiefahHealth } from "./pages/ziefahhealth/ziefahhealth";
 import { NSETropicals } from "./pages/nsetropicals/nsetropicals";
+import { DesignBySteeze } from "./pages/designbysteeze/designbysteeze";
 
 import reportWebVitals from "./reportWebVitals";
 import "swiper/css";
@@ -34,6 +35,7 @@ ReactDOM.render(
             <Route path="about" element={<About />} />
             <Route path="work/ziefahhealth" element={<ZiefahHealth />} />
             <Route path="work/nsetropicals" element={<NSETropicals />} />
+            <Route path="work/designbysteeze" element={<DesignBySteeze />} />
           </Route>
         </Routes>
       </ScrollToTopOnRoute>

@@ -29,7 +29,7 @@ export const NSETropicals: React.FC = () => {
         tables={[
           {
             header: "My Role",
-            items: ["UX Research", "UX/UI Deesign"],
+            items: ["UX Research", "UX/UI Design"],
           },
           {
             header: "Team",
