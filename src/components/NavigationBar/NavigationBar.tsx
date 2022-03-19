@@ -15,7 +15,7 @@ export const NavigationBar: React.FC = () => {
 
   const navLinks: INavLink[] = [
     {
-      toUrl: "/work",
+      toUrl: "/",
       text: "Work",
     },
     {

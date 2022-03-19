@@ -25,11 +25,11 @@ export const ProjectCard: React.FC<IProjectCardProps> = (props: IProjectCardProp
         >
           <div className="absolute inset-0 hidden bg-white opacity-20 group-hover:block group-focus:block" />
           <img
-            className="my-10 group-hover:blur-lg group-focus:blur-lg"
+            className="my-10 blur-none scale-100 transition-[filter] transition-[transform] group-hover:blur-lg group-hover:scale-105 group-focus:blur-lg group-focus:scale-105"
             src={backgroundImgSrc}
             alt={`${projectName} preview`}
           />
-          <div className="hidden bg-black text-white absolute px-6 py-2 rounded-sm group-hover:inline-flex group-focus:inline-flex">
+          <div className="opacity-0 transition-[opacity] bg-black text-white absolute px-6 py-2 rounded-sm group-hover:opacity-100 group-focus:opacity-100">
             View Project
           </div>
         </Link>
