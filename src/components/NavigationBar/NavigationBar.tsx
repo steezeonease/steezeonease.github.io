@@ -102,9 +102,9 @@ export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationB
       )}
     >
       <div className={css("ml-6 sticky top-[32px] z-40 sm:hidden h-0")}>
-        {isMenuOpen && <div className="backdrop-blur-sm fixed inset-0 pointer-events-none z-50 " />}
+        {isMenuOpen && <div className="backdrop-blur-sm fixed inset-0 z-50 " />}
         <div
-          className={css("fixed inset-0 pointer-events-none opacity-0 transition-[opacity] z-50 ", {
+          className={css("fixed inset-0 opacity-0 transition-[opacity] z-50 ", {
             "backdrop-blur-md bg-white opacity-60": isMenuOpen,
           })}
         />
