@@ -1,7 +1,6 @@
 import React from "react";
 
 import Zoom from "react-medium-image-zoom";
-import { Icon } from "@fluentui/react";
 
 import { HeaderSize, HeaderText } from "../../components/ProjectPage/HeaderText/headertext";
 import { ProjectContainer } from "../../components/ProjectPage/ProjectContainer/projectcontainer";
@@ -9,7 +8,6 @@ import { ProjectDetailsTable } from "../../components/ProjectPage/ProjectDetails
 import { ProjectIntro } from "../../components/ProjectPage/ProjectIntro/projectintro";
 import { PageParagraph } from "../../components/PageComponents/PageParagraph/PageParagraph";
 import { PageSection } from "../../components/PageComponents/ProjectSection/projectsection";
-import { PrototypeFrame } from "../../components/ProjectPage/PrototypeFrame/prototypeframe";
 import { ImageTextSideBySide } from "../../components/ProjectPage/ImageTextSideBySide/ImageTextSideBySide";
 
 export const DesignBySteeze: React.FC = () => {

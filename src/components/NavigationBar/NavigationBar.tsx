@@ -3,7 +3,6 @@ import { css, IconButton } from "@fluentui/react";
 import { Async } from "@fluentui/utilities";
 import { Link, useLocation } from "react-router-dom";
 import { SocialBar } from "../SocialBar/socialbar";
-import { PADDING } from "../../utilities/responsive";
 
 interface INavLink {
   toUrl: string;
@@ -18,11 +17,10 @@ interface INavigationBarProps {
 export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationBarProps) => {
   const [hasShadow, setHasShadow] = React.useState<boolean>(false);
   const { isMenuOpen, setMenuStatus } = props;
-
-  const async = new Async();
   const location = useLocation();
+  const async = new Async();
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     if (isMenuOpen) {
       setMenuStatus(false);
     }
@@ -85,15 +83,11 @@ export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationB
         }
       )}
     >
-      <div
-        className={css("ml-6 sm:hidden", {
-          "h-0": !isMenuOpen,
-        })}
-      >
-        {isMenuOpen && <div className="backdrop-blur-sm fixed z-40 inset-0 pointer-events-none" />}
+      <div className={css("ml-6 sticky top-[32px] z-40 sm:hidden h-0")}>
+        {isMenuOpen && <div className="backdrop-blur-sm fixed inset-0 pointer-events-none z-50 " />}
         <div
-          className={css("fixed z-40 inset-0 pointer-events-none opacity-0 transition-[opacity]", {
-            ["backdrop-blur-md bg-white opacity-60"]: isMenuOpen,
+          className={css("fixed inset-0 pointer-events-none opacity-0 transition-[opacity] z-50 ", {
+            "backdrop-blur-md bg-white opacity-60": isMenuOpen,
           })}
         />
         <IconButton
@@ -107,16 +101,14 @@ export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationB
           </nav>
         )}
       </div>
-      <div className="flex flex-col items-center mt-8 sm:justify-start sm:mt-0">
+      <div className="flex flex-col mt-8 sm:justify-start items-center sm:mt-0 sm:items-start">
         <Link className="mb-4" to="/">
-          <div className="relative font-header text-3xl">
+          <div className="relative z-20 font-header text-3xl">
             <img
-              className={css(
-                "absolute bottom-[calc(100%-25px)] left-0 transition-opacity opacity-100",
-                {
-                  "opacity-0": hasShadow,
-                }
-              )}
+              className={css("absolute bottom-[calc(100%-25px)] left-0 transition-opacity", {
+                "opacity-0": hasShadow,
+                "opacity-100": !hasShadow,
+              })}
               src={require("./images/monstera.svg").default}
               alt=""
             />
