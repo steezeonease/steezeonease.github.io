@@ -252,12 +252,10 @@ export const ZiefahHealth: React.FC = () => {
             I looked into direct competitors that existed to see areas of growth for us at Ziefah
             Health.
           </div>
-          <div className="flex justify-between space-x-12">
-            <img
-              className="basis-1/2"
-              src={require("./images/comparativeanalysis.jpg")}
-              alt="Competitive analysis"
-            />
+          <div className="flex justify-between flex-col mb-8 sm:flex-row sm:space-x-12 sm:mb-0">
+            <div className="basis-1/2 mb-4 sm:mb-0">
+              <img src={require("./images/comparativeanalysis.jpg")} alt="Competitive analysis" />
+            </div>
             <div className="flex flex-col justify-center space-y-6 basis-1/2">
               <img className="h-16" src={require("./images/lightbulb.svg").default} alt="" />
               <p>
@@ -266,7 +264,7 @@ export const ZiefahHealth: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-between space-x-12">
+          <div className="flex justify-between flex-col-reverse sm:flex-row sm:space-x-12">
             <div className="flex flex-col justify-center space-y-6 w-fit">
               <img className="h-16" src={require("./images/lightbulb.svg").default} alt="" />
               <p className="mb-4">These competitors do a wonderful job at:</p>
@@ -276,9 +274,8 @@ export const ZiefahHealth: React.FC = () => {
                 <li>Providing in house therapy</li>
               </ul>
             </div>
-            <div>
+            <div className="basis-1/2 mb-4 sm:mb-0">
               <img
-                className="basis-1/2"
                 src={require("./images/competitiveanalysistable.jpg")}
                 alt="Competitive analysis table"
               />

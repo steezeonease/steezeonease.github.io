@@ -146,7 +146,7 @@ export const DesignBySteeze: React.FC = () => {
             I then designed high-fidelity mockups in Figma with annotations to hand off to my
             husband along with assets.
           </div>
-          <div className="flex space-x-16 my-8 justify-between">
+          <div className="flex space-x-4 my-8 justify-between sm:space-x-16">
             <Zoom>
               <div>
                 <img
@@ -172,7 +172,7 @@ export const DesignBySteeze: React.FC = () => {
             mobile responsiveneness.
           </div>
           <div className="mb-4">Here&rsquo;s what I did different:</div>
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-outside ml-4">
             <li>
               Moved the header image so there wouldn&rsquo;t be a contrast issue (white text on
               white background)
@@ -182,25 +182,25 @@ export const DesignBySteeze: React.FC = () => {
             </li>
             <li>Created a hamburger menu for navigation</li>
           </ul>
-          <div className="flex justify-center mt-8 sm:space-x-32">
-            <Zoom>
-              <div>
+          <div className="flex justify-center mt-8 space-x-4 sm:space-x-32">
+            <div>
+              <Zoom>
                 <img
-                  className="max-w-[250px] shadow-md"
+                  className="max-w-[250px] w-full shadow-md"
                   src={require("./images/mobile.png")}
                   alt="Figma mobile mockup of my website"
                 />
-              </div>
-            </Zoom>
-            <Zoom>
-              <div>
+              </Zoom>
+            </div>
+            <div>
+              <Zoom>
                 <img
-                  className="max-w-[250px] shadow-md"
+                  className="max-w-[250px] w-full shadow-md"
                   src={require("./images/mobile2.png")}
                   alt="Figma mobile mockup of my website"
                 />
-              </div>
-            </Zoom>
+              </Zoom>
+            </div>
           </div>
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Feedback">
@@ -244,7 +244,7 @@ export const DesignBySteeze: React.FC = () => {
             I then started ideating on ways I could showcase my work with focusing on making it easy
             to pin point information with high level details.
           </div>
-          <div className="flex justify-center items-center space-x-8 my-8">
+          <div className="flex justify-center items-center space-x-4 my-8 sm:space-x-8">
             <div>
               <img
                 className="shadow-md"
@@ -273,7 +273,7 @@ export const DesignBySteeze: React.FC = () => {
             I created 3 high fidelity mockup designs for mobile, tablet, and desktop to keep on the
             go users in mind.
           </div>
-          <div className="flex justify-center items-center space-x-8 my-8">
+          <div className="flex justify-center items-center space-x-4 my-8 sm:space-x-8">
             <div>
               <img
                 className="shadow-md"

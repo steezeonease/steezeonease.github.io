@@ -1,3 +1,4 @@
+import { PrimaryButton } from "@fluentui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { PADDING } from "../../../utilities/responsive";
@@ -35,6 +36,19 @@ export const ProjectCard: React.FC<IProjectCardProps> = (props: IProjectCardProp
       </Link>
       <div className="text-left font-header text-2xl sm:text-4xl">{projectName}</div>
       <div className="text-left font-body text-md sm:text-lg">{projectTagline}</div>
+      <div className="flex justify-start block mt-4 sm:hidden">
+        <Link to={linkToProject}>
+          <PrimaryButton
+            className="bg-black text-white border-black hover:bg-black hover:border-black font-body"
+            styles={{
+              label: {
+                fontWeight: 300,
+              },
+            }}
+            text="View Project"
+          />
+        </Link>
+      </div>
     </div>
   );
 };

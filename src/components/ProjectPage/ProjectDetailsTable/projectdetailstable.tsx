@@ -17,7 +17,7 @@ export const ProjectDetailsTable: React.FC<IProjectDetailsTableProps> = (
 
   return (
     <div
-      className={`grid grid-rows-2 grid-cols-2 gap-y-4 justify-evenly max-w-5xl w-full mb-8 ${PADDING} sm:flex`}
+      className={`grid grid-rows-2 grid-cols-2 gap-y-4 gap-x-2 justify-evenly max-w-5xl w-full mb-8 ${PADDING} sm:flex`}
     >
       {tables.map((table, idx) => {
         return (

@@ -77,7 +77,7 @@ export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationB
   return (
     <div
       className={css(
-        `flex justify-between mt-4 pb-4 pt-4 mb-4 h-min sticky top-0 bg-white z-10 flex-col sm:flex-row sm:mt-12 sm:px-8`,
+        `flex justify-between mt-8 pb-4 pt-0 mb-4 h-min sticky top-0 bg-white z-10 flex-col sm:flex-row sm:mt-12 sm:px-8 sm:pt-4`,
         {
           "shadow-md": hasShadow,
         }
