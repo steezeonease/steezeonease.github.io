@@ -138,7 +138,7 @@ export const ZiefahHealth: React.FC = () => {
           ).
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.small} headerText="Objective">
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-outside ml-4">
             <li>Understand the needs and wants when searching for a therapist</li>
             <li>Learn about pain points, challenges, and frustrations when seeking therapy</li>
             <li>Discover current methods and resources when looking into therapy</li>
@@ -468,11 +468,12 @@ export const ZiefahHealth: React.FC = () => {
             <li>Schedule a free consultation</li>
           </ul>
 
-          <img
-            className="-mb-24"
-            src={require("./images/memojipaypal.png")}
-            alt="Memoji asking about PayPal option"
-          />
+          <div className="sm:-mb-24">
+            <img
+              src={require("./images/memojipaypal.png")}
+              alt="Memoji asking about PayPal option"
+            />
+          </div>
           <div className="flex items-center space-x-12 justify-end">
             <img
               className="max-w-[220px] shadow-md"

@@ -68,16 +68,20 @@ export const NSETropicals: React.FC = () => {
         <PageParagraph headerSize={HeaderSize.medium} headerText="Heuristic Analysis">
           I began my redesign process with evaluating the original website and performed a heuristic
           analysis. Here are some of the pain points and frustrations I found.
-          <img
-            className="max-w-4xl mx-auto my-8"
-            src={require("./images/heuristicanalysis.png")}
-            alt="Heuristic Analysis"
-          />
+          <div className="flex mx-auto my-8 max-w-4xl">
+            <Zoom>
+              <img
+                className="w-full"
+                src={require("./images/heuristicanalysis.png")}
+                alt="Heuristic Analysis"
+              />
+            </Zoom>
+          </div>
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Primary Research">
           Realizing the many issues that I encountered on the website, I recruited 5 users to
           perform usability tests to validate my assumptions.
-          <div className="flex space-x-28 mt-8">
+          <div className="flex flex-col mt-8 sm:flex-row sm:space-x-28">
             <PageParagraph headerSize={HeaderSize.small} headerText="User Interviews">
               <ul className="list-disc list-inside">
                 <li>Method: Remote ZOOM calls</li>
@@ -149,9 +153,11 @@ export const NSETropicals: React.FC = () => {
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.small} headerText="Insights to Validations">
           <div className="flex flex-col items-center">
-            <div>
+            <div className="space-y-6 sm:space-y-0">
               <div className="flex space-x-6">
-                <img src={require("./images/bookmemoji.jpg")} alt="Memoji" />
+                <div className="flex flex-col justify-center basis-1/4">
+                  <img src={require("./images/bookmemoji.jpg")} alt="Memoji" />
+                </div>
                 <div className="flex flex-col justify-center space-y-6">
                   <p>Took users on average roughly 55 seconds to find the book for pre-order.</p>
                   <p className="font-bold">
@@ -160,7 +166,9 @@ export const NSETropicals: React.FC = () => {
                 </div>
               </div>
               <div className="flex space-x-6">
-                <img src={require("./images/giftcardmemoji.jpg")} alt="Memoji" />
+                <div className="flex flex-col justify-center basis-1/4">
+                  <img src={require("./images/giftcardmemoji.jpg")} alt="Memoji" />
+                </div>
                 <div className="flex flex-col justify-center space-y-6">
                   <p>5/5 users missed specifiying gift card method during the checkout process.</p>
                   <p className="font-bold">
@@ -170,14 +178,18 @@ export const NSETropicals: React.FC = () => {
                 </div>
               </div>
               <div className="flex space-x-6">
-                <img src={require("./images/testimonialsmemoji.jpg")} alt="Memoji" />
+                <div className="flex flex-col justify-center basis-1/4">
+                  <img src={require("./images/testimonialsmemoji.jpg")} alt="Memoji" />
+                </div>
                 <div className="flex flex-col justify-center space-y-6">
                   <p>5/5 users were frustrated with testimonials being not credited.</p>
                   <p className="font-bold">Validation: Testimonials page is not credited.</p>
                 </div>
               </div>
               <div className="flex space-x-6">
-                <img src={require("./images/ratingsmemoji.png")} alt="Memoji" />
+                <div className="flex flex-col justify-center basis-1/4">
+                  <img src={require("./images/ratingsmemoji.png")} alt="Memoji" />
+                </div>
                 <div className="flex flex-col justify-center space-y-6">
                   <p>5/5 users were confused on the sort feature of sort by average rating.</p>
                   <p className="font-bold">

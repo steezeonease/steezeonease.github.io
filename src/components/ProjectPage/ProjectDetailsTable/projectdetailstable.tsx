@@ -16,11 +16,13 @@ export const ProjectDetailsTable: React.FC<IProjectDetailsTableProps> = (
   const { tables } = props;
 
   return (
-    <div className={`flex justify-evenly max-w-5xl w-full mb-8 ${PADDING}`}>
+    <div
+      className={`grid grid-rows-2 grid-cols-2 gap-y-4 justify-evenly max-w-5xl w-full mb-8 ${PADDING} sm:flex`}
+    >
       {tables.map((table, idx) => {
         return (
           <div key={idx} className="text-center">
-            <div className="font-header text-3xl">{table.header}</div>
+            <div className="font-header text-2xl sm:text-3xl">{table.header}</div>
             {table.items.map((item, idx) => {
               return <div key={idx}>{item}</div>;
             })}

@@ -16,7 +16,7 @@ export const HeaderText = (props: React.PropsWithChildren<IHeaderTextProps>) => 
   const HeaderTextSizes = {
     [HeaderSize.small]: "text-2xl",
     [HeaderSize.medium]: "text-3xl",
-    [HeaderSize.large]: "text-5xl text-center mb-8",
+    [HeaderSize.large]: "text-4xl text-center mb-4 sm:text-5xl sm:mb-8",
   };
 
   return <div className={`font-header ${HeaderTextSizes[headerSize]}`}>{children}</div>;
