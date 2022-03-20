@@ -9,7 +9,7 @@ export const Homepage: React.FC = () => {
       <TopTextHeader
         subHeaderText="UX Designer based in Seattle, WA"
         headerText="
-        My joys in life is to leave a positive imprint by adding a touch of humananity to others'
+        My joy in life is to leave a positive imprint by adding a touch of humanity to others'
         daily life experiences."
       />
       <ProjectCard
