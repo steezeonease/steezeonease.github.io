@@ -58,7 +58,7 @@ export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationB
 
   const linkClasses = (isCurrent: boolean) => {
     let textClasses =
-      "text-lg hover:text-shadow focus-visible:outline-1 focus-visible:outline-black focus-visible:outline focus-visible:outline-offset-8";
+      "text-lg w-min hover:text-shadow focus-visible:outline-1 focus-visible:outline-black focus-visible:outline focus-visible:outline-offset-8";
     if (isCurrent) {
       textClasses += " border-b border-black border-solid";
     }

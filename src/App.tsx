@@ -27,6 +27,7 @@ function App() {
     <div
       className={css("flex flex-col", {
         "overflow-hidden": isMenuOpen,
+        "h-screen": isMenuOpen,
       })}
     >
       <NavigationBar setMenuStatus={setMenuStatus} isMenuOpen={isMenuOpen} />
