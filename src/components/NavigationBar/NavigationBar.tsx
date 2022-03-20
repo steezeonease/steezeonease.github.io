@@ -56,20 +56,31 @@ export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationB
     };
   });
 
-  const linkClasses =
-    "text-lg hover:text-shadow focus-visible:outline-1 focus-visible:outline-black focus-visible:outline focus-visible:outline-offset-8";
+  const linkClasses = (isCurrent: boolean) => {
+    let textClasses =
+      "text-lg hover:text-shadow focus-visible:outline-1 focus-visible:outline-black focus-visible:outline focus-visible:outline-offset-8";
+    if (isCurrent) {
+      textClasses += " border-b border-black border-solid";
+    }
+    return textClasses;
+  };
 
   const navLinksElem = (
     <>
       {navLinks.map((navLink, idx) => {
         return (
-          <Link key={idx} className={linkClasses} to={navLink.toUrl}>
+          <Link
+            key={idx}
+            className={linkClasses(navLink.toUrl === location.pathname)}
+            to={navLink.toUrl}
+            data-is-current={navLink.toUrl === location.pathname}
+          >
             {navLink.text}
           </Link>
         );
       })}
       <a
-        className={linkClasses}
+        className={linkClasses(false)}
         rel="noreferrer"
         href="https://dl.dropboxusercontent.com/s/bhrbenkkdwn50em/Hannah%20Yi%20Resume.pdf?dl=0"
         target={"_blank"}
