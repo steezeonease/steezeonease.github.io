@@ -514,7 +514,18 @@ export const NSETropicals: React.FC = () => {
         <HeaderText headerSize={HeaderSize.large}>Deliver</HeaderText>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Prototype">
           <div className="mb-4">Enough of the before and after images.</div>
-          <div className="mb-4">Clickable prototype below.</div>
+          <div className="mb-4">
+            Check out the clickable prototype below or click{" "}
+            <a
+              className="text-link"
+              href="https://www.figma.com/proto/9Tooj3JeRoRDX8vpUHPKuO/NSE-Tropicals-Prototype?page-id=430%3A615&node-id=430%3A625&viewport=241%2C48%2C0.52&scaling=scale-down&starting-point-node-id=430%3A625"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>{" "}
+            to be redirected.
+          </div>
           <PrototypeFrame src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9Tooj3JeRoRDX8vpUHPKuO%2FNSE-Tropicals-Prototype%3Fpage-id%3D430%253A615%26node-id%3D430%253A625%26viewport%3D241%252C48%252C0.52%26scaling%3Dscale-down%26starting-point-node-id%3D430%253A625" />
         </PageParagraph>
       </PageSection>

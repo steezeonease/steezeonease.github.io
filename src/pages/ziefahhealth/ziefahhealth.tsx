@@ -276,11 +276,13 @@ export const ZiefahHealth: React.FC = () => {
                 <li>Providing in house therapy</li>
               </ul>
             </div>
-            <img
-              className="basis-1/2"
-              src={require("./images/competitiveanalysistable.jpg")}
-              alt="Competitive analysis table"
-            />
+            <div>
+              <img
+                className="basis-1/2"
+                src={require("./images/competitiveanalysistable.jpg")}
+                alt="Competitive analysis table"
+              />
+            </div>
           </div>
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.small} headerText="Comparative Analysis">
@@ -539,7 +541,18 @@ export const ZiefahHealth: React.FC = () => {
             on their needs and preferences. We've created a safe space for you to talk with
             therapists who care about you and understand what you're going through.
           </div>
-          <div className="mb-4">Clickable prototype below.</div>
+          <div className="mb-4">
+            Check out the clickable prototype below or click{" "}
+            <a
+              className="text-link"
+              href="https://www.figma.com/proto/QQXnt9NCVmrY9v8tIG1pCp/Ziefah-Health-(Copy)?page-id=538%3A12600&node-id=538%3A14230&viewport=241%2C48%2C0.65&scaling=scale-down&starting-point-node-id=538%3A14230"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>{" "}
+            to be redirected.
+          </div>
           <PrototypeFrame src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQQXnt9NCVmrY9v8tIG1pCp%2FZiefah-Health-(Copy)%3Fpage-id%3D538%253A12600%26node-id%3D538%253A14230%26viewport%3D241%252C48%252C0.65%26scaling%3Dscale-down%26starting-point-node-id%3D538%253A14230" />
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Style Guide">
@@ -558,7 +571,7 @@ export const ZiefahHealth: React.FC = () => {
             improvement and work to be done.
           </div>
           <div className="mb-4">Our next steps would be to:</div>
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-outside ml-4">
             <li>Conduct a second round of usability testing within our targeted user group</li>
             <li>Build out the therapist side of the application</li>
             <li>Review language and content with therapists</li>
