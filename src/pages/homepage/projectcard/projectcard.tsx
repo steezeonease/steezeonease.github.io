@@ -14,7 +14,7 @@ export const ProjectCard: React.FC<IProjectCardProps> = (props: IProjectCardProp
   const { backgroundColor, backgroundImgSrc, projectName, projectTagline, linkToProject } = props;
 
   return (
-    <div className={`max-w-full w-full mb-28 ${PADDING}`}>
+    <div className={`max-w-full w-full mb-16 ${PADDING} sm:mb-28`}>
       <Link
         className="group aspect-projectCard flex justify-center items-center rounded-md shadow-md mb-7 relative"
         style={{
@@ -33,8 +33,8 @@ export const ProjectCard: React.FC<IProjectCardProps> = (props: IProjectCardProp
           View Project
         </div>
       </Link>
-      <div className="text-left font-header text-4xl">{projectName}</div>
-      <div className="text-left font-body text-lg">{projectTagline}</div>
+      <div className="text-left font-header text-2xl sm:text-4xl">{projectName}</div>
+      <div className="text-left font-body text-md sm:text-lg">{projectTagline}</div>
     </div>
   );
 };

@@ -11,7 +11,9 @@ export const TopTextHeader: React.FC<ITopTextHeaderProps> = (props: ITopTextHead
   return (
     <div className={`${PADDING}`}>
       <div className="font-body text-lg mb-5">{subHeaderText}</div>
-      <div className="font-header text-3xl mb-20 max-w-4xl self-center">{headerText}</div>
+      <div className="font-header text-2xl mb-8 max-w-4xl self-center sm:text-3xl sm:mb-20">
+        {headerText}
+      </div>
     </div>
   );
 };

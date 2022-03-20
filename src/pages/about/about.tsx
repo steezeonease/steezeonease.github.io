@@ -4,6 +4,7 @@ import { HeaderSize } from "../../components/ProjectPage/HeaderText/headertext";
 import { PageSection } from "../../components/PageComponents/ProjectSection/projectsection";
 import { TopTextHeader } from "../../components/TopTextHeader/toptextheader";
 import { PageParagraph } from "../../components/PageComponents/PageParagraph/PageParagraph";
+import { PADDING } from "../../utilities/responsive";
 
 export const About = () => {
   return (
@@ -12,7 +13,7 @@ export const About = () => {
         subHeaderText="What others have said..."
         headerText="&ldquo;This is to say that Hannah might be one of the most dedicated and passionate designers I have ever met. She is a trusted team player and cares deeply about those around her.&rdquo;"
       />
-      <div className="flex space-x-8 mb-8 max-w-5xl">
+      <div className={`flex space-x-8 mb-8 max-w-5xl ${PADDING}`}>
         <div>
           <img
             className="w-full"

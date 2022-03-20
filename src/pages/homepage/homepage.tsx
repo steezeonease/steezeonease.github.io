@@ -28,7 +28,7 @@ export const Homepage: React.FC = () => {
       />
       <ProjectCard
         backgroundColor="#FFE9D8"
-        backgroundImgSrc={require("./images/nse_preview.png")}
+        backgroundImgSrc={require("./images/designbysteeze_preview.png")}
         projectName="designbysteeze"
         projectTagline="How might a husband and wife collaborate to build something beauitful?"
         linkToProject="/work/designbysteeze"
