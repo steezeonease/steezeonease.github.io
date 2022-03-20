@@ -13,6 +13,7 @@ import { PageSection } from "../../components/PageComponents/ProjectSection/proj
 import { PrototypeFrame } from "../../components/ProjectPage/PrototypeFrame/prototypeframe";
 import { Icon } from "@fluentui/react";
 import { ImageTextSideBySide } from "../../components/ProjectPage/ImageTextSideBySide/ImageTextSideBySide";
+import { InsightsElem } from "../../utilities/htmlTemplates";
 
 export const ZiefahHealth: React.FC = () => {
   const ProjectSectionBG = "#f6f8ff";
@@ -118,7 +119,18 @@ export const ZiefahHealth: React.FC = () => {
             Our team designed and created a mobile application where Muslim youth can find and
             connect with in house Muslim therapists based on their needs and preferences.
           </div>
-          <div className="mb-4">Check out the clickable prototype below.</div>
+          <div className="mb-4">
+            Check out the clickable prototype below or click{" "}
+            <a
+              className="text-link"
+              href="https://www.figma.com/proto/QQXnt9NCVmrY9v8tIG1pCp/Ziefah-Health-(Copy)?page-id=538%3A12600&node-id=538%3A14230&viewport=241%2C48%2C0.65&scaling=scale-down&starting-point-node-id=538%3A14230"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>{" "}
+            to be redirected.
+          </div>
           <PrototypeFrame src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQQXnt9NCVmrY9v8tIG1pCp%2FZiefah-Health-(Copy)%3Fpage-id%3D538%253A12600%26node-id%3D538%253A14230%26viewport%3D241%252C48%252C0.65%26scaling%3Dscale-down%26starting-point-node-id%3D538%253A14230" />
         </PageParagraph>
       </PageSection>
@@ -189,39 +201,22 @@ export const ZiefahHealth: React.FC = () => {
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.small} headerText="Insights to Needs">
           <div className="flex flex-col items-center">
-            <div>
-              <div className="flex space-x-6">
-                <img src={require("./images/memojihi.jpg")} alt="Memoji" />
-                <div className="flex flex-col justify-center space-y-6">
-                  <p>
-                    9/12 participants wanted a therapist who share a similar trait or
-                    characteristic.
-                  </p>
-                  <p className="font-bold">
-                    Users need therapists who share similar backgrounds to find connection.
-                  </p>
-                </div>
-              </div>
-              <div className="flex space-x-6">
-                <img src={require("./images/memojitrust.jpg")} alt="Memoji" />
-                <div className="flex flex-col justify-center space-y-6">
-                  <p>9/12 participants utilized trusted sources when finding a therapist.</p>
-                  <p className="font-bold">
-                    Users need to feel supported and comforted through trusted reviews or
-                    testimonials.
-                  </p>
-                </div>
-              </div>
-              <div className="flex space-x-6">
-                <img src={require("./images/memojinervous.jpg")} alt="Memoji" />
-                <div className="flex flex-col justify-center space-y-6">
-                  <p>10/12 participants dealt with a barrier or challenge when seeking therapy.</p>
-                  <p className="font-bold">
-                    Users need re-assurance and validation before taking the step of seeking
-                    therapy.
-                  </p>
-                </div>
-              </div>
+            <div className="space-y-8 sm:space-y-6">
+              {InsightsElem(
+                require("./images/memojihi.jpg"),
+                "9/12 participants wanted a therapist who share a similar trait or characteristic.",
+                "Users need therapists who share similar backgrounds to find connection."
+              )}
+              {InsightsElem(
+                require("./images/memojitrust.jpg"),
+                "9/12 participants utilized trusted sources when finding a therapist.",
+                "Users need to feel supported and comforted through trusted reviews or testimonials."
+              )}
+              {InsightsElem(
+                require("./images/memojinervous.jpg"),
+                "10/12 participants dealt with a barrier or challenge when seeking therapy.",
+                "Users need re-assurance and validation before taking the step of seeking therapy."
+              )}
             </div>
           </div>
         </PageParagraph>
@@ -257,7 +252,11 @@ export const ZiefahHealth: React.FC = () => {
               <img src={require("./images/comparativeanalysis.jpg")} alt="Competitive analysis" />
             </div>
             <div className="flex flex-col justify-center space-y-6 basis-1/2">
-              <img className="h-16" src={require("./images/lightbulb.svg").default} alt="" />
+              <img
+                className="h-16 hidden sm:block"
+                src={require("./images/lightbulb.svg").default}
+                alt=""
+              />
               <p>
                 Many of these competitors lacked in depth search criteria when users were searching
                 for their perfect therapist.
@@ -266,7 +265,11 @@ export const ZiefahHealth: React.FC = () => {
           </div>
           <div className="flex justify-between flex-col-reverse sm:flex-row sm:space-x-12">
             <div className="flex flex-col justify-center space-y-6 w-fit">
-              <img className="h-16" src={require("./images/lightbulb.svg").default} alt="" />
+              <img
+                className="h-16 hidden sm:block"
+                src={require("./images/lightbulb.svg").default}
+                alt=""
+              />
               <p className="mb-4">These competitors do a wonderful job at:</p>
               <ul className="list-disc list-inside">
                 <li>Making the user feel supported</li>
@@ -465,68 +468,82 @@ export const ZiefahHealth: React.FC = () => {
             <li>Schedule a free consultation</li>
           </ul>
 
-          <div className="sm:-mb-24">
+          <div className="mb-4 lg:-mb-24">
             <img
               src={require("./images/memojipaypal.png")}
               alt="Memoji asking about PayPal option"
             />
           </div>
-          <div className="flex items-center space-x-12 justify-end">
-            <img
-              className="max-w-[220px] shadow-md"
-              src={require("./images/paymentdetailsbefore.png")}
-              alt="Payment details before"
-            />
-            <Icon className="text-2xl" iconName="Forward" />
-            <img
-              className="max-w-[220px] shadow-md"
-              src={require("./images/paymentdetailsafter.png")}
-              alt="Payment details after"
-            />
-          </div>
-
-          <div className="flex flex-col my-16">
-            <img
-              className="-mb-32 self-end"
-              src={require("./images/darkmodemessaging.png")}
-              alt="Memoji feedback about messaing"
-            />
-            <div className="flex items-center space-x-12">
+          <div className="flex items-center space-x-4 justify-end sm:space-x-12">
+            <div>
               <img
-                className="max-w-[220px] shadow-md"
-                src={require("./images/messagesbefore.png")}
-                alt="Messages before"
+                className="max-w-[220px] w-full shadow-md"
+                src={require("./images/paymentdetailsbefore.png")}
+                alt="Payment details before"
               />
-              <Icon className="text-2xl" iconName="Forward" />
+            </div>
+            <Icon className="text-xl sm:text-2xl" iconName="Forward" />
+            <div>
               <img
-                className="max-w-[220px] shadow-md"
-                src={require("./images/messagesafter.png")}
-                alt="Messages after"
+                className="max-w-[220px] w-full shadow-md"
+                src={require("./images/paymentdetailsafter.png")}
+                alt="Payment details after"
               />
             </div>
           </div>
 
+          <div className="flex flex-col my-16">
+            <img
+              className="mb-4 self-end lg:-mb-32"
+              src={require("./images/darkmodemessaging.png")}
+              alt="Memoji feedback about messaing"
+            />
+            <div className="flex items-center space-x-4 sm:space-x-12">
+              <div>
+                <img
+                  className="max-w-[220px] w-full shadow-md"
+                  src={require("./images/messagesbefore.png")}
+                  alt="Messages before"
+                />
+              </div>
+              <Icon className="text-xl sm:text-2xl" iconName="Forward" />
+              <div>
+                <img
+                  className="max-w-[220px] w-full shadow-md"
+                  src={require("./images/messagesafter.png")}
+                  alt="Messages after"
+                />
+              </div>
+            </div>
+          </div>
+
           <img
-            className="-mb-36"
+            className="mb-4 lg:-mb-36"
             src={require("./images/messagingmemoji.png")}
             alt="Memoji feedback on scheduling"
           />
-          <div className="flex items-center space-x-12 justify-end">
-            <img
-              className="max-w-[220px] shadow-md"
-              src={require("./images/messaging1.png")}
-              alt="Payment details before"
-            />
-            <img
-              className="max-w-[220px] shadow-md"
-              src={require("./images/messaging2.png")}
-              alt="Payment details after"
-            />
-            <img
-              className="max-w-[220px] shadow-md"
-              src={require("./images/messaging3.png")}
-              alt="Payment details after"
-            />
+          <div className="flex items-center justify-end space-x-4 sm:space-x-12">
+            <div>
+              <img
+                className="max-w-[220px] w-full shadow-md"
+                src={require("./images/messaging1.png")}
+                alt="Payment details before"
+              />
+            </div>
+            <div>
+              <img
+                className="max-w-[220px] w-full shadow-md"
+                src={require("./images/messaging2.png")}
+                alt="Payment details after"
+              />
+            </div>
+            <div>
+              <img
+                className="max-w-[220px] w-full shadow-md"
+                src={require("./images/messaging3.png")}
+                alt="Payment details after"
+              />
+            </div>
           </div>
         </PageParagraph>
       </PageSection>

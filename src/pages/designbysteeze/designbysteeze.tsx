@@ -70,8 +70,8 @@ export const DesignBySteeze: React.FC = () => {
           How might a husband and wife collaborate to create something beautiful?
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Solution">
-          I learned how to work with a UX Engineer to create my portfolio (the one you&rsquo;re on
-          right now at this very moment).
+          I as the UX Designer collaborated with my husband who is a UX Engineer to create the
+          portfolio you are currently on now.
         </PageParagraph>
       </PageSection>
       <PageSection>
@@ -83,11 +83,12 @@ export const DesignBySteeze: React.FC = () => {
             textContent={
               <>
                 <div>
-                  I looked at hundreds of portfolios to gain inspiration before I found the one.
+                  I looked at hundreds of portfolios to gain inspiration before I found this perfect
+                  layout.
                 </div>
                 <div>
-                  I was inspired by the use of real life images to showcase projects as well as the
-                  parallax effect to support the story telling.
+                  I was inspired by the real life images to showcase projects as well as the
+                  parallax effect. It helped create a sense of story telling.
                 </div>
               </>
             }
@@ -124,7 +125,7 @@ export const DesignBySteeze: React.FC = () => {
         <PageParagraph headerSize={HeaderSize.medium} headerText="Persona">
           I read an interesting article that highlighted several pointers for what a hiring manager
           looks for in a portfolio within a 5 minute time frame. After speaking with other UX
-          Designers in the field, I decided to create a real life persona of the targeted user.
+          Designers in the field, I decided to create a real life persona of my targeted user.
           <img
             src={require("./images/persona.jpg")}
             alt="Hiring manager persona"
@@ -133,8 +134,7 @@ export const DesignBySteeze: React.FC = () => {
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Moodboard">
           I wanted my brand to look and feel elegant, modern, and sleek. The dahlia is my favorite
-          and inspired me to incorporate it into the theme of my portfolio. I created a moodboard to
-          help me think through the layout of my design.
+          flower and it inspired me to incorporate it into the theme of my portfolio.
           <img
             src={require("./images/moodboard.jpg")}
             alt="Hiring manager persona"
@@ -143,8 +143,8 @@ export const DesignBySteeze: React.FC = () => {
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Mockups">
           <div>
-            I then designed high-fidelity mockups in Figma with annotations to hand off to my
-            husband along with assets.
+            I then designed high-fidelity annotated mockups in Figma to hand off to my husband along
+            with assets.
           </div>
           <div className="flex space-x-4 my-8 justify-between sm:space-x-16">
             <Zoom>
@@ -167,20 +167,18 @@ export const DesignBySteeze: React.FC = () => {
             </Zoom>
           </div>
           <div className="mb-4">
-            Most users are more likely going to be on the computer when going through my portfolio.
-            However, for designing inclusive and to help challenge myself I created mockups for
-            mobile responsiveneness.
+            Most users are more likely going to be on a desktop when going through my portfolio.
+            However, I created mockups for mobile breakpoints keeping all users in mind.
           </div>
-          <div className="mb-4">Here&rsquo;s what I did different:</div>
+          <div className="mb-4">Here&rsquo;s what I altered:</div>
           <ul className="list-disc list-outside ml-4">
             <li>
               Moved the header image so there wouldn&rsquo;t be a contrast issue (white text on
               white background)
             </li>
-            <li>
-              Added buttons as there is no such thing as “hover state” when on a mobile device
-            </li>
+            <li>Added buttons as there is no hover state on mobile</li>
             <li>Created a hamburger menu for navigation</li>
+            <li>Added buttons to redirect users to specific project pages</li>
           </ul>
           <div className="flex justify-center mt-8 space-x-4 sm:space-x-32">
             <div>
@@ -207,7 +205,7 @@ export const DesignBySteeze: React.FC = () => {
           <div>
             It was critical for me to gain insights on what users saw and felt when coming to check
             out my portfolio. I asked Creative Directors, Senior UX Designers, and Hiring Managers
-            to take a look at my portfolio to provide any overall feedback and suggestions.
+            to provide any overall feedback and suggestions to improve my portfolio design.
           </div>
           <div className="flex flex-col">
             <div>
@@ -229,20 +227,21 @@ export const DesignBySteeze: React.FC = () => {
         <HeaderText headerSize={HeaderSize.large}>Iteration 2</HeaderText>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Realization">
           <div className="mb-4">
-            I agreed 100% with the feedback that was shared with me. I reflected on the persona I
+            I 100% agreed with the feedback that was shared with me. I reflected on the persona I
             created at the beginning of this project. I reminded myself of this quote
             &ldquo;designers are not making user-centered portfolios, they are making self-centered
             portfolios.&rdquo;
           </div>
           <div>
-            I realized that I was caught up on creating a portfolio tailored to my likings and my
-            wants when I needed to create my portfolio tailored to the user AKA the hiring manager.
+            I realized that I was caught up on creating a portfolio tailored to my branding and
+            vision when I needed to create my portfolio tailored to the user AKA the hiring manager.
           </div>
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Sketches">
           <div>
-            I then started ideating on ways I could showcase my work with focusing on making it easy
-            to pin point information with high level details.
+            I then started ideating on ways I could showcase my work. Remembering the hiring manager
+            persona, I needed to layout my information so that high level details were up at the top
+            of each project page.
           </div>
           <div className="flex justify-center items-center space-x-4 my-8 sm:space-x-8">
             <div>
@@ -270,8 +269,8 @@ export const DesignBySteeze: React.FC = () => {
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Responsive Designs">
           <div>
-            I created 3 high fidelity mockup designs for mobile, tablet, and desktop to keep on the
-            go users in mind.
+            I created 3 high fidelity mockup designs of the landing page for mobile, tablet, and
+            desktop.
           </div>
           <div className="flex justify-center items-center space-x-4 my-8 sm:space-x-8">
             <div>
@@ -343,12 +342,12 @@ export const DesignBySteeze: React.FC = () => {
           <div className="mb-4">
             As I constantly am growing as a UX Designer, I&rsquo;ll be constantly evolving my
             portfolio. For now, I am proud of what it has become through iterations incorporating
-            feedback. It was truly a rewarding experience to see my designs come to life page by
-            page.
+            feedback.
           </div>
           <div className="mb-4">
             It was incredible to have the opportunity to collaborate with an engineer, especially my
-            husband. I look forward to working with all types of developers in the future to learn
+            husband. It was truly a rewarding experience to see my designs come to life page by
+            page. I look forward to working with all types of developers in the future to learn
             various styles and preferences in terms of design hand off.
           </div>
           <div>I hope you enjoyed learning about the creation of designbysteeze.com.</div>

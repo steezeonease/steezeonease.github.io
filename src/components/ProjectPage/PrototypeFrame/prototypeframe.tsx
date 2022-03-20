@@ -5,9 +5,9 @@ interface IPrototypeFrameProps {
 export const PrototypeFrame = (props: React.PropsWithChildren<IPrototypeFrameProps>) => {
   const { src } = props;
   return (
-    <div className="relative aspect-video">
+    <div className="relative aspect-square lg:aspect-video">
       <iframe
-        className="absolute inset-0"
+        className="sm:absolute inset-0"
         title={"Prototype"}
         width="100%"
         height="100%"

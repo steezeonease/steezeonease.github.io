@@ -10,6 +10,7 @@ import { ProjectIntro } from "../../components/ProjectPage/ProjectIntro/projecti
 import { PageParagraph } from "../../components/PageComponents/PageParagraph/PageParagraph";
 import { PageSection } from "../../components/PageComponents/ProjectSection/projectsection";
 import { PrototypeFrame } from "../../components/ProjectPage/PrototypeFrame/prototypeframe";
+import { InsightsElem } from "../../utilities/htmlTemplates";
 
 export const NSETropicals: React.FC = () => {
   const ProjectSectionBG = "rgba(248, 255, 232, 0.4)";
@@ -50,7 +51,7 @@ export const NSETropicals: React.FC = () => {
           Plant collectors around the world go on the e-commerce website NSE Tropicals to stay up to
           date with market prices, participate in auctions, or to simply fill their void with rare
           planty goodness. I myself have been shopping and supporting this business for many years
-          and I've decided to take a stab at redesigning the platform.
+          so I decided to redesign the platform.
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Challenge">
           How might I better the shopping experience for fellow plant collectors on NSE Tropicals?
@@ -59,7 +60,18 @@ export const NSETropicals: React.FC = () => {
           <div className="mb-4">
             I redesigned the navigation system, inventory sort feature, testimonials page, and shop.
           </div>
-          <div className="mb-4">Check out the clickable prototype below.</div>
+          <div className="mb-4">
+            Check out the clickable prototype below or click{" "}
+            <a
+              className="text-link"
+              href="https://www.figma.com/proto/9Tooj3JeRoRDX8vpUHPKuO/NSE-Tropicals-Prototype?page-id=430%3A615&node-id=430%3A625&viewport=241%2C48%2C0.52&scaling=scale-down&starting-point-node-id=430%3A625"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>{" "}
+            to be redirected.
+          </div>
           <PrototypeFrame src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9Tooj3JeRoRDX8vpUHPKuO%2FNSE-Tropicals-Prototype%3Fpage-id%3D430%253A615%26node-id%3D430%253A625%26viewport%3D241%252C48%252C0.52%26scaling%3Dscale-down%26starting-point-node-id%3D430%253A625" />
         </PageParagraph>
       </PageSection>
@@ -83,8 +95,8 @@ export const NSETropicals: React.FC = () => {
           perform usability tests to validate my assumptions.
           <div className="flex flex-col mt-8 sm:flex-row sm:space-x-28">
             <PageParagraph headerSize={HeaderSize.small} headerText="User Interviews">
-              <ul className="list-disc list-inside">
-                <li>Method: Remote ZOOM calls</li>
+              <ul className="list-disc list-outside ml-4">
+                <li>Method: Remote, ZOOM</li>
                 <li>Participants: 2 Male, 3 Female</li>
                 <li>Age: 20's</li>
                 <li>Experience: 4 new to site, 1 goes on the site 3x a week</li>
@@ -92,7 +104,7 @@ export const NSETropicals: React.FC = () => {
               </ul>
             </PageParagraph>
             <PageParagraph headerSize={HeaderSize.small} headerText="Tasks">
-              <ul className="list-disc list-inside">
+              <ul className="list-disc list-outside ml-4">
                 <li>Find information about the site</li>
                 <li>Pre-order a copy of the book</li>
                 <li>Purchase a gift card</li>
@@ -147,57 +159,33 @@ export const NSETropicals: React.FC = () => {
           </div>
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.small} headerText="Key Takeaways">
-          All the users were able to complete all the tasks asked although they did run into some
-          pain points and frustrations along the way. Besides the negative pointers, users seemed to
-          have liked the overall vibe of the landing page header image and message.
+          All the users were able to complete all the tasks although they did run into some pain
+          points and frustrations along the way. Besides the negative pointers, users seemed to have
+          liked the overall feel of the landing page.
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.small} headerText="Insights to Validations">
           <div className="flex flex-col items-center">
             <div className="space-y-6 sm:space-y-0">
-              <div className="flex space-x-6">
-                <div className="flex flex-col justify-center basis-1/4">
-                  <img src={require("./images/bookmemoji.jpg")} alt="Memoji" />
-                </div>
-                <div className="flex flex-col justify-center space-y-6">
-                  <p>Took users on average roughly 55 seconds to find the book for pre-order.</p>
-                  <p className="font-bold">
-                    Validation: Welcome to the Jungle in navigation is confusing.
-                  </p>
-                </div>
-              </div>
-              <div className="flex space-x-6">
-                <div className="flex flex-col justify-center basis-1/4">
-                  <img src={require("./images/giftcardmemoji.jpg")} alt="Memoji" />
-                </div>
-                <div className="flex flex-col justify-center space-y-6">
-                  <p>5/5 users missed specifiying gift card method during the checkout process.</p>
-                  <p className="font-bold">
-                    Validation: Instruction of noting physical vs e-gift care might be missed when
-                    adding to cart.
-                  </p>
-                </div>
-              </div>
-              <div className="flex space-x-6">
-                <div className="flex flex-col justify-center basis-1/4">
-                  <img src={require("./images/testimonialsmemoji.jpg")} alt="Memoji" />
-                </div>
-                <div className="flex flex-col justify-center space-y-6">
-                  <p>5/5 users were frustrated with testimonials being not credited.</p>
-                  <p className="font-bold">Validation: Testimonials page is not credited.</p>
-                </div>
-              </div>
-              <div className="flex space-x-6">
-                <div className="flex flex-col justify-center basis-1/4">
-                  <img src={require("./images/ratingsmemoji.png")} alt="Memoji" />
-                </div>
-                <div className="flex flex-col justify-center space-y-6">
-                  <p>5/5 users were confused on the sort feature of sort by average rating.</p>
-                  <p className="font-bold">
-                    Validation: Sorting option of Sort by average rating but there is no rating or
-                    review system.
-                  </p>
-                </div>
-              </div>
+              {InsightsElem(
+                require("./images/bookmemoji.jpg"),
+                "Took users on average roughly 55 seconds to find the book for pre-order.",
+                "Validation: Welcome to the Jungle in navigation is confusing."
+              )}
+              {InsightsElem(
+                require("./images/giftcardmemoji.jpg"),
+                "5/5 users missed specifiying gift card method during the checkout process",
+                "Validation: Instruction of noting physical vs e-gift care might be missed when adding to cart."
+              )}
+              {InsightsElem(
+                require("./images/testimonialsmemoji.jpg"),
+                "5/5 users were frustrated with testimonials not being credited.",
+                "Validation: Testimonials page is not credited."
+              )}
+              {InsightsElem(
+                require("./images/ratingsmemoji.png"),
+                "5/5 users were confused on the sort feature of sort by average rating.",
+                "Validation: Sorting option of Sort by average rating but there is no rating or review system."
+              )}
             </div>
           </div>
         </PageParagraph>
@@ -206,9 +194,9 @@ export const NSETropicals: React.FC = () => {
         <HeaderText headerSize={HeaderSize.large}>Define</HeaderText>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Personas">
           <div className="mb-4">
-            To help me build out personas from real people, I utilized Google surveys and sent them
-            out through my plant instagram account. It was the perfect way to get responses from
-            fellow plant collectors.
+            I built out real life personas by utilizing Google surveys and sending them out through
+            my plant instagram account. It was the perfect way to get responses from fellow plant
+            collectors.
           </div>
           <div className="mb-4">
             Most users will fall under this first persona as they mostly go onto NSE Tropicals to
@@ -220,11 +208,7 @@ export const NSETropicals: React.FC = () => {
             src={require("./images/collecterpersona.jpg")}
             alt="Jennifer Huang the collector persona"
           />
-          <div className="my-8">
-            This next persona is keeping the users in mind who have been on this website once or a
-            couple times in the past whether it was shopping for a friend or pre-ordering a copy of
-            the book.
-          </div>
+          <div className="my-8">This next persona represnts users who rarely go on this site.</div>
           <img
             className="mx-auto shadow-md"
             src={require("./images/enthusiastpersona.jpg")}
@@ -235,7 +219,7 @@ export const NSETropicals: React.FC = () => {
           <HeaderText headerSize={HeaderSize.medium}>Define</HeaderText>
         </div>
         <PageParagraph headerSize={HeaderSize.small} headerText="Problem Statement">
-          Plant shoppers need an organized and easier way to find. navigate, and shop for collector
+          Plant shoppers need an organized and easier way to find, navigate, and shop for collector
           plants on NSE Tropicals.
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.small} headerText="Solution">
@@ -274,7 +258,7 @@ export const NSETropicals: React.FC = () => {
           </Zoom>
           <div className="my-8">
             After identifying what the new navigation should look and feel like, I decided to
-            validate this through a closed cart sort with new participants than the initial sorting.
+            validate this through a closed cart sort with new participants.
           </div>
           <img
             className="shadow-md"
@@ -284,8 +268,8 @@ export const NSETropicals: React.FC = () => {
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Site Map">
           <div className="mb-4">
-            After finalizing how I wanted to group my navigation elements, I created site maps for
-            both footer and main navigation bar to move onto implementing them into my wireframes.
+            After finalizing how I wanted to group my navigation elements, I created site maps to
+            help me layout my redesign.
           </div>
           <div className="flex items-center space-x-8">
             <div className="basis-5/12">
@@ -307,14 +291,15 @@ export const NSETropicals: React.FC = () => {
         <PageParagraph headerSize={HeaderSize.medium} headerText="Moodboard">
           <div className="mb-4">
             This moodboard was inspired by the users during testing. They mentioned really loving
-            the dark jungle vibes they felt as they scrolled through the landing page so I kept
-            those elements in my redesign.
+            the dark jungle feel as they scrolled through the landing page so I decided to continue
+            that feel in my redesign.
           </div>
           <img className="shadow-md" src={require("./images/moodboard.jpg")} alt="Moodboard" />
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Sketches">
           <div className="mb-4">
-            These are my initial sketches showcasing my ideas of the redesign.
+            These are my initial sketches showcasing my ideas for the landing, shop, and product
+            pages.
           </div>
           <div className="flex justify-between space-x-4">
             <div className="flex-1 basis-1/3 flex flex-col justify-center">
@@ -377,10 +362,10 @@ export const NSETropicals: React.FC = () => {
         <HeaderText headerSize={HeaderSize.large}>Iterate</HeaderText>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Feedback">
           <div className="mb-8">
-            After presenting my initial redesign to my fellow colleagues and receiving design
-            critique, I decided to take the time to redesign my initial redsign.
+            After presenting my initial redesign to fellow colleagues and receiving design critique,
+            I took some time to strengthen my redesign.
           </div>
-          <div className="flex -mb-16">
+          <div className="flex lg:-mb-16">
             <img src={require("./images/feedback1.png")} alt="Feedback on redesign" />
           </div>
           <div className="flex justify-end">
@@ -425,8 +410,8 @@ export const NSETropicals: React.FC = () => {
           </div>
           <div className="my-16">
             I feel the importance of showcasing my growth as a UX Designer. I will show you a series
-            of images, the left one being my initial design as my second project during boot camp
-            and the right one being after graduating from boot camp.
+            of images, the left one being my initial design during boot camp and the right one being
+            after graduating from boot camp.
           </div>
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.small} headerText="Landing Page">
@@ -440,7 +425,7 @@ export const NSETropicals: React.FC = () => {
                 />
               </Zoom>
             </div>
-            <Icon className="text-2xl mx-8 self-center" iconName="Forward" />
+            <Icon className="text-2xl mx-4 self-center sm:mx-8" iconName="Forward" />
             <div className="flex-1 flex flex-col justify-center">
               <Zoom>
                 <img
@@ -463,7 +448,7 @@ export const NSETropicals: React.FC = () => {
                 />
               </Zoom>
             </div>
-            <Icon className="text-2xl mx-8 self-center" iconName="Forward" />
+            <Icon className="text-2xl mx-4 self-center sm:mx-8" iconName="Forward" />
             <div className="flex-1 flex flex-col justify-center">
               <Zoom>
                 <img
@@ -486,7 +471,7 @@ export const NSETropicals: React.FC = () => {
                 />
               </Zoom>
             </div>
-            <Icon className="text-2xl mx-8 self-center" iconName="Forward" />
+            <Icon className="text-2xl mx-4 self-center sm:mx-8" iconName="Forward" />
             <div className="flex-1 flex flex-col justify-center">
               <Zoom>
                 <img
@@ -509,7 +494,7 @@ export const NSETropicals: React.FC = () => {
                 />
               </Zoom>
             </div>
-            <Icon className="text-2xl mx-8 self-center" iconName="Forward" />
+            <Icon className="text-2xl mx-4 self-center sm:mx-8" iconName="Forward" />
             <div className="flex-1 flex flex-col justify-center">
               <Zoom>
                 <img
@@ -525,7 +510,9 @@ export const NSETropicals: React.FC = () => {
       <PageSection>
         <HeaderText headerSize={HeaderSize.large}>Deliver</HeaderText>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Prototype">
-          <div className="mb-4">Enough of the before and after images.</div>
+          <div className="mb-4">
+            I hope it was satisfying to see my growth in visual design as it was for me!
+          </div>
           <div className="mb-4">
             Check out the clickable prototype below or click{" "}
             <a
@@ -548,7 +535,7 @@ export const NSETropicals: React.FC = () => {
             I would love to continue to work on this project if and when time allows.
           </div>
           <div>Next, I would:</div>
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-outside ml-4">
             <li>Conduct a second round of usability testing with my high-fidelity prototype</li>
             <li>Share my redesign with the owner of NSE Tropicals</li>
           </ul>

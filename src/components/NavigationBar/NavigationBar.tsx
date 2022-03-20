@@ -35,10 +35,6 @@ export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationB
       toUrl: "/about",
       text: "About",
     },
-    {
-      toUrl: "/resume",
-      text: "Resume",
-    },
   ];
 
   const onDocumentScroll = () => {
@@ -60,17 +56,28 @@ export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationB
     };
   });
 
-  const navLinksElem = navLinks.map((navLink, idx) => {
-    return (
-      <Link
-        key={idx}
-        className="text-lg hover:text-shadow focus-visible:outline-1 focus-visible:outline-black focus-visible:outline focus-visible:outline-offset-8"
-        to={navLink.toUrl}
+  const linkClasses =
+    "text-lg hover:text-shadow focus-visible:outline-1 focus-visible:outline-black focus-visible:outline focus-visible:outline-offset-8";
+
+  const navLinksElem = (
+    <>
+      {navLinks.map((navLink, idx) => {
+        return (
+          <Link key={idx} className={linkClasses} to={navLink.toUrl}>
+            {navLink.text}
+          </Link>
+        );
+      })}
+      <a
+        className={linkClasses}
+        rel="noreferrer"
+        href="https://dl.dropboxusercontent.com/s/bhrbenkkdwn50em/Hannah%20Yi%20Resume.pdf?dl=0"
+        target={"_blank"}
       >
-        {navLink.text}
-      </Link>
-    );
-  });
+        Resume
+      </a>
+    </>
+  );
 
   const iconName = isMenuOpen ? "Cancel" : "GlobalNavButton";
 
