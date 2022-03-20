@@ -1,4 +1,5 @@
 import React from "react";
+import { PADDING } from "../../../utilities/responsive";
 
 interface ITableDetails {
   header: string;
@@ -15,7 +16,7 @@ export const ProjectDetailsTable: React.FC<IProjectDetailsTableProps> = (
   const { tables } = props;
 
   return (
-    <div className="flex justify-evenly max-w-5xl w-full mb-8">
+    <div className={`flex justify-evenly max-w-5xl w-full mb-8 ${PADDING}`}>
       {tables.map((table, idx) => {
         return (
           <div key={idx} className="text-center">

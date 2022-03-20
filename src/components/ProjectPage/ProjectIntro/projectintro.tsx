@@ -1,4 +1,5 @@
 import React from "react";
+import { PADDING } from "../../../utilities/responsive";
 import { HeaderSize, HeaderText } from "../HeaderText/headertext";
 
 interface IProjectIntroProps {
@@ -11,12 +12,12 @@ export const ProjectIntro: React.FC<IProjectIntroProps> = (props: IProjectIntroP
   const { projectName, subtitle, headerImage } = props;
 
   return (
-    <>
+    <div className={PADDING}>
       <div className="mb-4">
         <HeaderText headerSize={HeaderSize.large}>{projectName}</HeaderText>
       </div>
       <div className="font-body text-xl">{subtitle}</div>
       {headerImage}
-    </>
+    </div>
   );
 };

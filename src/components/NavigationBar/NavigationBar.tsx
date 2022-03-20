@@ -3,6 +3,7 @@ import { css } from "@fluentui/react";
 import { Async } from "@fluentui/utilities";
 import { Link } from "react-router-dom";
 import { SocialBar } from "../SocialBar/socialbar";
+import { PADDING } from "../../utilities/responsive";
 
 interface INavLink {
   toUrl: string;
@@ -46,7 +47,7 @@ export const NavigationBar: React.FC = () => {
   return (
     <div
       className={css(
-        "flex justify-between mt-12 pb-4 pt-4 mb-10 px-20 h-min sticky top-0 bg-white z-10",
+        `flex justify-between mt-12 pb-4 pt-4 mb-10 h-min sticky top-0 bg-white z-10 ${PADDING}`,
         {
           "shadow-md": hasShadow,
         }

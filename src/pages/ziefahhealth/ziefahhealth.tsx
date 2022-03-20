@@ -12,6 +12,7 @@ import { PageParagraph } from "../../components/PageComponents/PageParagraph/Pag
 import { PageSection } from "../../components/PageComponents/ProjectSection/projectsection";
 import { PrototypeFrame } from "../../components/ProjectPage/PrototypeFrame/prototypeframe";
 import { Icon } from "@fluentui/react";
+import { ImageTextSideBySide } from "../../components/ProjectPage/ImageTextSideBySide/ImageTextSideBySide";
 
 export const ZiefahHealth: React.FC = () => {
   const ProjectSectionBG = "#f6f8ff";
@@ -143,7 +144,7 @@ export const ZiefahHealth: React.FC = () => {
             <li>Discover current methods and resources when looking into therapy</li>
           </ul>
         </PageParagraph>
-        <div className="flex space-x-28">
+        <div className="flex flex-col sm:flex-row sm:space-x-28">
           <PageParagraph headerSize={HeaderSize.small} headerText="User Interviews">
             <ul className="list-disc list-inside">
               <li>Method: Remote ZOOM calls</li>
@@ -175,7 +176,11 @@ export const ZiefahHealth: React.FC = () => {
             here
           </a>
           ).
-          <img className="mx-auto" src={require("./images/affinitymap.jpg")} alt="Affinity map" />
+          <img
+            className="mx-auto shadow-md"
+            src={require("./images/affinitymap.jpg")}
+            alt="Affinity map"
+          />
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.small} headerText="Key Takeaways">
           The information that was presented to us was crucial in learning about challenges present
@@ -430,20 +435,19 @@ export const ZiefahHealth: React.FC = () => {
           <img src={require("./images/appscreenshots.jpg")} alt="App screenshots" />
         </PageParagraph>
         <PageParagraph headerSize={HeaderSize.medium} headerText="Moodboard">
-          <div className="flex space-x-8">
-            <img
-              className="w-3/5 shadow-md"
-              src={require("./images/moodboard.jpg")}
-              alt="Moodboard"
-            />
-            <div className="w-2/5 flex flex-col justify-center">
-              <div className="mb-4">
-                Our team was inspired by the ocean. I designed this moodboard to help envision the
-                shades of blue and text we wanted to utilize for Ziefah Health.
-              </div>
-              <div>Blue reminded us of health, relaxation, and calmness. </div>
-            </div>
-          </div>
+          <ImageTextSideBySide
+            imageSrc={require("./images/moodboard.jpg")}
+            altText="Moodboard"
+            textContent={
+              <>
+                <div className="mb-4">
+                  Our team was inspired by the ocean. I designed this moodboard to help envision the
+                  shades of blue and text we wanted to utilize for Ziefah Health.
+                </div>
+                <div>Blue reminded us of health, relaxation, and calmness. </div>
+              </>
+            }
+          />
         </PageParagraph>
       </PageSection>
       <PageSection backgroundColor={ProjectSectionBG}>
