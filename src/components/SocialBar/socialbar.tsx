@@ -1,5 +1,4 @@
 import React from "react";
-import ReactGA from "react-ga";
 import { LOG_EVENT } from "../../utilities/tracking";
 
 export const SocialBar: React.FC = () => {

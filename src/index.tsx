@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
 import App from "./App";
 
 // Pages
@@ -22,6 +22,7 @@ const ScrollToTopOnRoute = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
   React.useLayoutEffect(() => {
     document.documentElement.scrollTo(0, 0);
+    console.log(location.pathname);
     ReactGA.pageview(location.pathname);
   }, [location.pathname]);
   return <>{children}</>;
@@ -31,7 +32,7 @@ ReactGA.initialize("G-RBBMWGBFR3");
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTopOnRoute>
         <Routes>
           <Route path="/" element={<App />}>
@@ -43,7 +44,7 @@ ReactDOM.render(
           </Route>
         </Routes>
       </ScrollToTopOnRoute>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
