@@ -82,7 +82,7 @@ export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationB
       <a
         className={linkClasses(false)}
         rel="noreferrer"
-        href="https://dl.dropboxusercontent.com/s/bhrbenkkdwn50em/Hannah%20Yi%20Resume.pdf?dl=0"
+        href="https://dl.dropboxusercontent.com/s/0j67h18ky717w28/Hannah%20Yi%20Resume.pdf?dl=0"
         target={"_blank"}
       >
         Resume
