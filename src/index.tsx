@@ -10,6 +10,7 @@ import { About } from "./pages/about/about";
 import { ZiefahHealth } from "./pages/ziefahhealth/ziefahhealth";
 import { NSETropicals } from "./pages/nsetropicals/nsetropicals";
 import { DesignBySteeze } from "./pages/designbysteeze/designbysteeze";
+import ReactGA from "react-ga";
 
 import reportWebVitals from "./reportWebVitals";
 import "swiper/css";
@@ -21,9 +22,12 @@ const ScrollToTopOnRoute = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
   React.useLayoutEffect(() => {
     document.documentElement.scrollTo(0, 0);
+    ReactGA.pageview(location.pathname);
   }, [location.pathname]);
   return <>{children}</>;
 };
+
+ReactGA.initialize("G-RBBMWGBFR3");
 
 ReactDOM.render(
   <React.StrictMode>

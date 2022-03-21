@@ -13,16 +13,6 @@ function App() {
     setIsMenuOpen(status);
   };
 
-  React.useEffect(() => {
-    // if (isMenuOpen) {
-    //   document.body.style.overflow = "hidden";
-    //   document.body.style.height = "100%";
-    // } else {
-    //   document.body.style.overflow = "";
-    //   document.body.style.height = "";
-    // }
-  }, [isMenuOpen]);
-
   return (
     <div
       className={css("flex flex-col", {

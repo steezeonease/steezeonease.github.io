@@ -14,6 +14,7 @@ import { PrototypeFrame } from "../../components/ProjectPage/PrototypeFrame/prot
 import { Icon } from "@fluentui/react";
 import { ImageTextSideBySide } from "../../components/ProjectPage/ImageTextSideBySide/ImageTextSideBySide";
 import { InsightsElem } from "../../utilities/htmlTemplates";
+import { LOG_EVENT } from "../../utilities/tracking";
 
 export const ZiefahHealth: React.FC = () => {
   const ProjectSectionBG = "#f6f8ff";
@@ -126,6 +127,13 @@ export const ZiefahHealth: React.FC = () => {
               href="https://www.figma.com/proto/QQXnt9NCVmrY9v8tIG1pCp/Ziefah-Health-(Copy)?page-id=538%3A12600&node-id=538%3A14230&viewport=241%2C48%2C0.65&scaling=scale-down&starting-point-node-id=538%3A14230"
               target="_blank"
               rel="noreferrer"
+              onClick={() =>
+                LOG_EVENT(
+                  "Links",
+                  "Ziefah Health Prototype",
+                  "Ziefah Health Prototype link clicked"
+                )
+              }
             >
               here
             </a>{" "}
@@ -563,6 +571,13 @@ export const ZiefahHealth: React.FC = () => {
               href="https://www.figma.com/proto/QQXnt9NCVmrY9v8tIG1pCp/Ziefah-Health-(Copy)?page-id=538%3A12600&node-id=538%3A14230&viewport=241%2C48%2C0.65&scaling=scale-down&starting-point-node-id=538%3A14230"
               target="_blank"
               rel="noreferrer"
+              onClick={() =>
+                LOG_EVENT(
+                  "Links",
+                  "Ziefah Health Prototype",
+                  "Ziefah Health Prototype link clicked"
+                )
+              }
             >
               here
             </a>{" "}

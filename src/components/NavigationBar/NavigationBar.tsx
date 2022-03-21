@@ -3,6 +3,7 @@ import { css, IconButton } from "@fluentui/react";
 import { Async } from "@fluentui/utilities";
 import { Link, useLocation } from "react-router-dom";
 import { SocialBar } from "../SocialBar/socialbar";
+import { LOG_EVENT } from "../../utilities/tracking";
 
 interface INavLink {
   toUrl: string;
@@ -84,6 +85,7 @@ export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationB
         rel="noreferrer"
         href="https://dl.dropboxusercontent.com/s/0j67h18ky717w28/Hannah%20Yi%20Resume.pdf?dl=0"
         target={"_blank"}
+        onClick={() => LOG_EVENT("Links", "Resume", "Resume link clicked")}
       >
         Resume
       </a>

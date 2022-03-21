@@ -11,6 +11,7 @@ import { PageParagraph } from "../../components/PageComponents/PageParagraph/Pag
 import { PageSection } from "../../components/PageComponents/ProjectSection/projectsection";
 import { PrototypeFrame } from "../../components/ProjectPage/PrototypeFrame/prototypeframe";
 import { InsightsElem } from "../../utilities/htmlTemplates";
+import { LOG_EVENT } from "../../utilities/tracking";
 
 export const NSETropicals: React.FC = () => {
   const ProjectSectionBG = "rgba(248, 255, 232, 0.4)";
@@ -67,6 +68,13 @@ export const NSETropicals: React.FC = () => {
               href="https://www.figma.com/proto/9Tooj3JeRoRDX8vpUHPKuO/NSE-Tropicals-Prototype?page-id=430%3A615&node-id=430%3A625&viewport=241%2C48%2C0.52&scaling=scale-down&starting-point-node-id=430%3A625"
               target="_blank"
               rel="noreferrer"
+              onClick={() =>
+                LOG_EVENT(
+                  "Links",
+                  "NSE Tropicals Prototype",
+                  "NSE Tropicals Prototype link clicked"
+                )
+              }
             >
               here
             </a>{" "}
@@ -520,6 +528,13 @@ export const NSETropicals: React.FC = () => {
               href="https://www.figma.com/proto/9Tooj3JeRoRDX8vpUHPKuO/NSE-Tropicals-Prototype?page-id=430%3A615&node-id=430%3A625&viewport=241%2C48%2C0.52&scaling=scale-down&starting-point-node-id=430%3A625"
               target="_blank"
               rel="noreferrer"
+              onClick={() =>
+                LOG_EVENT(
+                  "Links",
+                  "NSE Tropicals Prototype",
+                  "NSE Tropicals Prototype link clicked"
+                )
+              }
             >
               here
             </a>{" "}
