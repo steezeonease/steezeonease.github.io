@@ -14,6 +14,10 @@ import { InsightsElem } from "../../utilities/htmlTemplates";
 import { LOG_EVENT } from "../../utilities/tracking";
 
 export const NSETropicals: React.FC = () => {
+  React.useEffect(() => {
+    document.title = "designbysteeze - NSE Tropicals";
+  }, []);
+
   const ProjectSectionBG = "rgba(248, 255, 232, 0.4)";
 
   return (

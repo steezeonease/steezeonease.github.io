@@ -7,6 +7,10 @@ import { PageParagraph } from "../../components/PageComponents/PageParagraph/Pag
 import { PADDING } from "../../utilities/responsive";
 
 export const About = () => {
+  React.useEffect(() => {
+    document.title = "designbysteeze - About Me";
+  }, []);
+
   return (
     <PageContainer>
       <TopTextHeader

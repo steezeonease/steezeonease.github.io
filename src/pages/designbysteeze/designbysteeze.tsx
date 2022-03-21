@@ -11,6 +11,10 @@ import { PageSection } from "../../components/PageComponents/ProjectSection/proj
 import { ImageTextSideBySide } from "../../components/ProjectPage/ImageTextSideBySide/ImageTextSideBySide";
 
 export const DesignBySteeze: React.FC = () => {
+  React.useEffect(() => {
+    document.title = "designbysteeze - designbysteeze";
+  }, []);
+
   const ProjectSectionBG = "rgba(255, 244, 236, 0.4)";
 
   return (

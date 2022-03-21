@@ -19,6 +19,10 @@ import { LOG_EVENT } from "../../utilities/tracking";
 export const ZiefahHealth: React.FC = () => {
   const ProjectSectionBG = "#f6f8ff";
 
+  React.useEffect(() => {
+    document.title = "designbysteeze - Ziefah Health";
+  }, []);
+
   const onboardingCarousel: {
     imgSrc: string;
     altText: string;

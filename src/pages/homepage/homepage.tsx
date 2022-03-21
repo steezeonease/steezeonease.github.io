@@ -5,6 +5,10 @@ import { TopTextHeader } from "../../components/TopTextHeader/toptextheader";
 import { ProjectCard } from "./projectcard/projectcard";
 
 export const Homepage: React.FC = () => {
+  React.useEffect(() => {
+    document.title = "designbysteeze";
+  }, []);
+
   return (
     <PageContainer isMaxWidth={true}>
       <TopTextHeader
