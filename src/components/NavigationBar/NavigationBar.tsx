@@ -106,6 +106,7 @@ export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationB
         <div
           className={css("fixed inset-0 opacity-0 transition-[opacity] z-50 ", {
             "backdrop-blur-md bg-white opacity-60": isMenuOpen,
+            "pointer-events-none": !isMenuOpen,
           })}
         />
         <IconButton
