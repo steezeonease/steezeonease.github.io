@@ -85,7 +85,7 @@ export const NavigationBar: React.FC<INavigationBarProps> = (props: INavigationB
         rel="noreferrer"
         href="https://dl.dropboxusercontent.com/s/0j67h18ky717w28/Hannah%20Yi%20Resume.pdf?dl=0"
         target={"_blank"}
-        onClick={() => LOG_EVENT("Links", "Resume", "Resume link clicked")}
+        onClick={() => LOG_EVENT("Resume viewed", "Links", "Resume", "Resume link clicked")}
       >
         Resume
       </a>

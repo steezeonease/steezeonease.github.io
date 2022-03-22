@@ -8,7 +8,9 @@ export const SocialBar: React.FC = () => {
         href="https://www.linkedin.com/in/steeze/"
         target="_blank"
         rel="noreferrer"
-        onClick={() => LOG_EVENT("Links", "LinkedIn", "LinkedIn link clicked")}
+        onClick={() =>
+          LOG_EVENT("LinkedIn profile viewed", "Links", "LinkedIn", "LinkedIn link clicked")
+        }
       >
         <img src={require("./images/linkedin.svg").default} alt="LinkedIn icon" />
       </a>
@@ -16,7 +18,7 @@ export const SocialBar: React.FC = () => {
         href="mailto: designbysteeze@gmail.com"
         target="_blank"
         rel="noreferrer"
-        onClick={() => LOG_EVENT("Links", "E-mail", "E-mail link clicked")}
+        onClick={() => LOG_EVENT("E-mail link clicked", "Links", "E-mail", "E-mail link clicked")}
       >
         <img src={require("./images/mail.svg").default} alt="mail icon" />
       </a>

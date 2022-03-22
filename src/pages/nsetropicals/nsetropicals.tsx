@@ -74,6 +74,7 @@ export const NSETropicals: React.FC = () => {
               rel="noreferrer"
               onClick={() =>
                 LOG_EVENT(
+                  "NSE Tropicals Prototype viewed",
                   "Links",
                   "NSE Tropicals Prototype",
                   "NSE Tropicals Prototype link clicked"
@@ -534,6 +535,7 @@ export const NSETropicals: React.FC = () => {
               rel="noreferrer"
               onClick={() =>
                 LOG_EVENT(
+                  "NSE Tropicals Prototype viewed",
                   "Links",
                   "NSE Tropicals Prototype",
                   "NSE Tropicals Prototype link clicked"

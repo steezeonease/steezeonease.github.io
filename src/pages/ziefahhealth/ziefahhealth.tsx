@@ -133,6 +133,7 @@ export const ZiefahHealth: React.FC = () => {
               rel="noreferrer"
               onClick={() =>
                 LOG_EVENT(
+                  "Ziefah Health Prototype viewed",
                   "Links",
                   "Ziefah Health Prototype",
                   "Ziefah Health Prototype link clicked"
@@ -577,6 +578,7 @@ export const ZiefahHealth: React.FC = () => {
               rel="noreferrer"
               onClick={() =>
                 LOG_EVENT(
+                  "Ziefah Health Prototype viewed",
                   "Links",
                   "Ziefah Health Prototype",
                   "Ziefah Health Prototype link clicked"
