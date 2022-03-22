@@ -10,7 +10,7 @@ import { About } from "./pages/about/about";
 import { ZiefahHealth } from "./pages/ziefahhealth/ziefahhealth";
 import { NSETropicals } from "./pages/nsetropicals/nsetropicals";
 import { DesignBySteeze } from "./pages/designbysteeze/designbysteeze";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 import reportWebVitals from "./reportWebVitals";
 import "swiper/css";
@@ -28,7 +28,7 @@ const ScrollToTopOnRoute = ({ children }: { children: React.ReactNode }) => {
   return <>{children}</>;
 };
 
-ReactGA.initialize("G-RBBMWGBFR3");
+ReactGA.initialize("G-YDRLYR6ZKM");
 
 ReactDOM.render(
   <React.StrictMode>
