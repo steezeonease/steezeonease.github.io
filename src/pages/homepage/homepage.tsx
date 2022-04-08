@@ -14,8 +14,7 @@ export const Homepage: React.FC = () => {
       <TopTextHeader
         subHeaderText="UX Designer based in Seattle, WA"
         headerText="
-        My joy in life is to leave a positive imprint by adding a touch of humanity to others'
-        daily life experiences."
+        Constantly putting people first through my design work."
       />
       <ProjectCard
         backgroundColor="#DCE3FF"
@@ -35,7 +34,7 @@ export const Homepage: React.FC = () => {
         backgroundColor="#FFE9D8"
         backgroundImgSrc={require("./images/designbysteeze_preview.png")}
         projectName="designbysteeze"
-        projectTagline="How might a husband and wife collaborate to build something beauitful?"
+        projectTagline="How might I collaborate with my husband to build something beauitful?"
         linkToProject="/work/designbysteeze"
       />
     </PageContainer>
