@@ -34,7 +34,7 @@ export const Homepage: React.FC = () => {
         backgroundColor="#FFE9D8"
         backgroundImgSrc={require("./images/designbysteeze_preview.png")}
         projectName="designbysteeze"
-        projectTagline="How might I collaborate with my husband to build something beauitful?"
+        projectTagline="How might I collaborate with my husband to build something beautiful?"
         linkToProject="/work/designbysteeze"
       />
     </PageContainer>
